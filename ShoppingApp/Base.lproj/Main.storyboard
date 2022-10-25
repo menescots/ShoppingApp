@@ -99,18 +99,18 @@
                         <viewLayoutGuide key="safeArea" id="I0g-hl-qZo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="settings" selectedImage="profile" id="D57-Ff-n2t"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="D57-Ff-n2t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xjj-hg-a2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2013" y="1355"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Circle Bar Controller-->
         <scene sceneID="ObP-Xy-hhS">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1CL-L3-vbk" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1CL-L3-vbk" customClass="SHCircleBarController" customModule="CircleBar" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="FX5-Sn-VVA" customClass="TabBarWithCorners" customModule="ShoppingApp" customModuleProvider="target">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="FX5-Sn-VVA" customClass="SHCircleBar" customModule="CircleBar">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -123,7 +123,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="WiV-wM-7iw"/>
                         <segue destination="oH8-It-Usa" kind="relationship" relationship="viewControllers" id="yec-uo-4H6"/>
                         <segue destination="pRt-Ex-aXb" kind="relationship" relationship="viewControllers" id="60U-o0-40N"/>
-                        <segue destination="Mea-Zj-Wig" kind="relationship" relationship="viewControllers" id="CEK-px-aPZ"/>
+                        <segue destination="Mea-Zj-Wig" kind="relationship" relationship="viewControllers" id="IU2-ol-2Dh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="301-f5-rS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -137,7 +137,6 @@
         <image name="home" width="32" height="32"/>
         <image name="magnifier" width="32" height="32"/>
         <image name="profile" width="32" height="32"/>
-        <image name="settings" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
