@@ -1,0 +1,26 @@
+[{
+    "name": "Electronics",
+    "id": 1,
+    "content": "Mobiles, Laptops, Camera, Trimmer",
+    "imageName": "electronics"
+},{
+    "name": "Mens",
+    "id": 2,
+    "content": "Mens Jeans, Mens T-shrts, Trousers",
+    "imageName": "mens"
+},{
+    "name": "Womens",
+    "id": 3,
+    "content": "Women Skirts, WoMens Tops, Traditional dress",
+    "imageName": "womens"
+},{
+    "name": "Baby",
+    "id": 4,
+    "content": "Baby soap, Baby powders, Baby daipers",
+    "imageName": "baby"
+},{
+    "name": "Kids",
+    "id": 5,
+    "content": "Kids toys, Kids bi-cycle, Kids pants",
+    "imageName": "kids"
+}]

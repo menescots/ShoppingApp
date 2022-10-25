@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7EB867902900335D00502692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB8678F2900335D00502692 /* AppDelegate.swift */; };
 		7EB867922900335D00502692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867912900335D00502692 /* SceneDelegate.swift */; };
-		7EB867942900335D00502692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867932900335D00502692 /* ViewController.swift */; };
 		7EB867972900335D00502692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB867952900335D00502692 /* Main.storyboard */; };
 		7EB8679A2900335D00502692 /* ShoppingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867982900335D00502692 /* ShoppingApp.xcdatamodeld */; };
 		7EB8679C2900336000502692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8679B2900336000502692 /* Assets.xcassets */; };
@@ -17,6 +16,15 @@
 		7EB867AA2900336000502692 /* ShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867A92900336000502692 /* ShoppingAppTests.swift */; };
 		7EB867B42900336000502692 /* ShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867B32900336000502692 /* ShoppingAppUITests.swift */; };
 		7EB867B62900336000502692 /* ShoppingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867B52900336000502692 /* ShoppingAppUITestsLaunchTests.swift */; };
+		7EFA9C5F290287A100BFEA13 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFA9C5E290287A100BFEA13 /* CoreDataManager.swift */; };
+		7EFA9CA62906869E00BFEA13 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFA9CA52906869E00BFEA13 /* HomeViewController.swift */; };
+		7EFA9CA829068BE100BFEA13 /* CategoryCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFA9CA729068BE100BFEA13 /* CategoryCustomCell.swift */; };
+		7EFA9CAB2906A34800BFEA13 /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EFA9CAA2906A34800BFEA13 /* Category.json */; };
+		7EFA9CAD2906A35100BFEA13 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EFA9CAC2906A35100BFEA13 /* Products.json */; };
+		7EFA9CC12906CE7600BFEA13 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFA9CC02906CE7600BFEA13 /* FirebaseAnalytics */; };
+		7EFA9CC32906CE7600BFEA13 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFA9CC22906CE7600BFEA13 /* FirebaseAuth */; };
+		7EFA9CC52906CE7600BFEA13 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFA9CC42906CE7600BFEA13 /* FirebaseDatabase */; };
+		7EFF1E0C2907C71C002A9F8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF1E0B2907C71B002A9F8A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +48,6 @@
 		7EB8678C2900335D00502692 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8678F2900335D00502692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EB867912900335D00502692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7EB867932900335D00502692 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EB867962900335D00502692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EB867992900335D00502692 /* ShoppingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingApp.xcdatamodel; sourceTree = "<group>"; };
 		7EB8679B2900336000502692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +58,12 @@
 		7EB867AF2900336000502692 /* ShoppingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB867B32900336000502692 /* ShoppingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITests.swift; sourceTree = "<group>"; };
 		7EB867B52900336000502692 /* ShoppingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EFA9C5E290287A100BFEA13 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7EFA9CA52906869E00BFEA13 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7EFA9CA729068BE100BFEA13 /* CategoryCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCustomCell.swift; sourceTree = "<group>"; };
+		7EFA9CAA2906A34800BFEA13 /* Category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Category.json; sourceTree = "<group>"; };
+		7EFA9CAC2906A35100BFEA13 /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
+		7EFF1E0B2907C71B002A9F8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFA9CC52906CE7600BFEA13 /* FirebaseDatabase in Frameworks */,
+				7EFA9CC12906CE7600BFEA13 /* FirebaseAnalytics in Frameworks */,
+				7EFA9CC32906CE7600BFEA13 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +101,7 @@
 				7EB867A82900336000502692 /* ShoppingAppTests */,
 				7EB867B22900336000502692 /* ShoppingAppUITests */,
 				7EB8678D2900335D00502692 /* Products */,
+				7EFF1E0A2906D04A002A9F8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +118,15 @@
 		7EB8678E2900335D00502692 /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
-				7EB8678F2900335D00502692 /* AppDelegate.swift */,
-				7EB867912900335D00502692 /* SceneDelegate.swift */,
-				7EB867932900335D00502692 /* ViewController.swift */,
+				7EFA9CA92906A33300BFEA13 /* Data */,
+				7EFA9CA4290685A100BFEA13 /* Helpers */,
+				7EFA9CA02906823E00BFEA13 /* Home */,
+				7EFA9C5D2902878B00BFEA13 /* CoreData */,
 				7EB867952900335D00502692 /* Main.storyboard */,
 				7EB8679B2900336000502692 /* Assets.xcassets */,
 				7EB8679D2900336000502692 /* LaunchScreen.storyboard */,
+				7EFF1E0B2907C71B002A9F8A /* GoogleService-Info.plist */,
 				7EB867A02900336000502692 /* Info.plist */,
-				7EB867982900335D00502692 /* ShoppingApp.xcdatamodeld */,
 			);
 			path = ShoppingApp;
 			sourceTree = "<group>";
@@ -130,6 +148,73 @@
 			path = ShoppingAppUITests;
 			sourceTree = "<group>";
 		};
+		7EFA9C5D2902878B00BFEA13 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7EB867982900335D00502692 /* ShoppingApp.xcdatamodeld */,
+				7EFA9C5E290287A100BFEA13 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7EFA9CA02906823E00BFEA13 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7EFA9CA12906826F00BFEA13 /* Controller */,
+				7EFA9CA22906827600BFEA13 /* DataSource */,
+				7EFA9CA32906859700BFEA13 /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7EFA9CA12906826F00BFEA13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7EFA9CA52906869E00BFEA13 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7EFA9CA22906827600BFEA13 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		7EFA9CA32906859700BFEA13 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7EFA9CA729068BE100BFEA13 /* CategoryCustomCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7EFA9CA4290685A100BFEA13 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7EB8678F2900335D00502692 /* AppDelegate.swift */,
+				7EB867912900335D00502692 /* SceneDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7EFA9CA92906A33300BFEA13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7EFA9CAC2906A35100BFEA13 /* Products.json */,
+				7EFA9CAA2906A34800BFEA13 /* Category.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7EFF1E0A2906D04A002A9F8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +231,11 @@
 			dependencies = (
 			);
 			name = ShoppingApp;
+			packageProductDependencies = (
+				7EFA9CC02906CE7600BFEA13 /* FirebaseAnalytics */,
+				7EFA9CC22906CE7600BFEA13 /* FirebaseAuth */,
+				7EFA9CC42906CE7600BFEA13 /* FirebaseDatabase */,
+			);
 			productName = ShoppingApp;
 			productReference = 7EB8678C2900335D00502692 /* ShoppingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +308,9 @@
 				Base,
 			);
 			mainGroup = 7EB867832900335D00502692;
+			packageReferences = (
+				7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7EB8678D2900335D00502692 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +329,10 @@
 			files = (
 				7EB8679F2900336000502692 /* LaunchScreen.storyboard in Resources */,
 				7EB8679C2900336000502692 /* Assets.xcassets in Resources */,
+				7EFF1E0C2907C71C002A9F8A /* GoogleService-Info.plist in Resources */,
 				7EB867972900335D00502692 /* Main.storyboard in Resources */,
+				7EFA9CAB2906A34800BFEA13 /* Category.json in Resources */,
+				7EFA9CAD2906A35100BFEA13 /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +357,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EB867942900335D00502692 /* ViewController.swift in Sources */,
+				7EFA9CA829068BE100BFEA13 /* CategoryCustomCell.swift in Sources */,
+				7EFA9CA62906869E00BFEA13 /* HomeViewController.swift in Sources */,
 				7EB8679A2900335D00502692 /* ShoppingApp.xcdatamodeld in Sources */,
 				7EB867902900335D00502692 /* AppDelegate.swift in Sources */,
+				7EFA9C5F290287A100BFEA13 /* CoreDataManager.swift in Sources */,
 				7EB867922900335D00502692 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,8 +545,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,8 +573,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +704,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EFA9CC02906CE7600BFEA13 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7EFA9CC22906CE7600BFEA13 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7EFA9CC42906CE7600BFEA13 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7EB867982900335D00502692 /* ShoppingApp.xcdatamodeld */ = {
