@@ -16,8 +16,8 @@ class ProductsCollectionViewCell: UICollectionViewCell {
             productNameLabel.text = productName
         }
     
-    func setProductPrice(price: String) {
-            priceLabel.text = "\(price)$"
+    func setProductPrice(price: Int32) {
+            priceLabel.text = "\(String(price))$"
         }
     
     func setProductImage(image: String) {
