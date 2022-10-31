@@ -9,20 +9,29 @@ import UIKit
 import FacebookLogin
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //view.layer.contents = #imageLiteral(resourceName: "background.jpeg").cgImage
-        
-//        let loginButton = FBLoginButton()
-//        loginButton.center = view.center
-//        view.addSubview(loginButton)
-        
-        if let token = AccessToken.current,
-                !token.isExpired {
-                // User is logged in, do work such as go to next view controller.
-            }
+setUpFields()
+
     }
 
-
+    @IBAction func signInTapped(_ sender: Any) {
+    }
+    
+    @IBAction func signUpTapped(_ sender: Any) {
+    }
+    
+    func setUpFields() {
+        emailField.layer.cornerRadius = 5
+        emailField.layer.borderWidth = 1.0
+        emailField.layer.borderColor = UIColor.black.cgColor
+        emailField.setLeftPaddingPoints(5)
+        passwordField.layer.cornerRadius = 5
+        passwordField.layer.borderWidth = 1.0
+        passwordField.layer.borderColor = UIColor.black.cgColor
+        passwordField.setLeftPaddingPoints(5)
+        
+    }
 }

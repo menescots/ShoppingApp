@@ -7,38 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002D7D5DFBE709FBCE9FBA89B75BB9D8 /* Ruleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF055A3135E4D31D8C6148E1C11C2640 /* Ruleable.swift */; };
+		044B7FA71BF44ED41C181687B864E161 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A2507AF446C81516B0EF4A48AD33D /* RegexRule.swift */; };
 		078B15623336CE789EB52AB53E367BC3 /* Pods-ShoppingAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F38500646A6E0B68B7E84FDEB7BA84 /* Pods-ShoppingAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1645DBAB51BF552F05790A501824FEB9 /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38650C5D1DEE38D6B711639D6C12EE5D /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m */; };
-		3ECB3F0A394C434351C4C4CA956016FA /* SHCircleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3A63B117102327A09D826939198A0 /* SHCircleBar.swift */; };
-		52219D253C8B1CFF3CACA50C6E358991 /* SHCircleBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2059F9A1C7A06A256D2F51EA757925 /* SHCircleBarController.swift */; };
-		663FCDD5A23560A4EFA51D714DF15A18 /* Pods-ShoppingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D45BF0D25AADEA1BA3C4AE6423AD5942 /* Pods-ShoppingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		761406FCB8F3B80687E1EE364D57BCEF /* CircleBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BDD65C571642EC3013657E6B3607D4D /* CircleBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		305BA9A5BD14C2CECA5C1A246AE8701F /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDC29A0866707356FAF6E1C9ACC99F9 /* PasswordRule.swift */; };
+		3213A7B3A7232B67F41A955C8C1D54F6 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F2E855AD4DDBA829E604D94DC2241 /* PasswordTextField.swift */; };
+		3D47929EF321EF983503F0BFEB0F239C /* PasswordTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = D273B5F386F26D278BB07563C4C7E2EF /* PasswordTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ECB3F0A394C434351C4C4CA956016FA /* SHCircleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A8942E99AC09B1A5AB32C0B25F567E /* SHCircleBar.swift */; };
+		4049B826874678510C57FC868C777AD3 /* visibility_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CE6D0A35833AEE81B13F8AAEA771BF /* visibility_on@2x.png */; };
+		4B493F4174C35381D58313D9F5B3301B /* Pods-ShoppingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D45BF0D25AADEA1BA3C4AE6423AD5942 /* Pods-ShoppingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		520B4279FBA537136BC6B1B3124D2DDD /* visibility_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 465530C6BD51F1E3716C321943DD962B /* visibility_off@3x.png */; };
+		52219D253C8B1CFF3CACA50C6E358991 /* SHCircleBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824641CB11C41D17BF31B6BC2E8A832F /* SHCircleBarController.swift */; };
+		574D28AEE4D80F83ACE306496CEAFAB7 /* SecureTextToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3257A55260DE0845B64AB217194B244 /* SecureTextToggleButton.swift */; };
+		761406FCB8F3B80687E1EE364D57BCEF /* CircleBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DB310996BA3D4B8A0C551EE082F9CC /* CircleBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7976BC502C5CFB8C23DF56B617B3F27A /* visibility_off.png in Resources */ = {isa = PBXBuildFile; fileRef = E147830378B37A2A936A5783F6F0090D /* visibility_off.png */; };
+		7CBFC4768A0875E1BD95426CBD320F97 /* BundleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753465F99582DA8B56E7397DBD76EB7 /* BundleUtil.swift */; };
+		7DBE9C2A9106E74D392CEE95425C59C4 /* PasswordTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4259CEDB65553EB1355CAF5D3AC3F6F /* PasswordTextField-dummy.m */; };
 		7FF8E08A55AB7FEDC8D0226042AC7C71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		80BFF3ABB2EC17392FD015005018D011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		81DF2F420A9D5109DE4BEB998D89C8DB /* Pods-ShoppingAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E440728602536A10C256C4341864C0 /* Pods-ShoppingAppTests-dummy.m */; };
-		85BA1CB0B7C1C7E1077D1646C7FFF9BA /* CircleBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EAEC57BB2C3743E7BBD34E6EB7926 /* CircleBar-dummy.m */; };
-		995FE2E1120F9B128151EBBDCD8DFC42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9C1F6F369D5E65131074825E75BBF0B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A3A7B52C47B77B87EC486FFED19A582F /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A10E6041E37300BB4D0DC3884374BD8F /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B42B3C9C63B76A8DD5C602C9E4B72E34 /* Pods-ShoppingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F50731EB124D5AAEA88827E518CB24F2 /* Pods-ShoppingApp-dummy.m */; };
+		85BA1CB0B7C1C7E1077D1646C7FFF9BA /* CircleBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CCA600144A609FD1CAAC8F71C84F53 /* CircleBar-dummy.m */; };
+		8793D800ED5C5114FCDF90FEE0854B2B /* PasswordTextField-PasswordTextField in Resources */ = {isa = PBXBuildFile; fileRef = E1AE02FE52E1DF553479C602B170F3F1 /* PasswordTextField-PasswordTextField */; };
+		9877081D855406DFBA7897BA6CD9A178 /* PasswordTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6AA16F37CA08204D9ACFC817DFE527 /* PasswordTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CE5E4F0A37E6C3355F0B091306F980E /* visibility_on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB354B17EC3F70216988CDFD9985124 /* visibility_on@3x.png */; };
+		9F22B58FFD8E6B6D7001B5285A4CA785 /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A10E6041E37300BB4D0DC3884374BD8F /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE59C63F2AD1411C5A16DA5AF9BC02DD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A52F0D61DD8D047EFDAF913BF0BF8 /* StringExtension.swift */; };
+		CA4EA1132E853624FA36CC9C877D3747 /* visibility_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A82575A087709018A749493DFC75E6 /* visibility_off@2x.png */; };
+		CD92EC9A2FFBC1A281FFA8E915B84602 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CF150F59D53D4D1758F22EAF065CF5D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D754C3FC7FA62BD4E28A5DC2827D524F /* Pods-ShoppingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F50731EB124D5AAEA88827E518CB24F2 /* Pods-ShoppingApp-dummy.m */; };
+		DA3DC1C683DC11A01D8591B40C1A923A /* visibility_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 01571AFC149D6103145E5C70DDAFF5ED /* visibility_on.png */; };
+		F28DDFE64D36BA48542CDEA3CCC2D617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F9A79CF066DDD2FF2D0BF7F325CC1894 /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38650C5D1DEE38D6B711639D6C12EE5D /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		22C1A3B678A97BD8C6FC0D0BBCDD5B5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C0C61DE724689C02344D66FAE8A3FAD;
-			remoteInfo = "Pods-ShoppingApp";
-		};
-		724E9D872F4E855CB90B49A73BC23BF9 /* PBXContainerItemProxy */ = {
+		A1BDA633A370277D6B59AD6B22FEDB58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B7378E43393E401083784252E88810C0;
 			remoteInfo = CircleBar;
 		};
-		C0AD5770783537972B680BCD74C58F48 /* PBXContainerItemProxy */ = {
+		A92C8369429BD28E6EB7F19AB7E0867D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C0C61DE724689C02344D66FAE8A3FAD;
+			remoteInfo = "Pods-ShoppingApp";
+		};
+		B10D4AA6B285C19A02CF8A3D0148827F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45B65ECC40F1B82786BABFA3A97B0D20;
+			remoteInfo = PasswordTextField;
+		};
+		CD178B56FA721A90F1EFE8030872E5C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45B65ECC40F1B82786BABFA3A97B0D20;
+			remoteInfo = PasswordTextField;
+		};
+		E4F2F8BF571E71F262F59BE09B5FAD37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47125EF768D6F7A41A3B4EDDB3C096EB;
+			remoteInfo = "PasswordTextField-PasswordTextField";
+		};
+		EEE53D903689839FBF0E6846380D94B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -49,62 +88,93 @@
 
 /* Begin PBXFileReference section */
 		012386CB1C6A48A35C1E6D86C7632C40 /* Pods-ShoppingApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShoppingApp-frameworks.sh"; sourceTree = "<group>"; };
+		01571AFC149D6103145E5C70DDAFF5ED /* visibility_on.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = visibility_on.png; path = PasswordTextField/Media/visibility_on.png; sourceTree = "<group>"; };
 		030F5372EE15781A042796B2F429DED2 /* Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		06594F20AC1148968C99DC94F1562B5E /* Pods-ShoppingAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShoppingAppTests.modulemap"; sourceTree = "<group>"; };
-		0B2EAEC57BB2C3743E7BBD34E6EB7926 /* CircleBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleBar-dummy.m"; sourceTree = "<group>"; };
+		06CCA600144A609FD1CAAC8F71C84F53 /* CircleBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleBar-dummy.m"; sourceTree = "<group>"; };
+		0BDC29A0866707356FAF6E1C9ACC99F9 /* PasswordRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordRule.swift; path = PasswordTextField/PasswordRule.swift; sourceTree = "<group>"; };
+		0C6AA16F37CA08204D9ACFC817DFE527 /* PasswordTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordTextField-umbrella.h"; sourceTree = "<group>"; };
+		0E0A52F0D61DD8D047EFDAF913BF0BF8 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = PasswordTextField/StringExtension.swift; sourceTree = "<group>"; };
+		1753465F99582DA8B56E7397DBD76EB7 /* BundleUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundleUtil.swift; path = PasswordTextField/BundleUtil.swift; sourceTree = "<group>"; };
 		1A9070773FE2ACE4244A73C2BC090C15 /* Pods-ShoppingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B5D092A60F20F5C707B5117D4EC03CD /* ResourceBundle-PasswordTextField-PasswordTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PasswordTextField-PasswordTextField-Info.plist"; sourceTree = "<group>"; };
 		2D4D052092D9C26B0F24B2618067DBF3 /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
 		38650C5D1DEE38D6B711639D6C12EE5D /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShoppingApp-ShoppingAppUITests-dummy.m"; sourceTree = "<group>"; };
 		3A7A7AC982D4645C8AEC48CA9053F3F1 /* Pods-ShoppingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E5CC766163B46084F38FC3811155353 /* Pods-ShoppingAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingAppTests-Info.plist"; sourceTree = "<group>"; };
 		3E941FC29F33BF4EFA65EF695F08ACED /* Pods-ShoppingApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShoppingApp"; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F7F2E855AD4DDBA829E604D94DC2241 /* PasswordTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordTextField.swift; path = PasswordTextField/PasswordTextField.swift; sourceTree = "<group>"; };
 		4317AA0F382B1FB2BAD5596ADF0505C8 /* Pods-ShoppingApp-ShoppingAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShoppingApp-ShoppingAppUITests"; path = Pods_ShoppingApp_ShoppingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43697E92E1EF903807158F32D260C4DC /* CircleBar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CircleBar; path = CircleBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ABF2841C856D19EB258834F3448C95 /* Pods-ShoppingApp-ShoppingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp-ShoppingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4995C4C82F3425C89525818113536278 /* CircleBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleBar.modulemap; sourceTree = "<group>"; };
-		50687AAB1FE203C1EF8E0EEF18A61B22 /* CircleBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleBar.debug.xcconfig; sourceTree = "<group>"; };
+		465530C6BD51F1E3716C321943DD962B /* visibility_off@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visibility_off@3x.png"; path = "PasswordTextField/Media/visibility_off@3x.png"; sourceTree = "<group>"; };
+		515636D04E74F36F0DD22EA3C2686776 /* PasswordTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PasswordTextField-Info.plist"; sourceTree = "<group>"; };
 		523B01777ED37A205868AF510CE109A0 /* Pods-ShoppingApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShoppingApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		57961F0FD3441E8DEC06C71B59286C4E /* CircleBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleBar-prefix.pch"; sourceTree = "<group>"; };
-		5E2059F9A1C7A06A256D2F51EA757925 /* SHCircleBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHCircleBarController.swift; path = CircleBar/Classes/SHCircleBarController.swift; sourceTree = "<group>"; };
+		60DB310996BA3D4B8A0C551EE082F9CC /* CircleBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleBar-umbrella.h"; sourceTree = "<group>"; };
 		60E440728602536A10C256C4341864C0 /* Pods-ShoppingAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShoppingAppTests-dummy.m"; sourceTree = "<group>"; };
 		62106E26262FF879A04007ECBF2B7648 /* Pods-ShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6779C63B09CEEB2821051742C91EB1EE /* Pods-ShoppingAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShoppingAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		67F38500646A6E0B68B7E84FDEB7BA84 /* Pods-ShoppingAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShoppingAppTests-umbrella.h"; sourceTree = "<group>"; };
 		695F4C384D13F27C7EA0B54CE7006F5C /* Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6BDD65C571642EC3013657E6B3607D4D /* CircleBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleBar-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		87893263227EA7940729B20F28EE51D3 /* CircleBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircleBar-Info.plist"; sourceTree = "<group>"; };
+		7F14FCB9EDCEE6BB510ED843A91AC6F5 /* PasswordTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasswordTextField.debug.xcconfig; sourceTree = "<group>"; };
+		824641CB11C41D17BF31B6BC2E8A832F /* SHCircleBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHCircleBarController.swift; path = CircleBar/Classes/SHCircleBarController.swift; sourceTree = "<group>"; };
+		82A8942E99AC09B1A5AB32C0B25F567E /* SHCircleBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHCircleBar.swift; path = CircleBar/Classes/SHCircleBar.swift; sourceTree = "<group>"; };
+		833D3EA2022518302B57E54B8694C081 /* CircleBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircleBar-Info.plist"; sourceTree = "<group>"; };
+		89D066B2C696B341A979BD01893F4B04 /* CircleBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleBar.modulemap; sourceTree = "<group>"; };
+		8F38721E25F87ECF8614962C01958DC2 /* PasswordTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordTextField-prefix.pch"; sourceTree = "<group>"; };
+		986851AE50EA15708823B3DF2000C1D1 /* CircleBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleBar-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A07A2507AF446C81516B0EF4A48AD33D /* RegexRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexRule.swift; path = PasswordTextField/RegexRule.swift; sourceTree = "<group>"; };
+		A0E8A28A52A85890DC3250E3D6498FF6 /* PasswordTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PasswordTextField.modulemap; sourceTree = "<group>"; };
 		A10E6041E37300BB4D0DC3884374BD8F /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShoppingApp-ShoppingAppUITests-umbrella.h"; sourceTree = "<group>"; };
 		A2E17A19AE53D95DF12D34A68C40A5A7 /* Pods-ShoppingApp-ShoppingAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShoppingApp-ShoppingAppUITests-frameworks.sh"; sourceTree = "<group>"; };
 		A2E274166C4A2D64531293C1344675ED /* Pods-ShoppingAppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShoppingAppTests"; path = Pods_ShoppingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CE6D0A35833AEE81B13F8AAEA771BF /* visibility_on@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visibility_on@2x.png"; path = "PasswordTextField/Media/visibility_on@2x.png"; sourceTree = "<group>"; };
+		B3257A55260DE0845B64AB217194B244 /* SecureTextToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureTextToggleButton.swift; path = PasswordTextField/SecureTextToggleButton.swift; sourceTree = "<group>"; };
 		B4A3BEC9296FD7D5FF35E2355DC83563 /* Pods-ShoppingApp-ShoppingAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-ShoppingAppUITests-Info.plist"; sourceTree = "<group>"; };
+		B57975DE043DD74AB677173164E13BB6 /* CircleBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleBar.debug.xcconfig; sourceTree = "<group>"; };
 		B89A6DD3783794EBD9C0E603B3B123E8 /* Pods-ShoppingAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C4259CEDB65553EB1355CAF5D3AC3F6F /* PasswordTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PasswordTextField-dummy.m"; sourceTree = "<group>"; };
 		C42BACE53C6D87746195E0A7D80131C1 /* Pods-ShoppingApp-ShoppingAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShoppingApp-ShoppingAppUITests.modulemap"; sourceTree = "<group>"; };
+		C8852EB6649B6B910B7CD41CFBF65AAA /* CircleBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleBar.release.xcconfig; sourceTree = "<group>"; };
 		CD30C436999BCCD2FA06F3E9A440D497 /* Pods-ShoppingApp-ShoppingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp-ShoppingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D273B5F386F26D278BB07563C4C7E2EF /* PasswordTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PasswordTextField.h; path = PasswordTextField/PasswordTextField.h; sourceTree = "<group>"; };
 		D3828D77EE4B2B04B14A9764BE86B1E1 /* Pods-ShoppingApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		D45BF0D25AADEA1BA3C4AE6423AD5942 /* Pods-ShoppingApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShoppingApp-umbrella.h"; sourceTree = "<group>"; };
-		DFEFC8834EA5950D3A2222C92603165B /* CircleBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleBar.release.xcconfig; sourceTree = "<group>"; };
-		E9A3A63B117102327A09D826939198A0 /* SHCircleBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHCircleBar.swift; path = CircleBar/Classes/SHCircleBar.swift; sourceTree = "<group>"; };
+		E147830378B37A2A936A5783F6F0090D /* visibility_off.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = visibility_off.png; path = PasswordTextField/Media/visibility_off.png; sourceTree = "<group>"; };
+		E1AE02FE52E1DF553479C602B170F3F1 /* PasswordTextField-PasswordTextField */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "PasswordTextField-PasswordTextField"; path = PasswordTextField.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85CE0749612908E4790BFC75F4DCD8D /* PasswordTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasswordTextField.release.xcconfig; sourceTree = "<group>"; };
+		EF055A3135E4D31D8C6148E1C11C2640 /* Ruleable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ruleable.swift; path = PasswordTextField/Ruleable.swift; sourceTree = "<group>"; };
 		EFE255936EABB02B64E3B279426B459E /* Pods-ShoppingApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-Info.plist"; sourceTree = "<group>"; };
+		F3B2B979D21179086FB3F7EBE3152F8F /* PasswordTextField */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PasswordTextField; path = PasswordTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50731EB124D5AAEA88827E518CB24F2 /* Pods-ShoppingApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShoppingApp-dummy.m"; sourceTree = "<group>"; };
+		F5A82575A087709018A749493DFC75E6 /* visibility_off@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visibility_off@2x.png"; path = "PasswordTextField/Media/visibility_off@2x.png"; sourceTree = "<group>"; };
+		FAB354B17EC3F70216988CDFD9985124 /* visibility_on@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visibility_on@3x.png"; path = "PasswordTextField/Media/visibility_on@3x.png"; sourceTree = "<group>"; };
 		FBF266B688D06559B8A7352F5124D4C8 /* Pods-ShoppingApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShoppingApp.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		354404B022316BFA5D96E4E2A50BDB0F /* Frameworks */ = {
+		0D6F1D31A5BF2A7FF8F3D0B94ACC5AC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1F6F369D5E65131074825E75BBF0B3 /* Foundation.framework in Frameworks */,
+				CF150F59D53D4D1758F22EAF065CF5D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		432EA029E36830DBA3DE96D2ACB0AC3D /* Frameworks */ = {
+		72A387E89225BCA2DC9681129EFE8A36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				995FE2E1120F9B128151EBBDCD8DFC42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A34217DFCD36B91A8A3E7A702B915F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD92EC9A2FFBC1A281FFA8E915B84602 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,9 +194,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F73ED230638625ADA65D268892621A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28DDFE64D36BA48542CDEA3CCC2D617 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081D54249E74617DDAD3B27FA9E02049 /* PasswordTextField */ = {
+			isa = PBXGroup;
+			children = (
+				1753465F99582DA8B56E7397DBD76EB7 /* BundleUtil.swift */,
+				0BDC29A0866707356FAF6E1C9ACC99F9 /* PasswordRule.swift */,
+				D273B5F386F26D278BB07563C4C7E2EF /* PasswordTextField.h */,
+				3F7F2E855AD4DDBA829E604D94DC2241 /* PasswordTextField.swift */,
+				A07A2507AF446C81516B0EF4A48AD33D /* RegexRule.swift */,
+				EF055A3135E4D31D8C6148E1C11C2640 /* Ruleable.swift */,
+				B3257A55260DE0845B64AB217194B244 /* SecureTextToggleButton.swift */,
+				0E0A52F0D61DD8D047EFDAF913BF0BF8 /* StringExtension.swift */,
+				BD3D79F0D5ECAEC50D59800E47E86D0E /* Resources */,
+				F28DDEBCC55B0B47E8DAE4E5E76DBDE1 /* Support Files */,
+			);
+			name = PasswordTextField;
+			path = PasswordTextField;
+			sourceTree = "<group>";
+		};
 		082DB7F8488E720164B5C705A93CCF7F /* Pods-ShoppingApp-ShoppingAppUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,30 +257,13 @@
 			path = "Target Support Files/Pods-ShoppingApp";
 			sourceTree = "<group>";
 		};
-		0EDF1692B46F99D1A78B6752364436DD /* Support Files */ = {
+		0E891A5D107912D50FBF40B147E2CFFD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4995C4C82F3425C89525818113536278 /* CircleBar.modulemap */,
-				0B2EAEC57BB2C3743E7BBD34E6EB7926 /* CircleBar-dummy.m */,
-				87893263227EA7940729B20F28EE51D3 /* CircleBar-Info.plist */,
-				57961F0FD3441E8DEC06C71B59286C4E /* CircleBar-prefix.pch */,
-				6BDD65C571642EC3013657E6B3607D4D /* CircleBar-umbrella.h */,
-				50687AAB1FE203C1EF8E0EEF18A61B22 /* CircleBar.debug.xcconfig */,
-				DFEFC8834EA5950D3A2222C92603165B /* CircleBar.release.xcconfig */,
+				DCBB396041DFE40C87DB6550B4A80C4E /* CircleBar */,
+				081D54249E74617DDAD3B27FA9E02049 /* PasswordTextField */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CircleBar";
-			sourceTree = "<group>";
-		};
-		1C20CB35A135E05676CC132BD6A6F4B5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				43697E92E1EF903807158F32D260C4DC /* CircleBar */,
-				3E941FC29F33BF4EFA65EF695F08ACED /* Pods-ShoppingApp */,
-				4317AA0F382B1FB2BAD5596ADF0505C8 /* Pods-ShoppingApp-ShoppingAppUITests */,
-				A2E274166C4A2D64531293C1344675ED /* Pods-ShoppingAppTests */,
-			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -205,6 +284,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		7C54973FACED8F8B363A9F7F3C6E1B5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43697E92E1EF903807158F32D260C4DC /* CircleBar */,
+				F3B2B979D21179086FB3F7EBE3152F8F /* PasswordTextField */,
+				E1AE02FE52E1DF553479C602B170F3F1 /* PasswordTextField-PasswordTextField */,
+				3E941FC29F33BF4EFA65EF695F08ACED /* Pods-ShoppingApp */,
+				4317AA0F382B1FB2BAD5596ADF0505C8 /* Pods-ShoppingApp-ShoppingAppUITests */,
+				A2E274166C4A2D64531293C1344675ED /* Pods-ShoppingAppTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9B083042FAAB6A5F61108414EC944E4D /* Pods-ShoppingAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,12 +313,32 @@
 			path = "Target Support Files/Pods-ShoppingAppTests";
 			sourceTree = "<group>";
 		};
-		ACEEBF83C7BD3FCB3BE04C6FCBA94CAA /* Pods */ = {
+		B10C1C061EEA27BEEC9E0A8A92B253AA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F18324B4E6A79A61DFD714E3D2C8700B /* CircleBar */,
+				89D066B2C696B341A979BD01893F4B04 /* CircleBar.modulemap */,
+				06CCA600144A609FD1CAAC8F71C84F53 /* CircleBar-dummy.m */,
+				833D3EA2022518302B57E54B8694C081 /* CircleBar-Info.plist */,
+				986851AE50EA15708823B3DF2000C1D1 /* CircleBar-prefix.pch */,
+				60DB310996BA3D4B8A0C551EE082F9CC /* CircleBar-umbrella.h */,
+				B57975DE043DD74AB677173164E13BB6 /* CircleBar.debug.xcconfig */,
+				C8852EB6649B6B910B7CD41CFBF65AAA /* CircleBar.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/CircleBar";
+			sourceTree = "<group>";
+		};
+		BD3D79F0D5ECAEC50D59800E47E86D0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E147830378B37A2A936A5783F6F0090D /* visibility_off.png */,
+				F5A82575A087709018A749493DFC75E6 /* visibility_off@2x.png */,
+				465530C6BD51F1E3716C321943DD962B /* visibility_off@3x.png */,
+				01571AFC149D6103145E5C70DDAFF5ED /* visibility_on.png */,
+				B0CE6D0A35833AEE81B13F8AAEA771BF /* visibility_on@2x.png */,
+				FAB354B17EC3F70216988CDFD9985124 /* visibility_on@3x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -234,8 +346,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				ACEEBF83C7BD3FCB3BE04C6FCBA94CAA /* Pods */,
-				1C20CB35A135E05676CC132BD6A6F4B5 /* Products */,
+				0E891A5D107912D50FBF40B147E2CFFD /* Pods */,
+				7C54973FACED8F8B363A9F7F3C6E1B5C /* Products */,
 				7C20C0A0E45B7C0A43FC0D3E00B620F8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -248,33 +360,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F18324B4E6A79A61DFD714E3D2C8700B /* CircleBar */ = {
+		DCBB396041DFE40C87DB6550B4A80C4E /* CircleBar */ = {
 			isa = PBXGroup;
 			children = (
-				E9A3A63B117102327A09D826939198A0 /* SHCircleBar.swift */,
-				5E2059F9A1C7A06A256D2F51EA757925 /* SHCircleBarController.swift */,
-				0EDF1692B46F99D1A78B6752364436DD /* Support Files */,
+				82A8942E99AC09B1A5AB32C0B25F567E /* SHCircleBar.swift */,
+				824641CB11C41D17BF31B6BC2E8A832F /* SHCircleBarController.swift */,
+				B10C1C061EEA27BEEC9E0A8A92B253AA /* Support Files */,
 			);
 			name = CircleBar;
 			path = CircleBar;
 			sourceTree = "<group>";
 		};
+		F28DDEBCC55B0B47E8DAE4E5E76DBDE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0E8A28A52A85890DC3250E3D6498FF6 /* PasswordTextField.modulemap */,
+				C4259CEDB65553EB1355CAF5D3AC3F6F /* PasswordTextField-dummy.m */,
+				515636D04E74F36F0DD22EA3C2686776 /* PasswordTextField-Info.plist */,
+				8F38721E25F87ECF8614962C01958DC2 /* PasswordTextField-prefix.pch */,
+				0C6AA16F37CA08204D9ACFC817DFE527 /* PasswordTextField-umbrella.h */,
+				7F14FCB9EDCEE6BB510ED843A91AC6F5 /* PasswordTextField.debug.xcconfig */,
+				E85CE0749612908E4790BFC75F4DCD8D /* PasswordTextField.release.xcconfig */,
+				1B5D092A60F20F5C707B5117D4EC03CD /* ResourceBundle-PasswordTextField-PasswordTextField-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PasswordTextField";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		187EBBCCCE73B4C1BDC86B33CADD1A40 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A3A7B52C47B77B87EC486FFED19A582F /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		42DCDF88916492F1E5ABA5F54E0530FB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				761406FCB8F3B80687E1EE364D57BCEF /* CircleBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69BEF2AE94D7270F04173F86DA4D92C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B493F4174C35381D58313D9F5B3301B /* Pods-ShoppingApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +414,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C69C9E1AAC5A152862F3EC6CB4B38C56 /* Headers */ = {
+		B5D0B1A73CD2A068C08379A8F7B61400 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				663FCDD5A23560A4EFA51D714DF15A18 /* Pods-ShoppingApp-umbrella.h in Headers */,
+				3D47929EF321EF983503F0BFEB0F239C /* PasswordTextField.h in Headers */,
+				9877081D855406DFBA7897BA6CD9A178 /* PasswordTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94B08FB0B839C8A479F9AABB8125395 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F22B58FFD8E6B6D7001B5285A4CA785 /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,17 +436,18 @@
 /* Begin PBXNativeTarget section */
 		1C0C61DE724689C02344D66FAE8A3FAD /* Pods-ShoppingApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CCC0AD1AEC062A914EF4198E2195230 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp" */;
+			buildConfigurationList = C26D1A4FE1462C5B47ECE6FDCED7E033 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp" */;
 			buildPhases = (
-				C69C9E1AAC5A152862F3EC6CB4B38C56 /* Headers */,
-				9DFFE5EA9DEF5CAFDA5EC2C9392555EC /* Sources */,
-				432EA029E36830DBA3DE96D2ACB0AC3D /* Frameworks */,
-				C0D493468BDD6F132AC69DB7A21ED037 /* Resources */,
+				69BEF2AE94D7270F04173F86DA4D92C1 /* Headers */,
+				00021EEBD6E89FEB4620EF7BB98965A4 /* Sources */,
+				0D6F1D31A5BF2A7FF8F3D0B94ACC5AC1 /* Frameworks */,
+				13679C1C06190CAE74102ECBB359A000 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9DF00EFD049018363C2DC93092DE52ED /* PBXTargetDependency */,
+				8525B2CD8F9CE32966ECCA39DC205D83 /* PBXTargetDependency */,
+				891C10181B1F763281D625BBA9F9F225 /* PBXTargetDependency */,
 			);
 			name = "Pods-ShoppingApp";
 			productName = Pods_ShoppingApp;
@@ -328,26 +466,63 @@
 			buildRules = (
 			);
 			dependencies = (
-				3C84F6F06DD2478DBAF39C9A1F4AB736 /* PBXTargetDependency */,
+				EEC0E89A4CF0C9B1D0B4152C175FD06D /* PBXTargetDependency */,
 			);
 			name = "Pods-ShoppingAppTests";
 			productName = Pods_ShoppingAppTests;
 			productReference = A2E274166C4A2D64531293C1344675ED /* Pods-ShoppingAppTests */;
 			productType = "com.apple.product-type.framework";
 		};
-		AFA63FACD0195230B5C0B2A7E2DBDB63 /* Pods-ShoppingApp-ShoppingAppUITests */ = {
+		45B65ECC40F1B82786BABFA3A97B0D20 /* PasswordTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AED8778918A909C2F53A1EF8513A1850 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp-ShoppingAppUITests" */;
+			buildConfigurationList = 37D97F9FA4D4ADAEFCA782C3A899076C /* Build configuration list for PBXNativeTarget "PasswordTextField" */;
 			buildPhases = (
-				187EBBCCCE73B4C1BDC86B33CADD1A40 /* Headers */,
-				52B6A89EC9912AC6B330D260B3D488C5 /* Sources */,
-				354404B022316BFA5D96E4E2A50BDB0F /* Frameworks */,
-				3D7D2DDBA16E1FD42B4C39565E810AB5 /* Resources */,
+				B5D0B1A73CD2A068C08379A8F7B61400 /* Headers */,
+				E4342B7026169982135659B1E9C0E95D /* Sources */,
+				F73ED230638625ADA65D268892621A09 /* Frameworks */,
+				DC7B08A7A7E017D49EA4766FBAA0269B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE75DF80F89E79E3A5E5B84C42D0BB9C /* PBXTargetDependency */,
+				6C088FE3B94DDD595D91265F722D6A1B /* PBXTargetDependency */,
+			);
+			name = PasswordTextField;
+			productName = PasswordTextField;
+			productReference = F3B2B979D21179086FB3F7EBE3152F8F /* PasswordTextField */;
+			productType = "com.apple.product-type.framework";
+		};
+		47125EF768D6F7A41A3B4EDDB3C096EB /* PasswordTextField-PasswordTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1ED0E7E392B456685C6EF940A10A9DA /* Build configuration list for PBXNativeTarget "PasswordTextField-PasswordTextField" */;
+			buildPhases = (
+				198771810CAAF204F15B8F990C43F2DC /* Sources */,
+				72A387E89225BCA2DC9681129EFE8A36 /* Frameworks */,
+				CDA8BD9A6124A7ADF6368080071D4B8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PasswordTextField-PasswordTextField";
+			productName = PasswordTextField;
+			productReference = E1AE02FE52E1DF553479C602B170F3F1 /* PasswordTextField-PasswordTextField */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AFA63FACD0195230B5C0B2A7E2DBDB63 /* Pods-ShoppingApp-ShoppingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF655D5CDCBA86F95D92461AC617CC54 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp-ShoppingAppUITests" */;
+			buildPhases = (
+				B94B08FB0B839C8A479F9AABB8125395 /* Headers */,
+				7221222300459C35F76FFAC024464E80 /* Sources */,
+				8A34217DFCD36B91A8A3E7A702B915F0 /* Frameworks */,
+				0EE00F0EFE29103608F268D009F2460D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD73280A43DFCABA230F0BBEDF05C25F /* PBXTargetDependency */,
+				1C43DD2390194B02140F90D0893B571F /* PBXTargetDependency */,
 			);
 			name = "Pods-ShoppingApp-ShoppingAppUITests";
 			productName = Pods_ShoppingApp_ShoppingAppUITests;
@@ -390,11 +565,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1C20CB35A135E05676CC132BD6A6F4B5 /* Products */;
+			productRefGroup = 7C54973FACED8F8B363A9F7F3C6E1B5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B7378E43393E401083784252E88810C0 /* CircleBar */,
+				45B65ECC40F1B82786BABFA3A97B0D20 /* PasswordTextField */,
+				47125EF768D6F7A41A3B4EDDB3C096EB /* PasswordTextField-PasswordTextField */,
 				1C0C61DE724689C02344D66FAE8A3FAD /* Pods-ShoppingApp */,
 				AFA63FACD0195230B5C0B2A7E2DBDB63 /* Pods-ShoppingApp-ShoppingAppUITests */,
 				354BE019FE2125308B2CE5FC68F8F973 /* Pods-ShoppingAppTests */,
@@ -403,7 +580,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3D7D2DDBA16E1FD42B4C39565E810AB5 /* Resources */ = {
+		0EE00F0EFE29103608F268D009F2460D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13679C1C06190CAE74102ECBB359A000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -417,13 +601,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0D493468BDD6F132AC69DB7A21ED037 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C1FB2160C615236E9D47B52ADB5376F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,9 +608,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDA8BD9A6124A7ADF6368080071D4B8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7976BC502C5CFB8C23DF56B617B3F27A /* visibility_off.png in Resources */,
+				CA4EA1132E853624FA36CC9C877D3747 /* visibility_off@2x.png in Resources */,
+				520B4279FBA537136BC6B1B3124D2DDD /* visibility_off@3x.png in Resources */,
+				DA3DC1C683DC11A01D8591B40C1A923A /* visibility_on.png in Resources */,
+				4049B826874678510C57FC868C777AD3 /* visibility_on@2x.png in Resources */,
+				9CE5E4F0A37E6C3355F0B091306F980E /* visibility_on@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7B08A7A7E017D49EA4766FBAA0269B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8793D800ED5C5114FCDF90FEE0854B2B /* PasswordTextField-PasswordTextField in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00021EEBD6E89FEB4620EF7BB98965A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D754C3FC7FA62BD4E28A5DC2827D524F /* Pods-ShoppingApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198771810CAAF204F15B8F990C43F2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41979C15E382865F7A0989D83A9AD786 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,19 +655,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52B6A89EC9912AC6B330D260B3D488C5 /* Sources */ = {
+		7221222300459C35F76FFAC024464E80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1645DBAB51BF552F05790A501824FEB9 /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m in Sources */,
+				F9A79CF066DDD2FF2D0BF7F325CC1894 /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DFFE5EA9DEF5CAFDA5EC2C9392555EC /* Sources */ = {
+		E4342B7026169982135659B1E9C0E95D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42B3C9C63B76A8DD5C602C9E4B72E34 /* Pods-ShoppingApp-dummy.m in Sources */,
+				7CBFC4768A0875E1BD95426CBD320F97 /* BundleUtil.swift in Sources */,
+				305BA9A5BD14C2CECA5C1A246AE8701F /* PasswordRule.swift in Sources */,
+				3213A7B3A7232B67F41A955C8C1D54F6 /* PasswordTextField.swift in Sources */,
+				7DBE9C2A9106E74D392CEE95425C59C4 /* PasswordTextField-dummy.m in Sources */,
+				044B7FA71BF44ED41C181687B864E161 /* RegexRule.swift in Sources */,
+				002D7D5DFBE709FBCE9FBA89B75BB9D8 /* Ruleable.swift in Sources */,
+				574D28AEE4D80F83ACE306496CEAFAB7 /* SecureTextToggleButton.swift in Sources */,
+				BE59C63F2AD1411C5A16DA5AF9BC02DD /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,33 +691,49 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3C84F6F06DD2478DBAF39C9A1F4AB736 /* PBXTargetDependency */ = {
+		1C43DD2390194B02140F90D0893B571F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PasswordTextField;
+			target = 45B65ECC40F1B82786BABFA3A97B0D20 /* PasswordTextField */;
+			targetProxy = CD178B56FA721A90F1EFE8030872E5C9 /* PBXContainerItemProxy */;
+		};
+		6C088FE3B94DDD595D91265F722D6A1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PasswordTextField-PasswordTextField";
+			target = 47125EF768D6F7A41A3B4EDDB3C096EB /* PasswordTextField-PasswordTextField */;
+			targetProxy = E4F2F8BF571E71F262F59BE09B5FAD37 /* PBXContainerItemProxy */;
+		};
+		8525B2CD8F9CE32966ECCA39DC205D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleBar;
+			target = B7378E43393E401083784252E88810C0 /* CircleBar */;
+			targetProxy = A1BDA633A370277D6B59AD6B22FEDB58 /* PBXContainerItemProxy */;
+		};
+		891C10181B1F763281D625BBA9F9F225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PasswordTextField;
+			target = 45B65ECC40F1B82786BABFA3A97B0D20 /* PasswordTextField */;
+			targetProxy = B10D4AA6B285C19A02CF8A3D0148827F /* PBXContainerItemProxy */;
+		};
+		CD73280A43DFCABA230F0BBEDF05C25F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleBar;
+			target = B7378E43393E401083784252E88810C0 /* CircleBar */;
+			targetProxy = EEE53D903689839FBF0E6846380D94B5 /* PBXContainerItemProxy */;
+		};
+		EEC0E89A4CF0C9B1D0B4152C175FD06D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ShoppingApp";
 			target = 1C0C61DE724689C02344D66FAE8A3FAD /* Pods-ShoppingApp */;
-			targetProxy = 22C1A3B678A97BD8C6FC0D0BBCDD5B5E /* PBXContainerItemProxy */;
-		};
-		9DF00EFD049018363C2DC93092DE52ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CircleBar;
-			target = B7378E43393E401083784252E88810C0 /* CircleBar */;
-			targetProxy = 724E9D872F4E855CB90B49A73BC23BF9 /* PBXContainerItemProxy */;
-		};
-		DE75DF80F89E79E3A5E5B84C42D0BB9C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CircleBar;
-			target = B7378E43393E401083784252E88810C0 /* CircleBar */;
-			targetProxy = C0AD5770783537972B680BCD74C58F48 /* PBXContainerItemProxy */;
+			targetProxy = A92C8369429BD28E6EB7F19AB7E0867D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		182177BB73E042BCB645065C35A3124C /* Debug */ = {
+		0B093818F0A9152FC275D58ED28F0F90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD30C436999BCCD2FA06F3E9A440D497 /* Pods-ShoppingApp-ShoppingAppUITests.debug.xcconfig */;
+			baseConfigurationReference = 7F14FCB9EDCEE6BB510ED843A91AC6F5 /* PasswordTextField.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -506,28 +742,62 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PasswordTextField/PasswordTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PasswordTextField/PasswordTextField-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/PasswordTextField/PasswordTextField.modulemap";
+				PRODUCT_MODULE_NAME = PasswordTextField;
+				PRODUCT_NAME = PasswordTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		28638208FA9BF6EBF5798FEF2D19E2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E85CE0749612908E4790BFC75F4DCD8D /* PasswordTextField.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PasswordTextField/PasswordTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PasswordTextField/PasswordTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PasswordTextField/PasswordTextField.modulemap";
+				PRODUCT_MODULE_NAME = PasswordTextField;
+				PRODUCT_NAME = PasswordTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		2FF02E223BDF25ECA2F34D568E2008CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -629,9 +899,84 @@
 			};
 			name = Release;
 		};
+		399ACF439D97024C05A77976D997794E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62106E26262FF879A04007ECBF2B7648 /* Pods-ShoppingApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59CA282E1166B63F02A3DBA99B10513B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44ABF2841C856D19EB258834F3448C95 /* Pods-ShoppingApp-ShoppingAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6AB54FE8030C14BAC8AEBFE11C5681DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFEFC8834EA5950D3A2222C92603165B /* CircleBar.release.xcconfig */;
+			baseConfigurationReference = C8852EB6649B6B910B7CD41CFBF65AAA /* CircleBar.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -702,7 +1047,7 @@
 			};
 			name = Debug;
 		};
-		A3E9B1B46ECA1187B1418E296C83B243 /* Release */ = {
+		8D35AB9A5C08146A5873819F8538143A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D4D052092D9C26B0F24B2618067DBF3 /* Pods-ShoppingApp.release.xcconfig */;
 			buildSettings = {
@@ -740,9 +1085,9 @@
 			};
 			name = Release;
 		};
-		B8ACB858988C8DF1478CE85A2A0E2A84 /* Release */ = {
+		9356411F53448AF7B7BF3FFCA95C1A5B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44ABF2841C856D19EB258834F3448C95 /* Pods-ShoppingApp-ShoppingAppUITests.release.xcconfig */;
+			baseConfigurationReference = CD30C436999BCCD2FA06F3E9A440D497 /* Pods-ShoppingApp-ShoppingAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -772,15 +1117,30 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1239063B61A16C5761C247D83E2B59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E85CE0749612908E4790BFC75F4DCD8D /* PasswordTextField.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PasswordTextField";
+				IBSC_MODULE = PasswordTextField;
+				INFOPLIST_FILE = "Target Support Files/PasswordTextField/ResourceBundle-PasswordTextField-PasswordTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PasswordTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 		C251431453B10AD096E2CD137CD8DF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50687AAB1FE203C1EF8E0EEF18A61B22 /* CircleBar.debug.xcconfig */;
+			baseConfigurationReference = B57975DE043DD74AB677173164E13BB6 /* CircleBar.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -879,40 +1239,19 @@
 			};
 			name = Debug;
 		};
-		F99C9F5CAF04F5B14FA40B32F66DC21A /* Debug */ = {
+		FEE7233B185262EC7EADA1758DB6379C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62106E26262FF879A04007ECBF2B7648 /* Pods-ShoppingApp.debug.xcconfig */;
+			baseConfigurationReference = 7F14FCB9EDCEE6BB510ED843A91AC6F5 /* PasswordTextField.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PasswordTextField";
+				IBSC_MODULE = PasswordTextField;
+				INFOPLIST_FILE = "Target Support Files/PasswordTextField/ResourceBundle-PasswordTextField-PasswordTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PasswordTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -924,6 +1263,15 @@
 			buildConfigurations = (
 				6D8C6E3D5C36FE21DFA48ACBF90D61D3 /* Debug */,
 				2FF02E223BDF25ECA2F34D568E2008CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37D97F9FA4D4ADAEFCA782C3A899076C /* Build configuration list for PBXNativeTarget "PasswordTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B093818F0A9152FC275D58ED28F0F90 /* Debug */,
+				28638208FA9BF6EBF5798FEF2D19E2E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -946,20 +1294,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CCC0AD1AEC062A914EF4198E2195230 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp" */ = {
+		C1ED0E7E392B456685C6EF940A10A9DA /* Build configuration list for PBXNativeTarget "PasswordTextField-PasswordTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F99C9F5CAF04F5B14FA40B32F66DC21A /* Debug */,
-				A3E9B1B46ECA1187B1418E296C83B243 /* Release */,
+				FEE7233B185262EC7EADA1758DB6379C /* Debug */,
+				C1239063B61A16C5761C247D83E2B59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AED8778918A909C2F53A1EF8513A1850 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp-ShoppingAppUITests" */ = {
+		C26D1A4FE1462C5B47ECE6FDCED7E033 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				182177BB73E042BCB645065C35A3124C /* Debug */,
-				B8ACB858988C8DF1478CE85A2A0E2A84 /* Release */,
+				399ACF439D97024C05A77976D997794E /* Debug */,
+				8D35AB9A5C08146A5873819F8538143A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF655D5CDCBA86F95D92461AC617CC54 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp-ShoppingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9356411F53448AF7B7BF3FFCA95C1A5B /* Debug */,
+				59CA282E1166B63F02A3DBA99B10513B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

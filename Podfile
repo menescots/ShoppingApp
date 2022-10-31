@@ -7,6 +7,7 @@ target 'ShoppingApp' do
 
   # Pods for ShoppingApp
 	pod 'CircleBar'
+pod 'PasswordTextField'
 
 
   target 'ShoppingAppTests' do

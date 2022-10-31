@@ -9,6 +9,8 @@ import UIKit
 import CoreData
 import FirebaseCore
 import FacebookCore
+import IQKeyboardManagerSwift
+import FBSDKCoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 )
         CoreDataManager.shared.load()
         FirebaseApp.configure()
+        IQKeyboardManager.shared.enable = true
         return true
     }
     func application(

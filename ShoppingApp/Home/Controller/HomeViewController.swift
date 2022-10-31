@@ -25,10 +25,11 @@ class HomeViewController: UIViewController {
         setUpCollectionLayout()
         categoryCollectionView.dataSource = self
         categoryCollectionView.delegate = self
-        
         productsCollectionView.delegate = self
         productsCollectionView.dataSource = self
-        
+        if AccessToken.isCurrentAccessTokenActive {
+            print("your session is active")
+        }
         container = NSPersistentContainer(name: "ShoppingApp")
         performSelector(inBackground: #selector(fetchProducts), with: nil)
         performSelector(inBackground: #selector(fetchCategory), with: nil)
@@ -58,7 +59,6 @@ class HomeViewController: UIViewController {
                         self.configureCategory(category: category, usingJSON: jsonCategory)
                         categoryCollectionView.reloadData()
                     }
-                    
                     self.saveContext()
                     self.loadCategoriesSavedData()
                 }
@@ -105,7 +105,6 @@ class HomeViewController: UIViewController {
         product.review = json["review"].int16Value
         product.imageUrl = json["imageUrl"].stringValue
         product.id = json["id"].int32Value
-        
         
     }
     
@@ -188,12 +187,4 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         }
     }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        if collectionView == self.productsCollectionView {
-//            print("in layout")
-//            return CGSize(width: UIScreen.main.bounds.width/2, height: 200)
-//        } else {
-//            return CGSize(width: 133, height: 38)
-//        }
-//    }
 }

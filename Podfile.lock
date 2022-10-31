@@ -1,16 +1,20 @@
 PODS:
   - CircleBar (0.8.2)
+  - PasswordTextField (1.2.0)
 
 DEPENDENCIES:
   - CircleBar
+  - PasswordTextField
 
 SPEC REPOS:
   trunk:
     - CircleBar
+    - PasswordTextField
 
 SPEC CHECKSUMS:
   CircleBar: 8e17d2090e6e319b518010535a3145fb8fd68c22
+  PasswordTextField: 2548de43f150fc90a014da47b0d97e31aada4b94
 
-PODFILE CHECKSUM: 2baff90a980342d73e18a97f171f61a500c076c7
+PODFILE CHECKSUM: e05f1f880cdd3b3725aaabd9ad8a82ad381c1ecf
 
 COCOAPODS: 1.11.3

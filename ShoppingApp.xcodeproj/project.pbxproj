@@ -10,6 +10,14 @@
 		3D5A7D40CBABF84347AD4C49 /* Pods_ShoppingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DB87F3F7D3CCAB7A962AA4 /* Pods_ShoppingApp.framework */; };
 		7E04963D29080B4B00871A10 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04963C29080B4B00871A10 /* UIStackViewExtension.swift */; };
 		7E5ABDC7290821010072BCD3 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ABDC6290821010072BCD3 /* ProductsCollectionViewCell.swift */; };
+		7E8D39C4290FD50C00BE2BB9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C3290FD50C00BE2BB9 /* FirebaseAnalytics */; };
+		7E8D39C6290FD50C00BE2BB9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C5290FD50C00BE2BB9 /* FirebaseAuth */; };
+		7E8D39C8290FD50C00BE2BB9 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C7290FD50C00BE2BB9 /* FirebaseDatabase */; };
+		7E8D39CB290FD5A200BE2BB9 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39CA290FD5A200BE2BB9 /* FacebookLogin */; };
+		7E8D39CD290FD5A200BE2BB9 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39CC290FD5A200BE2BB9 /* FacebookShare */; };
+		7E8D39D0290FD61700BE2BB9 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */; };
+		7E8D39D3290FDB1C00BE2BB9 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39D2290FDB1C00BE2BB9 /* IQKeyboardManagerSwift */; };
+		7E8D39D5290FE0F700BE2BB9 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */; };
 		7EB867902900335D00502692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB8678F2900335D00502692 /* AppDelegate.swift */; };
 		7EB867922900335D00502692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867912900335D00502692 /* SceneDelegate.swift */; };
 		7EB867972900335D00502692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB867952900335D00502692 /* Main.storyboard */; };
@@ -19,23 +27,17 @@
 		7EB867AA2900336000502692 /* ShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867A92900336000502692 /* ShoppingAppTests.swift */; };
 		7EB867B42900336000502692 /* ShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867B32900336000502692 /* ShoppingAppUITests.swift */; };
 		7EB867B62900336000502692 /* ShoppingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867B52900336000502692 /* ShoppingAppUITestsLaunchTests.swift */; };
-		7EE53B94290A6D3500BE1505 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7EE53B93290A6D3500BE1505 /* SwiftyJSON */; };
 		7EE53BAD290A871300BE1505 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE53BA9290A871300BE1505 /* Category+CoreDataClass.swift */; };
 		7EE53BAE290A871300BE1505 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE53BAA290A871300BE1505 /* Category+CoreDataProperties.swift */; };
 		7EE53BAF290A871300BE1505 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE53BAB290A871300BE1505 /* Product+CoreDataClass.swift */; };
 		7EE53BB0290A871300BE1505 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE53BAC290A871300BE1505 /* Product+CoreDataProperties.swift */; };
+		7EE53BB2290BB9FD00BE1505 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE53BB1290BB9FD00BE1505 /* ProfileViewController.swift */; };
 		7EFA9C5F290287A100BFEA13 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFA9C5E290287A100BFEA13 /* CoreDataManager.swift */; };
 		7EFA9CA62906869E00BFEA13 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFA9CA52906869E00BFEA13 /* HomeViewController.swift */; };
 		7EFA9CA829068BE100BFEA13 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFA9CA729068BE100BFEA13 /* CategoryCollectionViewCell.swift */; };
 		7EFA9CAB2906A34800BFEA13 /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EFA9CAA2906A34800BFEA13 /* Category.json */; };
 		7EFA9CAD2906A35100BFEA13 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EFA9CAC2906A35100BFEA13 /* Products.json */; };
-		7EFA9CC12906CE7600BFEA13 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFA9CC02906CE7600BFEA13 /* FirebaseAnalytics */; };
-		7EFA9CC32906CE7600BFEA13 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFA9CC22906CE7600BFEA13 /* FirebaseAuth */; };
-		7EFA9CC52906CE7600BFEA13 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFA9CC42906CE7600BFEA13 /* FirebaseDatabase */; };
 		7EFF1E0C2907C71C002A9F8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF1E0B2907C71B002A9F8A /* GoogleService-Info.plist */; };
-		7EFF1E0F2907D8E0002A9F8A /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFF1E0E2907D8E0002A9F8A /* FacebookCore */; };
-		7EFF1E112907D8E0002A9F8A /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFF1E102907D8E0002A9F8A /* FacebookLogin */; };
-		7EFF1E132907D8E0002A9F8A /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 7EFF1E122907D8E0002A9F8A /* FacebookShare */; };
 		7EFF1E1A2907E590002A9F8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF1E192907E590002A9F8A /* LoginViewController.swift */; };
 		E3D53B12571D072B88D0F7C9 /* Pods_ShoppingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4E578022C06FE201B431AF /* Pods_ShoppingAppTests.framework */; };
 		F66B812BE5D6F6F0096A60EF /* Pods_ShoppingApp_ShoppingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62866F25B7AB6014D0977D77 /* Pods_ShoppingApp_ShoppingAppUITests.framework */; };
@@ -67,6 +69,7 @@
 		65DB87F3F7D3CCAB7A962AA4 /* Pods_ShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E04963C29080B4B00871A10 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
 		7E5ABDC6290821010072BCD3 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		7EB8678C2900335D00502692 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8678F2900335D00502692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EB867912900335D00502692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		7EE53BAA290A871300BE1505 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		7EE53BAB290A871300BE1505 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		7EE53BAC290A871300BE1505 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		7EE53BB1290BB9FD00BE1505 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7EFA9C5E290287A100BFEA13 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		7EFA9CA52906869E00BFEA13 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7EFA9CA729068BE100BFEA13 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -102,14 +106,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EFA9CC52906CE7600BFEA13 /* FirebaseDatabase in Frameworks */,
-				7EFF1E0F2907D8E0002A9F8A /* FacebookCore in Frameworks */,
-				7EE53B94290A6D3500BE1505 /* SwiftyJSON in Frameworks */,
-				7EFF1E112907D8E0002A9F8A /* FacebookLogin in Frameworks */,
-				7EFA9CC12906CE7600BFEA13 /* FirebaseAnalytics in Frameworks */,
-				7EFA9CC32906CE7600BFEA13 /* FirebaseAuth in Frameworks */,
+				7E8D39CB290FD5A200BE2BB9 /* FacebookLogin in Frameworks */,
+				7E8D39D3290FDB1C00BE2BB9 /* IQKeyboardManagerSwift in Frameworks */,
+				7E8D39D0290FD61700BE2BB9 /* SwiftyJSON in Frameworks */,
+				7E8D39C4290FD50C00BE2BB9 /* FirebaseAnalytics in Frameworks */,
+				7E8D39CD290FD5A200BE2BB9 /* FacebookShare in Frameworks */,
+				7E8D39C6290FD50C00BE2BB9 /* FirebaseAuth in Frameworks */,
+				7E8D39C8290FD50C00BE2BB9 /* FirebaseDatabase in Frameworks */,
 				3D5A7D40CBABF84347AD4C49 /* Pods_ShoppingApp.framework in Frameworks */,
-				7EFF1E132907D8E0002A9F8A /* FacebookShare in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +198,7 @@
 		7E0496382907F25A00871A10 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7EE53BB1290BB9FD00BE1505 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				7E04963C29080B4B00871A10 /* UIStackViewExtension.swift */,
+				7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -385,13 +391,13 @@
 			);
 			name = ShoppingApp;
 			packageProductDependencies = (
-				7EFA9CC02906CE7600BFEA13 /* FirebaseAnalytics */,
-				7EFA9CC22906CE7600BFEA13 /* FirebaseAuth */,
-				7EFA9CC42906CE7600BFEA13 /* FirebaseDatabase */,
-				7EFF1E0E2907D8E0002A9F8A /* FacebookCore */,
-				7EFF1E102907D8E0002A9F8A /* FacebookLogin */,
-				7EFF1E122907D8E0002A9F8A /* FacebookShare */,
-				7EE53B93290A6D3500BE1505 /* SwiftyJSON */,
+				7E8D39C3290FD50C00BE2BB9 /* FirebaseAnalytics */,
+				7E8D39C5290FD50C00BE2BB9 /* FirebaseAuth */,
+				7E8D39C7290FD50C00BE2BB9 /* FirebaseDatabase */,
+				7E8D39CA290FD5A200BE2BB9 /* FacebookLogin */,
+				7E8D39CC290FD5A200BE2BB9 /* FacebookShare */,
+				7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */,
+				7E8D39D2290FDB1C00BE2BB9 /* IQKeyboardManagerSwift */,
 			);
 			productName = ShoppingApp;
 			productReference = 7EB8678C2900335D00502692 /* ShoppingApp.app */;
@@ -469,9 +475,10 @@
 			);
 			mainGroup = 7EB867832900335D00502692;
 			packageReferences = (
-				7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				7EFF1E0D2907D8DF002A9F8A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
-				7EE53B92290A6D3500BE1505 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7E8D39C9290FD5A200BE2BB9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				7E8D39D1290FDB1C00BE2BB9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 7EB8678D2900335D00502692 /* Products */;
 			projectDirPath = "";
@@ -626,11 +633,13 @@
 				7EFF1E1A2907E590002A9F8A /* LoginViewController.swift in Sources */,
 				7E04963D29080B4B00871A10 /* UIStackViewExtension.swift in Sources */,
 				7EFA9CA829068BE100BFEA13 /* CategoryCollectionViewCell.swift in Sources */,
+				7EE53BB2290BB9FD00BE1505 /* ProfileViewController.swift in Sources */,
 				7EE53BAD290A871300BE1505 /* Category+CoreDataClass.swift in Sources */,
 				7E5ABDC7290821010072BCD3 /* ProductsCollectionViewCell.swift in Sources */,
 				7EFA9CA62906869E00BFEA13 /* HomeViewController.swift in Sources */,
 				7EE53BAE290A871300BE1505 /* Category+CoreDataProperties.swift in Sources */,
 				7EB8679A2900335D00502692 /* ShoppingApp.xcdatamodeld in Sources */,
+				7E8D39D5290FE0F700BE2BB9 /* UITextFieldExtension.swift in Sources */,
 				7EB867902900335D00502692 /* AppDelegate.swift in Sources */,
 				7EFA9C5F290287A100BFEA13 /* CoreDataManager.swift in Sources */,
 				7EB867922900335D00502692 /* SceneDelegate.swift in Sources */,
@@ -986,23 +995,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7EE53B92290A6D3500BE1505 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 9.0.0;
 			};
 		};
-		7EFF1E0D2907D8DF002A9F8A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+		7E8D39C9290FD5A200BE2BB9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
 			requirement = {
@@ -1010,43 +1011,59 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7E8D39D1290FDB1C00BE2BB9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7EE53B93290A6D3500BE1505 /* SwiftyJSON */ = {
+		7E8D39C3290FD50C00BE2BB9 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EE53B92290A6D3500BE1505 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-		7EFA9CC02906CE7600BFEA13 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		7EFA9CC22906CE7600BFEA13 /* FirebaseAuth */ = {
+		7E8D39C5290FD50C00BE2BB9 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		7EFA9CC42906CE7600BFEA13 /* FirebaseDatabase */ = {
+		7E8D39C7290FD50C00BE2BB9 /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EFA9CBF2906CE7500BFEA13 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
 		};
-		7EFF1E0E2907D8E0002A9F8A /* FacebookCore */ = {
+		7E8D39CA290FD5A200BE2BB9 /* FacebookLogin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EFF1E0D2907D8DF002A9F8A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookCore;
-		};
-		7EFF1E102907D8E0002A9F8A /* FacebookLogin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7EFF1E0D2907D8DF002A9F8A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			package = 7E8D39C9290FD5A200BE2BB9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
 		};
-		7EFF1E122907D8E0002A9F8A /* FacebookShare */ = {
+		7E8D39CC290FD5A200BE2BB9 /* FacebookShare */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7EFF1E0D2907D8DF002A9F8A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			package = 7E8D39C9290FD5A200BE2BB9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookShare;
+		};
+		7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		7E8D39D2290FDB1C00BE2BB9 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E8D39D1290FDB1C00BE2BB9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 
