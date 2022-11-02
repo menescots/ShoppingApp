@@ -18,6 +18,7 @@
 		7E8D39D0290FD61700BE2BB9 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */; };
 		7E8D39D3290FDB1C00BE2BB9 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39D2290FDB1C00BE2BB9 /* IQKeyboardManagerSwift */; };
 		7E8D39D5290FE0F700BE2BB9 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */; };
+		7E8D39D7290FF4DC00BE2BB9 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D39D6290FF4DC00BE2BB9 /* registerViewController.swift */; };
 		7EB867902900335D00502692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB8678F2900335D00502692 /* AppDelegate.swift */; };
 		7EB867922900335D00502692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867912900335D00502692 /* SceneDelegate.swift */; };
 		7EB867972900335D00502692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB867952900335D00502692 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		7E04963C29080B4B00871A10 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
 		7E5ABDC6290821010072BCD3 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		7E8D39D6290FF4DC00BE2BB9 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		7EB8678C2900335D00502692 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8678F2900335D00502692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EB867912900335D00502692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				7EFF1E192907E590002A9F8A /* LoginViewController.swift */,
+				7E8D39D6290FF4DC00BE2BB9 /* registerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -640,6 +643,7 @@
 				7EE53BAE290A871300BE1505 /* Category+CoreDataProperties.swift in Sources */,
 				7EB8679A2900335D00502692 /* ShoppingApp.xcdatamodeld in Sources */,
 				7E8D39D5290FE0F700BE2BB9 /* UITextFieldExtension.swift in Sources */,
+				7E8D39D7290FF4DC00BE2BB9 /* registerViewController.swift in Sources */,
 				7EB867902900335D00502692 /* AppDelegate.swift in Sources */,
 				7EFA9C5F290287A100BFEA13 /* CoreDataManager.swift in Sources */,
 				7EB867922900335D00502692 /* SceneDelegate.swift in Sources */,

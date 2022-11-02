@@ -9,6 +9,10 @@ target 'ShoppingApp' do
 	pod 'CircleBar'
 pod 'PasswordTextField'
 
+pod 'MaterialComponents/TextControls+FilledTextAreas'
+pod 'MaterialComponents/TextControls+FilledTextFields'
+pod 'MaterialComponents/TextControls+OutlinedTextAreas'
+pod 'MaterialComponents/TextControls+OutlinedTextFields'
 
   target 'ShoppingAppTests' do
     inherit! :search_paths

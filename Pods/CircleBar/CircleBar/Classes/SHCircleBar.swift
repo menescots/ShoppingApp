@@ -29,7 +29,7 @@ import UIKit
         
     }
     override func draw(_ rect: CGRect) {
-        let fillColor: UIColor = UIColor(named: "tabbarColor")!
+        let fillColor: UIColor = UIColor.white
         tabWidth = self.bounds.width / CGFloat(self.items!.count)
         let bezPath = drawPath(for: index)
         

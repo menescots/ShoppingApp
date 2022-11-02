@@ -3,7 +3,6 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -67,7 +66,7 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMI-b3-qdV">
                                                             <rect key="frame" x="0.0" y="0.0" width="133" height="38"/>
-                                                            <color key="backgroundColor" name="tabbarColor"/>
+                                                            <color key="backgroundColor" red="0.81691022594703477" green="0.86649665767790895" blue="0.95689409969999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="38" id="BIh-5D-Qt9"/>
                                                                 <constraint firstAttribute="width" constant="133" id="NCr-SU-NMW"/>
@@ -156,7 +155,7 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.91348113689999999" green="0.9084377039" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="backgroundColor" red="0.81682485339999999" green="0.86478680370000005" blue="0.95687538390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="MDR-Nb-j38" secondAttribute="trailing" id="27Y-c8-eyo"/>
                                                         <constraint firstItem="MDR-Nb-j38" firstAttribute="leading" secondItem="eVO-dw-KzI" secondAttribute="leading" id="2HW-QZ-RB9"/>
@@ -239,12 +238,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email.." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Sz3-3U-7RF">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email.." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Sz3-3U-7RF" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="0.0" y="85" width="310" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-pm-ICE">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-pm-ICE" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="0.0" y="170" width="310" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -280,6 +279,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="signUpTapped:" destination="4m0-dp-YU3" eventType="touchUpInside" id="z3c-FE-nfw"/>
+                                            <segue destination="3A7-BP-rej" kind="push" id="Dca-Pt-hlZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -300,6 +300,9 @@
                     <navigationItem key="navigationItem" id="2aJ-nX-QAb">
                         <barButtonItem key="leftBarButtonItem" image="cancel" style="plain" id="hND-M6-HM6">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="closeTapped:" destination="4m0-dp-YU3" id="qX0-ln-g56"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -312,16 +315,81 @@
             </objects>
             <point key="canvasLocation" x="2916.9230769230767" y="2023.9336492890993"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="6no-qr-bf1">
             <objects>
-                <viewController storyboardIdentifier="registerVC" id="3A7-BP-rej" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registerVC" id="3A7-BP-rej" customClass="registerViewController" customModule="ShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IWn-5Q-Cgi">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wzf-PX-HiZ">
+                                <rect key="frame" x="50" y="701" width="290" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLb-vy-6Tp">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="O6D-XX-yqK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                            <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="4m0-dp-YU3" eventType="touchUpInside" id="9pv-EL-AoZ"/>
+                                            <action selector="signUpTapped:" destination="3A7-BP-rej" eventType="touchUpInside" id="ZGa-rO-iW8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ZEk-eX-zAr">
+                                <rect key="frame" x="40" y="106" width="310" height="315"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pa-GR-JZY">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="SyD-4T-XOB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TZj-yf-Dlj" customClass="MDCOutlinedTextField">
+                                        <rect key="frame" x="0.0" y="85" width="310" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UVB-8l-QoD" customClass="MDCOutlinedTextField">
+                                        <rect key="frame" x="0.0" y="170" width="310" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Confirm password..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ogn-UV-MdR" userLabel="ConfirmPassword" customClass="MDCOutlinedTextField">
+                                        <rect key="frame" x="0.0" y="255" width="310" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EdG-Kb-Do2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EdG-Kb-Do2" firstAttribute="trailing" secondItem="wzf-PX-HiZ" secondAttribute="trailing" constant="50" id="MQR-SK-xv8"/>
+                            <constraint firstItem="ZEk-eX-zAr" firstAttribute="leading" secondItem="EdG-Kb-Do2" secondAttribute="leading" constant="40" id="P8g-p8-x2N"/>
+                            <constraint firstItem="EdG-Kb-Do2" firstAttribute="bottom" secondItem="wzf-PX-HiZ" secondAttribute="bottom" constant="10" id="bgr-fs-SV8"/>
+                            <constraint firstItem="wzf-PX-HiZ" firstAttribute="leading" secondItem="EdG-Kb-Do2" secondAttribute="leading" constant="50" id="dpG-bd-1Ch"/>
+                            <constraint firstItem="ZEk-eX-zAr" firstAttribute="top" secondItem="EdG-Kb-Do2" secondAttribute="top" constant="15" id="eRN-SW-hu3"/>
+                            <constraint firstItem="EdG-Kb-Do2" firstAttribute="trailing" secondItem="ZEk-eX-zAr" secondAttribute="trailing" constant="40" id="llh-yB-dHo"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="i91-nr-r8u"/>
+                    <connections>
+                        <outlet property="confirmPassword" destination="Ogn-UV-MdR" id="fQZ-aR-FDs"/>
+                        <outlet property="emailField" destination="TZj-yf-Dlj" id="Men-62-ENe"/>
+                        <outlet property="passwordField" destination="UVB-8l-QoD" id="D4b-oD-ESq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRB-Qu-9RQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -507,7 +575,7 @@
             <size key="intrinsicContentSize" width="-1" height="83"/>
         </designable>
     </designables>
-    <color key="tintColor" red="1" green="0.17137310265699579" blue="0.57192240980402143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" name="shadowColor"/>
     <resources>
         <image name="cancel" width="16" height="16"/>
         <image name="cart" width="32" height="32"/>
@@ -516,8 +584,8 @@
         <image name="magnifier" width="32" height="32"/>
         <image name="profile" width="32" height="32"/>
         <image name="shopping-bag" width="512" height="512"/>
-        <namedColor name="tabbarColor">
-            <color red="0.8666666666666667" green="0.99215686274509807" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="shadowColor">
+            <color red="0.57400000095367432" green="0.77100002765655518" blue="0.82099997997283936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
