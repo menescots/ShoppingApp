@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3D5A7D40CBABF84347AD4C49 /* Pods_ShoppingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DB87F3F7D3CCAB7A962AA4 /* Pods_ShoppingApp.framework */; };
 		7E04963D29080B4B00871A10 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04963C29080B4B00871A10 /* UIStackViewExtension.swift */; };
+		7E3B5EE62915007200FD261F /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EE52915007200FD261F /* CategoryModel.swift */; };
+		7E3B5EE82915010C00FD261F /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EE72915010C00FD261F /* ProductModel.swift */; };
+		7E3B5EEA2915162F00FD261F /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EE92915162F00FD261F /* DatabaseManager.swift */; };
 		7E5ABDC7290821010072BCD3 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ABDC6290821010072BCD3 /* ProductsCollectionViewCell.swift */; };
 		7E8D39C4290FD50C00BE2BB9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C3290FD50C00BE2BB9 /* FirebaseAnalytics */; };
 		7E8D39C6290FD50C00BE2BB9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C5290FD50C00BE2BB9 /* FirebaseAuth */; };
@@ -65,6 +68,9 @@
 		62FE1A9FFFCE073C694D3473 /* Pods-ShoppingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingAppTests.release.xcconfig"; path = "Target Support Files/Pods-ShoppingAppTests/Pods-ShoppingAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		65DB87F3F7D3CCAB7A962AA4 /* Pods_ShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E04963C29080B4B00871A10 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		7E3B5EE52915007200FD261F /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		7E3B5EE72915010C00FD261F /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		7E3B5EE92915162F00FD261F /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		7E5ABDC6290821010072BCD3 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		7E8D39D6290FF4DC00BE2BB9 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
@@ -305,6 +311,8 @@
 		7EFA9CA22906827600BFEA13 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				7E3B5EE52915007200FD261F /* CategoryModel.swift */,
+				7E3B5EE72915010C00FD261F /* ProductModel.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -323,6 +331,7 @@
 			children = (
 				7EB8678F2900335D00502692 /* AppDelegate.swift */,
 				7EB867912900335D00502692 /* SceneDelegate.swift */,
+				7E3B5EE92915162F00FD261F /* DatabaseManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -620,10 +629,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3B5EE62915007200FD261F /* CategoryModel.swift in Sources */,
 				7EFF1E1A2907E590002A9F8A /* LoginViewController.swift in Sources */,
+				7E3B5EEA2915162F00FD261F /* DatabaseManager.swift in Sources */,
 				7E04963D29080B4B00871A10 /* UIStackViewExtension.swift in Sources */,
 				7EFA9CA829068BE100BFEA13 /* CategoryCollectionViewCell.swift in Sources */,
 				7E8D39D92913AFBA00BE2BB9 /* WishlistViewController.swift in Sources */,
+				7E3B5EE82915010C00FD261F /* ProductModel.swift in Sources */,
 				7EE53BB2290BB9FD00BE1505 /* ProfileViewController.swift in Sources */,
 				7E5ABDC7290821010072BCD3 /* ProductsCollectionViewCell.swift in Sources */,
 				7EFA9CA62906869E00BFEA13 /* HomeViewController.swift in Sources */,

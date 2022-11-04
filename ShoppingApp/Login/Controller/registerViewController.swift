@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 import MaterialComponents.MaterialTextControls_OutlinedTextFields
 class registerViewController: UIViewController {
 

@@ -23,13 +23,12 @@ class WishlistViewController: UIViewController {
 
 extension WishlistViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = productsTableView.dequeueReusableCell(withIdentifier: "wishlistCell") as? WishlistCustomCell {
-            return cell
-        }
+        let cell = productsTableView.dequeueReusableCell(withIdentifier: "wishlistCell") as! WishlistCustomCell
+        return cell
     }
     
     

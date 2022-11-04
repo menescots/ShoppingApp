@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     application,
                     didFinishLaunchingWithOptions: launchOptions
                 )
-        CoreDataManager.shared.load()
+
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
         return true

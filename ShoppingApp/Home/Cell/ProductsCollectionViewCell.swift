@@ -16,7 +16,7 @@ class ProductsCollectionViewCell: UICollectionViewCell {
             productNameLabel.text = productName
         }
     
-    func setProductPrice(price: Int32) {
+    func setProductPrice(price: Int) {
             priceLabel.text = "\(String(price))$"
         }
     

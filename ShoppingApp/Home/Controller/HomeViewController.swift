@@ -10,12 +10,14 @@ import FacebookLogin
 import FirebaseAuth
 import CoreData
 import SwiftyJSON
+import FirebaseDatabase
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var productsCollectionView: UICollectionView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var UIStackView: UIStackView!
+    private let database = Database.database().reference()
     var container: NSPersistentContainer!
     var categories = [Category]()
     var products = [Product]()
@@ -27,53 +29,43 @@ class HomeViewController: UIViewController {
         categoryCollectionView.delegate = self
         productsCollectionView.delegate = self
         productsCollectionView.dataSource = self
+        listenForProducts()
+        listenForCategories()
 
     }
     
-    @objc func fetchCategory(){
-        do {
-            if let bundlePath = Bundle.main.path(forResource: "Category",
-                                                 ofType: "json"),
-               let jsonData = try? String(contentsOfFile: bundlePath) {
-                let jsonCategories = JSON(parseJSON: jsonData)
-                // read the commits back out
-                let jsonCategoriesArray = jsonCategories.arrayValue
-                
-                DispatchQueue.main.async { [unowned self] in
-                    for jsonCategory in jsonCategoriesArray {
-                        categoryCollectionView.reloadData()
-                    }
-
+    func listenForProducts() {
+        database.child("Products").observeSingleEvent(of: .value, with: { snapshot in
+            if let data = snapshot.value as? [[String: Any]] {
+                for datum in data {
+                    guard let name = datum["name"] as? String,
+                    let price = datum["price"] as? Int,
+                          let id = datum["id"] as? Int,
+                          let categoryId = datum["categoryId"] as? Int,
+                          let content = datum["content"] as? String else { print("returned"); return }
+                    
+                    self.products.append(Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil))
+                    self.productsCollectionView.reloadData()
                 }
             }
-        } catch {
-            print(error)
-        }
+        })
     }
     
-    @objc func fetchProducts() {
-        do {
-            if let bundlePath = Bundle.main.path(forResource: "Products",
-                                                 ofType: "json"),
-               let jsonData = try? String(contentsOfFile: bundlePath) {
-                let jsonProducts = JSON(parseJSON: jsonData)
-                
-                // read the commits back out
-                let jsonProductsArray = jsonProducts.arrayValue
-                
-                DispatchQueue.main.async { [unowned self] in
-                    for jsonProduct in jsonProductsArray {
-                        productsCollectionView.reloadData()
-                    }
+    func listenForCategories() {
+        database.child("Categories").observeSingleEvent(of: .value, with: { snapshot in
+            if let data = snapshot.value as? [[String: Any]] {
+                for datum in data {
+                    guard let name = datum["name"] as? String,
+                          let id = datum["id"] as? Int,
+                          let content = datum["content"] as? String else { print("returned"); return }
+                    
+                    self.categories.append(Category(name: name, content: content, id: id))
+                    self.categoryCollectionView.reloadData()
                 }
             }
-        } catch {
-            print(error)
-        }
+        })
     }
 
-    
-    
     @IBAction func addToWishlistButtonTapped(_ sender: Any) {
         
     }
@@ -110,14 +102,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath as IndexPath) as! CategoryCollectionViewCell
             
             let category = categories[indexPath.row]
-            cell.setLabelTitle(title: category.name ?? "empty" )
+            cell.setLabelTitle(title: category.name )
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell", for: indexPath as IndexPath) as! ProductsCollectionViewCell
             
             let product = products[indexPath.row]
             
-            cell.setProductName(productName: product.name!)
+            cell.setProductName(productName: product.name)
             cell.setProductImage(image: "imageproduct")
             cell.setProductPrice(price: product.price)
             return cell
