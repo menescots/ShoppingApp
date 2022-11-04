@@ -20,3 +20,6 @@ import UIKit
         }
     }
 
+extension Notification.Name {
+    static let didLogInNotification = Notification.Name("didLogInNotification")
+}

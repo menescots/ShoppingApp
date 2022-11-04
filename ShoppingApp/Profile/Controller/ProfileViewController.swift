@@ -7,58 +7,69 @@
 
 import UIKit
 import FacebookLogin
-
+import FirebaseAuth
+import FirebaseCore
 class ProfileViewController: UIViewController {
+    @IBOutlet weak var logOutButton: UIButton!
     @IBOutlet weak var loginStackView: UIStackView!
+    @IBOutlet weak var userNameLabel: UILabel!
     
     @IBOutlet weak var loginLabel: UILabel!
+    
+    private var loginObserver: NSObjectProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-
-    @IBAction func loginButtonTaped(_ sender: Any) {
-        FBSDKLoginKit.LoginManager().logOut()
-    }
-    @IBAction func facebookLoginButtonTapped(_ sender: Any) {
-        // 1
-            let loginManager = LoginManager()
-            
-            if let _ = AccessToken.current {
-                print("logged in")
-                loginManager.logOut()
-                
-            } else {
-                loginManager.logIn(permissions: [], from: self) { [weak self] (result, error) in
-                    
-                    guard error == nil else {
-                        print(error!.localizedDescription)
-                        return
-                    }
-                    guard let result = result, !result.isCancelled else {
-                        print("User cancelled login")
-                        return
-                    }
-                    
-                    Profile.loadCurrentProfile { (profile, error) in
-                        print(profile)
-                    }
-                }
-            }
-        }
-    }
-
-extension ProfileViewController: LoginButtonDelegate {
-    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        setNameLabel()
         
+        loginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification, object: nil, queue: .main, using: { [weak self] _ in
+            guard let strongSelf = self else {
+                return
+            }
+            strongSelf.logOutButton.isHidden = false
+            strongSelf.setNameLabel()
+        })
     }
     
-    
-    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-        guard let token = result?.token?.tokenString else {
-            print("user failder to log in with facebook")
+    func setNameLabel() {
+        guard let loggedUser = UserDefaults.standard.value(forKey: "email") as? String else {
+            logOutButton.isHidden = true
             return
         }
-                
+        userNameLabel.text = "Hello \(loggedUser)"
     }
+    @IBAction func logOutTapped(_ sender: Any) {
+        let actionSheet = UIAlertController(title: "Do you want to log out?",
+                                            message: nil,
+                                            preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel",
+                                            style: .cancel))
+        actionSheet.addAction(UIAlertAction(title: "Log out",
+                                            style: .destructive,
+                                            handler: { [weak self] _ in
+            
+            guard let strongSelf = self else { return }
+            
+            FBSDKLoginKit.LoginManager().logOut()
+            
+            do {
+                try FirebaseAuth.Auth.auth().signOut()
+                UserDefaults.standard.removeObject(forKey: "email")
+                UserDefaults.standard.removeObject(forKey: "name")
+                strongSelf.logOutButton.isHidden = true
+                strongSelf.userNameLabel.text = "Sign In on Sign Up"
+            } catch {
+                print("Failed to log out.")
+            }
+        }))
+        present(actionSheet, animated: true)
+    }
+    
+    
+    @IBAction func FBLoginButtonTapped(_ sender: Any) {
+       
+    }
+    
+    
 }
+

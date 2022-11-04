@@ -27,21 +27,7 @@ class HomeViewController: UIViewController {
         categoryCollectionView.delegate = self
         productsCollectionView.delegate = self
         productsCollectionView.dataSource = self
-        if AccessToken.isCurrentAccessTokenActive {
-            print("your session is active")
-        }
-        container = NSPersistentContainer(name: "ShoppingApp")
-        performSelector(inBackground: #selector(fetchProducts), with: nil)
-        performSelector(inBackground: #selector(fetchCategory), with: nil)
-        container.loadPersistentStores { storeDescription, error in
-            if let error = error {
-                print("Unresolved error \(error)")
-            }
-            self.container.viewContext.mergePolicy = NSMergePolicy(merge: NSMergePolicyType.mergeByPropertyObjectTrumpMergePolicyType)
-            self.container.viewContext.automaticallyMergesChangesFromParent = true
-        }
-        loadProductSavedData()
-        loadCategoriesSavedData()
+
     }
     
     @objc func fetchCategory(){
@@ -55,12 +41,9 @@ class HomeViewController: UIViewController {
                 
                 DispatchQueue.main.async { [unowned self] in
                     for jsonCategory in jsonCategoriesArray {
-                        let category = Category(context: self.container.viewContext)
-                        self.configureCategory(category: category, usingJSON: jsonCategory)
                         categoryCollectionView.reloadData()
                     }
-                    self.saveContext()
-                    self.loadCategoriesSavedData()
+
                 }
             }
         } catch {
@@ -80,43 +63,16 @@ class HomeViewController: UIViewController {
                 
                 DispatchQueue.main.async { [unowned self] in
                     for jsonProduct in jsonProductsArray {
-                        let product = Product(context: self.container.viewContext)
-                        self.configureProducts(product: product, usingJSON: jsonProduct)
                         productsCollectionView.reloadData()
                     }
-                    
-                    self.saveContext()
-                    self.loadProductSavedData()
                 }
             }
         } catch {
             print(error)
         }
     }
-    func configureCategory(category: Category, usingJSON json: JSON) {
-        category.name = json["name"].stringValue
-        category.content = json["content"].stringValue
-    }
-    func configureProducts(product: Product, usingJSON json: JSON) {
-        product.name = json["name"].stringValue
-        product.content = json["content"].stringValue
-        product.price = json["price"].int32Value
-        product.rate = json["price"].floatValue
-        product.review = json["review"].int16Value
-        product.imageUrl = json["imageUrl"].stringValue
-        product.id = json["id"].int32Value
-        
-    }
+
     
-    func saveContext() {
-        if container.viewContext.hasChanges {
-            do {
-                try container.viewContext.save()
-            } catch {
-                print("An error occurred while saving: \(error)")
-            }
-        }
-    }
     
     @IBAction func addToWishlistButtonTapped(_ sender: Any) {
         
@@ -136,26 +92,6 @@ class HomeViewController: UIViewController {
         productsCollectionView.collectionViewLayout = layout
     }
     
-    func loadProductSavedData() {
-        let request = Product.fetchRequest()
-        do {
-            products = try container.viewContext.fetch(request)
-            print("reloaded data")
-            productsCollectionView.reloadData()
-        } catch {
-            print("Fetch failed")
-        }
-    }
-    
-    func loadCategoriesSavedData() {
-        let request = Category.fetchRequest()
-        do {
-            categories = try container.viewContext.fetch(request)
-            categoryCollectionView.reloadData()
-        } catch {
-            print("Fetch failed")
-        }
-    }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
