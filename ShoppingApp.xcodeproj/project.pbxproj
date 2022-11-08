@@ -12,6 +12,13 @@
 		7E3B5EE62915007200FD261F /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EE52915007200FD261F /* CategoryModel.swift */; };
 		7E3B5EE82915010C00FD261F /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EE72915010C00FD261F /* ProductModel.swift */; };
 		7E3B5EEA2915162F00FD261F /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EE92915162F00FD261F /* DatabaseManager.swift */; };
+		7E3B5EEC29190E6400FD261F /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EEB29190E6300FD261F /* ShoppingCart.swift */; };
+		7E3B5EEF291A4F2B00FD261F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3B5EEE291A4F2B00FD261F /* Realm */; };
+		7E3B5EF1291A4F2B00FD261F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3B5EF0291A4F2B00FD261F /* RealmSwift */; };
+		7E3B5EF4291A591700FD261F /* ShoppingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EF2291A591700FD261F /* ShoppingApp.xcdatamodeld */; };
+		7E3B5EFB291A5C2500FD261F /* ShoppingApp+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EF9291A5C2500FD261F /* ShoppingApp+CoreDataClass.swift */; };
+		7E3B5EFC291A5C2500FD261F /* ShoppingApp+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EFA291A5C2500FD261F /* ShoppingApp+CoreDataProperties.swift */; };
+		7E3B5EFE291A5CE300FD261F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EFD291A5CE300FD261F /* CoreDataStack.swift */; };
 		7E5ABDC7290821010072BCD3 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ABDC6290821010072BCD3 /* ProductsCollectionViewCell.swift */; };
 		7E8D39C4290FD50C00BE2BB9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C3290FD50C00BE2BB9 /* FirebaseAnalytics */; };
 		7E8D39C6290FD50C00BE2BB9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C5290FD50C00BE2BB9 /* FirebaseAuth */; };
@@ -71,6 +78,11 @@
 		7E3B5EE52915007200FD261F /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		7E3B5EE72915010C00FD261F /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		7E3B5EE92915162F00FD261F /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		7E3B5EEB29190E6300FD261F /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		7E3B5EF3291A591700FD261F /* Product.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Product.xcdatamodel; sourceTree = "<group>"; };
+		7E3B5EF9291A5C2500FD261F /* ShoppingApp+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingApp+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E3B5EFA291A5C2500FD261F /* ShoppingApp+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingApp+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E3B5EFD291A5CE300FD261F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		7E5ABDC6290821010072BCD3 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		7E8D39D6290FF4DC00BE2BB9 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +124,9 @@
 				7E8D39C4290FD50C00BE2BB9 /* FirebaseAnalytics in Frameworks */,
 				7E8D39CD290FD5A200BE2BB9 /* FacebookShare in Frameworks */,
 				7E8D39C6290FD50C00BE2BB9 /* FirebaseAuth in Frameworks */,
+				7E3B5EEF291A4F2B00FD261F /* Realm in Frameworks */,
 				7E8D39C8290FD50C00BE2BB9 /* FirebaseDatabase in Frameworks */,
+				7E3B5EF1291A4F2B00FD261F /* RealmSwift in Frameworks */,
 				3D5A7D40CBABF84347AD4C49 /* Pods_ShoppingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +205,7 @@
 		7E0496362907F24E00871A10 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7E3B5EEB29190E6300FD261F /* ShoppingCart.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +247,8 @@
 		7EB867832900335D00502692 = {
 			isa = PBXGroup;
 			children = (
+				7E3B5EF9291A5C2500FD261F /* ShoppingApp+CoreDataClass.swift */,
+				7E3B5EFA291A5C2500FD261F /* ShoppingApp+CoreDataProperties.swift */,
 				7EB8678E2900335D00502692 /* ShoppingApp */,
 				7EB867A82900336000502692 /* ShoppingAppTests */,
 				7EB867B22900336000502692 /* ShoppingAppUITests */,
@@ -313,6 +330,7 @@
 			children = (
 				7E3B5EE52915007200FD261F /* CategoryModel.swift */,
 				7E3B5EE72915010C00FD261F /* ProductModel.swift */,
+				7E3B5EF2291A591700FD261F /* ShoppingApp.xcdatamodeld */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -332,6 +350,7 @@
 				7EB8678F2900335D00502692 /* AppDelegate.swift */,
 				7EB867912900335D00502692 /* SceneDelegate.swift */,
 				7E3B5EE92915162F00FD261F /* DatabaseManager.swift */,
+				7E3B5EFD291A5CE300FD261F /* CoreDataStack.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -398,6 +417,8 @@
 				7E8D39CC290FD5A200BE2BB9 /* FacebookShare */,
 				7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */,
 				7E8D39D2290FDB1C00BE2BB9 /* IQKeyboardManagerSwift */,
+				7E3B5EEE291A4F2B00FD261F /* Realm */,
+				7E3B5EF0291A4F2B00FD261F /* RealmSwift */,
 			);
 			productName = ShoppingApp;
 			productReference = 7EB8678C2900335D00502692 /* ShoppingApp.app */;
@@ -479,6 +500,7 @@
 				7E8D39C9290FD5A200BE2BB9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				7E8D39D1290FDB1C00BE2BB9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 7EB8678D2900335D00502692 /* Products */;
 			projectDirPath = "";
@@ -633,13 +655,18 @@
 				7EFF1E1A2907E590002A9F8A /* LoginViewController.swift in Sources */,
 				7E3B5EEA2915162F00FD261F /* DatabaseManager.swift in Sources */,
 				7E04963D29080B4B00871A10 /* UIStackViewExtension.swift in Sources */,
+				7E3B5EFC291A5C2500FD261F /* ShoppingApp+CoreDataProperties.swift in Sources */,
 				7EFA9CA829068BE100BFEA13 /* CategoryCollectionViewCell.swift in Sources */,
+				7E3B5EFB291A5C2500FD261F /* ShoppingApp+CoreDataClass.swift in Sources */,
 				7E8D39D92913AFBA00BE2BB9 /* WishlistViewController.swift in Sources */,
 				7E3B5EE82915010C00FD261F /* ProductModel.swift in Sources */,
 				7EE53BB2290BB9FD00BE1505 /* ProfileViewController.swift in Sources */,
+				7E3B5EEC29190E6400FD261F /* ShoppingCart.swift in Sources */,
+				7E3B5EF4291A591700FD261F /* ShoppingApp.xcdatamodeld in Sources */,
 				7E5ABDC7290821010072BCD3 /* ProductsCollectionViewCell.swift in Sources */,
 				7EFA9CA62906869E00BFEA13 /* HomeViewController.swift in Sources */,
 				7E8D39DC2913AFF500BE2BB9 /* WishlistCustomCell.swift in Sources */,
+				7E3B5EFE291A5CE300FD261F /* CoreDataStack.swift in Sources */,
 				7E8D39D5290FE0F700BE2BB9 /* UITextFieldExtension.swift in Sources */,
 				7E8D39D7290FF4DC00BE2BB9 /* registerViewController.swift in Sources */,
 				7EB867902900335D00502692 /* AppDelegate.swift in Sources */,
@@ -995,6 +1022,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.15.0;
+			};
+		};
 		7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -1030,6 +1065,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7E3B5EEE291A4F2B00FD261F /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7E3B5EF0291A4F2B00FD261F /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		7E8D39C3290FD50C00BE2BB9 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -1066,6 +1111,19 @@
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7E3B5EF2291A591700FD261F /* ShoppingApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E3B5EF3291A591700FD261F /* Product.xcdatamodel */,
+			);
+			currentVersion = 7E3B5EF3291A591700FD261F /* Product.xcdatamodel */;
+			path = ShoppingApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7EB867842900335D00502692 /* Project object */;
 }

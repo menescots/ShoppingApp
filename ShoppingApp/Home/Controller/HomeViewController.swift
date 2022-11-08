@@ -14,6 +14,7 @@ import FirebaseDatabase
 
 class HomeViewController: UIViewController {
 
+    
     @IBOutlet weak var productsCollectionView: UICollectionView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var UIStackView: UIStackView!
@@ -21,6 +22,7 @@ class HomeViewController: UIViewController {
     var container: NSPersistentContainer!
     var categories = [Category]()
     var products = [Product]()
+    var wishlistProducts = [ShoppingApp]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,7 @@ class HomeViewController: UIViewController {
 
     }
     
-    func listenForProducts() {
+    @objc func listenForProducts() {
         database.child("Products").observeSingleEvent(of: .value, with: { snapshot in
             if let data = snapshot.value as? [[String: Any]] {
                 for datum in data {
@@ -51,7 +53,7 @@ class HomeViewController: UIViewController {
         })
     }
     
-    func listenForCategories() {
+    @objc func listenForCategories() {
         database.child("Categories").observeSingleEvent(of: .value, with: { snapshot in
             if let data = snapshot.value as? [[String: Any]] {
                 for datum in data {
@@ -65,13 +67,24 @@ class HomeViewController: UIViewController {
             }
         })
     }
-
+    
     @IBAction func addToWishlistButtonTapped(_ sender: Any) {
+        guard let indexPath = productsCollectionView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ProductsCollectionViewCell)) else { return }
+        
+        let product = products[indexPath.row]
+        let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
+          let wishlistedProduct = ShoppingApp(context: managedContext)
+        wishlistedProduct.setValue(product.name, forKey: #keyPath(ShoppingApp.name))
+        wishlistedProduct.setValue(product.price, forKey: #keyPath(ShoppingApp.price))
+        wishlistedProduct.setValue(product.id, forKey: #keyPath(ShoppingApp.productId))
+        wishlistedProduct.setValue(product.imageUrl, forKey: #keyPath(ShoppingApp.imageUrl))
+          self.wishlistProducts.insert(wishlistedProduct, at: 0)
+          AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
         
     }
     @IBAction func addToCartButtonTapped(_ sender: Any) {
+        
     }
-    
     func setUpCollectionLayout(){
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
@@ -95,12 +108,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
    
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == self.categoryCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath as IndexPath) as! CategoryCollectionViewCell
-            
             let category = categories[indexPath.row]
             cell.setLabelTitle(title: category.name )
             return cell
@@ -108,7 +119,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell", for: indexPath as IndexPath) as! ProductsCollectionViewCell
             
             let product = products[indexPath.row]
-            
             cell.setProductName(productName: product.name)
             cell.setProductImage(image: "imageproduct")
             cell.setProductPrice(price: product.price)
@@ -116,3 +126,4 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }
 }
+

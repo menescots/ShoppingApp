@@ -368,14 +368,14 @@
 		991EF2BB30B32BCC6C86B1D41D7A9BBA /* MaterialTextControlsPrivate+FilledStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+FilledStyle.h"; path = "components/private/TextControlsPrivate/src/FilledStyle/MaterialTextControlsPrivate+FilledStyle.h"; sourceTree = "<group>"; };
 		99F13298D323E674B0480039C69D9B55 /* MDCTextControlAssistiveLabelViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlAssistiveLabelViewLayout.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelViewLayout.h; sourceTree = "<group>"; };
 		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFInternationalization; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A01C4DFDC7C01B97BBE22888F38CF2DA /* visibility_on.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = visibility_on.png; path = PasswordTextField/Media/visibility_on.png; sourceTree = "<group>"; };
 		A10E6041E37300BB4D0DC3884374BD8F /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShoppingApp-ShoppingAppUITests-umbrella.h"; sourceTree = "<group>"; };
 		A19BF3F045C2F50C98FC4BE694063D83 /* PasswordTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordTextField-prefix.pch"; sourceTree = "<group>"; };
 		A243FE5AAF4CD26E65CA5B3D0F75FB42 /* MDCBaseTextArea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextArea.h; path = components/TextControls/src/BaseTextAreas/MDCBaseTextArea.h; sourceTree = "<group>"; };
 		A2E17A19AE53D95DF12D34A68C40A5A7 /* Pods-ShoppingApp-ShoppingAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShoppingApp-ShoppingAppUITests-frameworks.sh"; sourceTree = "<group>"; };
 		A2E274166C4A2D64531293C1344675ED /* Pods-ShoppingAppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShoppingAppTests"; path = Pods_ShoppingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A348CB461854B6C6BBF7DE283F6EBDA7 /* MDCBaseTextFieldLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextFieldLayout.h; path = components/private/TextControlsPrivate/src/TextFields/MDCBaseTextFieldLayout.h; sourceTree = "<group>"; };
 		A7FB62DB767453D6B79EA1F77FAC98E4 /* MaterialComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialComponents.debug.xcconfig; sourceTree = "<group>"; };
 		A8212FBB7D4786A0F29ABE588E6E114C /* MaterialMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialMath.h; path = components/private/Math/src/MaterialMath.h; sourceTree = "<group>"; };
@@ -553,7 +553,6 @@
 				A26AAA0F1185C86912A4935BD840948A /* TextControls+OutlinedTextAreas */,
 				E1051D2E8B9452D5094644BEE93D1179 /* TextControls+OutlinedTextFields */,
 			);
-			name = MaterialComponents;
 			path = MaterialComponents;
 			sourceTree = "<group>";
 		};
@@ -615,7 +614,6 @@
 				3CDA68CA617661084E8F998508DAA2EB /* UIView+MaterialRTL.m */,
 				27E819BDF63512577050F6B902FAE43F /* Support Files */,
 			);
-			name = MDFInternationalization;
 			path = MDFInternationalization;
 			sourceTree = "<group>";
 		};
@@ -725,7 +723,6 @@
 				6B1AD3D64B825A697AD78D49B499CE31 /* SHCircleBarController.swift */,
 				FADDCF4C919E2E4A7BF0A2E5D7B4AEE8 /* Support Files */,
 			);
-			name = CircleBar;
 			path = CircleBar;
 			sourceTree = "<group>";
 		};
@@ -872,7 +869,6 @@
 				608D3E800A24864E86637A277FEB5C8B /* Resources */,
 				05CD0E067817CE8BEC4B0F560FA46793 /* Support Files */,
 			);
-			name = PasswordTextField;
 			path = PasswordTextField;
 			sourceTree = "<group>";
 		};
@@ -950,7 +946,7 @@
 			isa = PBXGroup;
 			children = (
 				43697E92E1EF903807158F32D260C4DC /* CircleBar */,
-				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */,
+				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */,
 				9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */,
 				F3B2B979D21179086FB3F7EBE3152F8F /* PasswordTextField */,
 				E1AE02FE52E1DF553479C602B170F3F1 /* PasswordTextField-PasswordTextField */,
@@ -1237,7 +1233,7 @@
 			);
 			name = MaterialComponents;
 			productName = MaterialComponents;
-			productReference = A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */;
+			productReference = A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B7378E43393E401083784252E88810C0 /* CircleBar */ = {
@@ -1983,7 +1979,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2018,7 +2014,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -15,3 +15,4 @@ struct Product {
     let content: String
     let imageUrl: URL?
 }
+
