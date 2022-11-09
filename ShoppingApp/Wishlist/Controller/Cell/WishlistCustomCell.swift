@@ -26,15 +26,10 @@ class WishlistCustomCell: UITableViewCell {
         productImage.image = UIImage(named: image)
         }
     
-    var cornerRadius: CGFloat = 14
     
     override func awakeFromNib() {
         super.awakeFromNib()
         addToCartButton.layer.borderColor = UIColor.black.cgColor
         addToCartButton.layer.borderWidth = 1
-        contentView.layer.cornerRadius = cornerRadius
-        contentView.layer.masksToBounds = true
-        layer.cornerRadius = cornerRadius
-        layer.masksToBounds = false
     }
 }

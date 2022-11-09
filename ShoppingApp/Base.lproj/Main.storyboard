@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fzM-NZ-015">
-                                <rect key="frame" x="19.999999999999986" y="67" width="350" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fzM-NZ-015">
+                                <rect key="frame" x="20" y="67" width="350" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's do" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kP-cU-Qi9">
                                         <rect key="frame" x="0.0" y="0.0" width="96" height="40"/>
@@ -459,22 +459,22 @@
                                                         <constraint firstAttribute="height" constant="125" id="kBX-E3-vNV"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="77S-k9-gWe">
-                                                    <rect key="frame" x="142" y="10" width="213.33333333333337" height="75"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="77S-k9-gWe">
+                                                    <rect key="frame" x="142" y="10" width="188" height="85"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="product Name but its long" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y56-Rz-Jt0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="213.33333333333334" height="44"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="product Name but its longwerrr" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y56-Rz-Jt0">
+                                                            <rect key="frame" x="0.0" y="0.0" width="188" height="50"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="44" id="xYB-sV-7Zn"/>
+                                                                <constraint firstAttribute="height" constant="50" id="xYB-sV-7Zn"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="43$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgS-40-tUx">
-                                                            <rect key="frame" x="0.0" y="45" width="213.33333333333334" height="30"/>
+                                                            <rect key="frame" x="0.0" y="65" width="188" height="20"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="30" id="JsN-XG-amB"/>
+                                                                <constraint firstAttribute="height" constant="20" id="JsN-XG-amB"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                                             <nil key="textColor"/>
@@ -483,23 +483,36 @@
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta8-k1-Cvb">
-                                                    <rect key="frame" x="263" y="98" width="102" height="34"/>
+                                                    <rect key="frame" x="268" y="95" width="102" height="44"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Add to cart" cornerStyle="large">
                                                         <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                         <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdp-ab-PZW">
+                                                    <rect key="frame" x="330" y="11" width="40" height="34.333333333333336"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="trash.fill" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="removeFromWishlist:" destination="SiC-cZ-Ue9" eventType="touchUpInside" id="59l-hn-Nv0"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="77S-k9-gWe" secondAttribute="trailing" constant="40" id="3Y4-JD-5i6"/>
                                                 <constraint firstItem="77S-k9-gWe" firstAttribute="top" secondItem="fkS-KW-xSk" secondAttribute="topMargin" constant="-1.0000000000000071" id="7F9-E3-rzl"/>
+                                                <constraint firstAttribute="trailing" secondItem="vdp-ab-PZW" secondAttribute="trailing" id="AYq-V5-hKF"/>
                                                 <constraint firstItem="nmH-pc-udW" firstAttribute="top" secondItem="fkS-KW-xSk" secondAttribute="top" constant="10" id="FHe-z1-Gcz"/>
+                                                <constraint firstItem="vdp-ab-PZW" firstAttribute="top" secondItem="fkS-KW-xSk" secondAttribute="topMargin" id="JvQ-gq-J0Y"/>
                                                 <constraint firstItem="77S-k9-gWe" firstAttribute="leading" secondItem="fkS-KW-xSk" secondAttribute="leading" constant="142" id="Lep-8F-Eoi"/>
                                                 <constraint firstItem="nmH-pc-udW" firstAttribute="leading" secondItem="fkS-KW-xSk" secondAttribute="leading" constant="10" id="TVB-Yf-ade"/>
                                                 <constraint firstAttribute="bottom" secondItem="nmH-pc-udW" secondAttribute="bottom" constant="9" id="U5I-Rl-Uuw"/>
-                                                <constraint firstAttribute="bottom" secondItem="ta8-k1-Cvb" secondAttribute="bottom" constant="12" id="dlI-jJ-pwr"/>
-                                                <constraint firstAttribute="trailing" secondItem="ta8-k1-Cvb" secondAttribute="trailing" constant="5" id="eLE-Bj-cva"/>
-                                                <constraint firstItem="ta8-k1-Cvb" firstAttribute="top" secondItem="77S-k9-gWe" secondAttribute="bottom" constant="13" id="w3u-mX-jUs"/>
+                                                <constraint firstAttribute="bottom" secondItem="ta8-k1-Cvb" secondAttribute="bottom" constant="5" id="dlI-jJ-pwr"/>
+                                                <constraint firstItem="vdp-ab-PZW" firstAttribute="leading" secondItem="77S-k9-gWe" secondAttribute="trailing" id="e0y-sQ-eu5"/>
+                                                <constraint firstAttribute="trailing" secondItem="ta8-k1-Cvb" secondAttribute="trailing" id="eLE-Bj-cva"/>
+                                                <constraint firstItem="ta8-k1-Cvb" firstAttribute="top" secondItem="77S-k9-gWe" secondAttribute="bottom" id="w3u-mX-jUs"/>
                                                 <constraint firstItem="77S-k9-gWe" firstAttribute="leading" secondItem="nmH-pc-udW" secondAttribute="trailing" constant="8" symbolic="YES" id="zqr-gd-Ft1"/>
                                                 <constraint firstItem="ta8-k1-Cvb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nmH-pc-udW" secondAttribute="trailing" constant="8" symbolic="YES" id="zua-bJ-bYq"/>
                                             </constraints>
@@ -538,7 +551,7 @@
         <!--Shopping cart-->
         <scene sceneID="al8-p4-GpA">
             <objects>
-                <viewController id="pRt-Ex-aXb" customClass="ShoppingCart" customModule="ShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pRt-Ex-aXb" customClass="ShoppingCartViewController" customModule="ShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lgP-e6-lfx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -816,6 +829,7 @@
         <image name="magnifier" width="32" height="32"/>
         <image name="profile" width="32" height="32"/>
         <image name="shopping-bag" width="512" height="512"/>
+        <image name="trash.fill" catalog="system" width="119" height="128"/>
         <namedColor name="shadowColor">
             <color red="0.57400000095367432" green="0.77100002765655518" blue="0.82099997997283936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

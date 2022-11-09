@@ -12,7 +12,7 @@ class WishlistViewController: UIViewController {
 
     @IBOutlet weak var productsTableView: UITableView!
     
-    var wishlistProducts = [ShoppingApp]()
+    var wishlistProducts = [Wishlist]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +21,20 @@ class WishlistViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("in will appear")
         getProducts()
     }
    
+    @IBAction func removeFromWishlist(_ sender: Any) {
+        guard let indexPath = productsTableView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! WishlistCustomCell)) else { return }
+        
+        AppDelegate.sharedAppDelegate.coreDataStack.managedContext.delete(self.wishlistProducts[indexPath.row])
+        self.wishlistProducts.remove(at: indexPath.row)
+        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+        self.productsTableView.deleteRows(at: [indexPath], with: .automatic)
+        
+    }
     func getProducts() {
-        let productFetch: NSFetchRequest<ShoppingApp> = ShoppingApp.fetchRequest()
+        let productFetch: NSFetchRequest<Wishlist> = Wishlist.fetchRequest()
         
         do {
             let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
@@ -57,5 +65,16 @@ extension WishlistViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            AppDelegate.sharedAppDelegate.coreDataStack.managedContext.delete(self.wishlistProducts[indexPath.row])
+            self.wishlistProducts.remove(at: indexPath.row)
+            // Save Changes
+            AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+            // Remove row from TableView
+            self.productsTableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
     
 }

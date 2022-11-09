@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ShoppingCart: UIViewController {
+class ShoppingCartViewController: UIViewController {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
     var cartProducts = [Product]()
@@ -21,7 +21,7 @@ class ShoppingCart: UIViewController {
 
 }
 
-extension ShoppingCart: UICollectionViewDelegate, UICollectionViewDataSource{
+extension ShoppingCartViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cartProducts.count
     }
