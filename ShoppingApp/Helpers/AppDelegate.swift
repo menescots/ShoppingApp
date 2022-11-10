@@ -15,7 +15,7 @@ import FBSDKCoreKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    lazy var coreDataStack: CoreDataStack = .init(modelName: "ShoppingApp")
+    lazy var coreDataStack: CoreDataStack = .init(modelName: "ShoppingAppCoreData")
     
     static let sharedAppDelegate: AppDelegate = {
            guard let delegate = UIApplication.shared.delegate as? AppDelegate else {

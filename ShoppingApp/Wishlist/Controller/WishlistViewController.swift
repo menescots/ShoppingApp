@@ -33,6 +33,22 @@ class WishlistViewController: UIViewController {
         self.productsTableView.deleteRows(at: [indexPath], with: .automatic)
         
     }
+    
+    @IBAction func addToCart(_ sender: Any) {
+        guard let indexPath = productsTableView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! WishlistCustomCell)) else { return }
+        let product = wishlistProducts[indexPath.row]
+        let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
+        
+        let cartProduct = ShoppingCart(context: managedContext)
+        
+        cartProduct.setValue(product.name, forKey: #keyPath(ShoppingCart.name))
+        cartProduct.setValue(product.price, forKey: #keyPath(ShoppingCart.price))
+        cartProduct.setValue(product.productId, forKey: #keyPath(ShoppingCart.productId))
+        cartProduct.setValue(product.image, forKey: #keyPath(ShoppingCart.image))
+        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+        removeFromWishlist(sender)
+    }
+    
     func getProducts() {
         let productFetch: NSFetchRequest<Wishlist> = Wishlist.fetchRequest()
         

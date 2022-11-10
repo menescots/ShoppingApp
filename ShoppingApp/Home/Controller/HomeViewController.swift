@@ -23,6 +23,8 @@ class HomeViewController: UIViewController {
     var categories = [Category]()
     var products = [Product]()
     var wishlistProducts = [Wishlist]()
+    var cartProducts = [ShoppingCart]()
+    
     var reloadButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "refresh"), for: .normal)
@@ -32,6 +34,7 @@ class HomeViewController: UIViewController {
     var noInternetInfo: UILabel = {
         let label = UILabel()
         label.text = "No internet connection"
+        label.textAlignment = .center
         label.isHidden = true
         return label
     }()
@@ -51,6 +54,7 @@ class HomeViewController: UIViewController {
         reloadButton.addTarget(self, action: #selector(listenForCategories), for: .touchUpInside)
         reloadButton.addTarget(self, action: #selector(listenForProducts), for: .touchUpInside)
         self.view.addSubview(reloadButton)
+        self.view.addSubview(noInternetInfo)
     }
     @objc func listenForProducts() {
         database.child("Products").observeSingleEvent(of: .value, with: { snapshot in
@@ -112,13 +116,25 @@ class HomeViewController: UIViewController {
         wishlistedProduct.setValue(product.price, forKey: #keyPath(Wishlist.price))
         wishlistedProduct.setValue(product.id, forKey: #keyPath(Wishlist.productId))
         wishlistedProduct.setValue(product.imageUrl, forKey: #keyPath(Wishlist.image))
-        self.wishlistProducts.insert(wishlistedProduct, at: 0)
         
         AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
         
     }
     @IBAction func addToCartButtonTapped(_ sender: Any) {
+        guard let indexPath = productsCollectionView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ProductsCollectionViewCell)) else { return }
         
+        let product = products[indexPath.row]
+        let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
+        
+        let cartProduct = ShoppingCart(context: managedContext)
+        
+        cartProduct.setValue(product.name, forKey: #keyPath(ShoppingCart.name))
+        cartProduct.setValue(product.price, forKey: #keyPath(ShoppingCart.price))
+        cartProduct.setValue(product.id, forKey: #keyPath(ShoppingCart.productId))
+        cartProduct.setValue(product.imageUrl, forKey: #keyPath(ShoppingCart.image))
+        self.cartProducts.insert(cartProduct, at: 0)
+        
+        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
     }
     func setUpCollectionLayout(){
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()

@@ -49,5 +49,6 @@ class ProductsCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         contentView.layer.cornerRadius = cornerRadius
         contentView.layer.masksToBounds = true
+        priceLabel.layer.cornerRadius = cornerRadius
     }
 }
