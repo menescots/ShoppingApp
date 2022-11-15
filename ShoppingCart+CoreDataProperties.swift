@@ -20,7 +20,7 @@ extension ShoppingCart {
     @NSManaged public var name: String
     @NSManaged public var price: Int32
     @NSManaged public var productId: Int32
-
+    @NSManaged public var amount: Int32
 }
 
 extension ShoppingCart : Identifiable {

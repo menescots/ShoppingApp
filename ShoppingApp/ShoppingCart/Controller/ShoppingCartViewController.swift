@@ -10,9 +10,10 @@ import CoreData
 
 class ShoppingCartViewController: UIViewController {
 
+    @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var productTableView: UITableView!
     var cartProducts = [ShoppingCart]()
-    
+  var totalPrice = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +43,7 @@ class ShoppingCartViewController: UIViewController {
     }
     @IBAction func removeFromCart(_ sender: Any) {
         guard let indexPath = productTableView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ShoppingCartCustomCell)) else { return }
-        
+
         AppDelegate.sharedAppDelegate.coreDataStack.managedContext.delete(self.cartProducts[indexPath.row])
         self.cartProducts.remove(at: indexPath.row)
         AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
@@ -62,6 +63,7 @@ class ShoppingCartViewController: UIViewController {
         }
     }
 
+
 }
 
 extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource{
@@ -71,14 +73,12 @@ extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath as IndexPath) as! ShoppingCartCustomCell
-        
         let product = cartProducts[indexPath.row]
-        
         cell.setProductName(name: product.name)
         cell.setProductImage(image: "imageproduct")
         cell.setProductPrice(price: Int(product.price))
         cell.setProductID(id: Int(product.productId))
-        
+        cell.setProductAmount()
         return cell
     }
     
