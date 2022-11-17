@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
     }()
     var noInternetInfo: UILabel = {
         let label = UILabel()
-        label.text = "No internet connection"
+        label.text = "Fetching products..."
         label.textAlignment = .center
         label.isHidden = true
         return label
@@ -39,8 +39,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpCollectionLayout()
-        productsCollectionView.delegate = self
-        productsCollectionView.dataSource = self
+       productsCollectionView.delegate = self
+       productsCollectionView.dataSource = self
         DispatchQueue.main.async {
             self.listenForProducts()
         }
@@ -73,11 +73,9 @@ class HomeViewController: UIViewController {
         let connectedRef = Database.database().reference(withPath: ".info/connected")
         connectedRef.observe(.value, with: { snapshot in
           if snapshot.value as? Bool ?? false {
-            print("Connected")
               self.reloadButton.isHidden = true
               self.noInternetInfo.isHidden = true
           } else {
-            print("Not connected")
               self.reloadButton.isHidden = false
               self.noInternetInfo.isHidden = false
           }

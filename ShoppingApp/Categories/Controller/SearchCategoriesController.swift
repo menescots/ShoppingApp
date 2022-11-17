@@ -25,7 +25,15 @@ class SearchCategoriesController: UIViewController {
         }
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     func listenForCategories() {
         database.child("Categories").observeSingleEvent(of: .value, with: { snapshot in
             if let data = snapshot.value as? [[String: Any]] {
@@ -50,11 +58,17 @@ extension SearchCategoriesController: UITableViewDelegate, UITableViewDataSource
         let cell = categoryTableView.dequeueReusableCell(withIdentifier: "categoryCell") as! CategoryTableViewCell
         
         let category = categories[indexPath.row]
-        
-       categoryNameLabel.text = category.name
-       categoryContentLabel.text = category.content
+        cell.setCategoryImage(index: indexPath.row)
+        cell.setCategoryName(name: category.name)
+        cell.setCategoryContent(content: category.content)
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "categoryProduct") as? CategoryProductsViewController else {
+            return
+        }
+        vc.category = categories[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
