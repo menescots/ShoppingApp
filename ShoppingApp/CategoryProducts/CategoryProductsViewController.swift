@@ -21,9 +21,11 @@ class CategoryProductsViewController: UIViewController {
         productsCollectionView.delegate = self
         productsCollectionView.dataSource = self
         title = category?.name
-        
-        DispatchQueue.main.async {
+        DispatchQueue.global(qos: .background).async {
             self.listenForProducts()
+            DispatchQueue.main.async {
+                self.productsCollectionView.reloadData()
+            }
         }
     }
     func listenForProducts() {

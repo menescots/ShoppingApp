@@ -188,6 +188,7 @@
                     <navigationItem key="navigationItem" id="Aja-Bi-5RS"/>
                     <connections>
                         <outlet property="UIStackView" destination="fzM-NZ-015" id="A3s-Tu-36y"/>
+                        <outlet property="filterTextField" destination="jhc-N3-BGQ" id="cGD-sR-9If"/>
                         <outlet property="productsCollectionView" destination="h95-B9-iUb" id="jCa-B5-0e1"/>
                     </connections>
                 </viewController>

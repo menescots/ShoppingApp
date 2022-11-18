@@ -20,8 +20,11 @@ class SearchCategoriesController: UIViewController {
         super.viewDidLoad()
         categoryTableView.dataSource = self
         categoryTableView.delegate = self
-        DispatchQueue.main.async {
+        DispatchQueue.global(qos: .background).async {
             self.listenForCategories()
+            DispatchQueue.main.async {
+                self.categoryTableView.reloadData()
+            }
         }
     }
     
