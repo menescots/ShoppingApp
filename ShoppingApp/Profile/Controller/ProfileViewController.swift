@@ -11,17 +11,15 @@ import FirebaseAuth
 import FirebaseCore
 class ProfileViewController: UIViewController {
     @IBOutlet weak var logOutButton: UIButton!
-    @IBOutlet weak var loginStackView: UIStackView!
     @IBOutlet weak var userNameLabel: UILabel!
     
-    @IBOutlet weak var loginLabel: UILabel!
+    @IBOutlet weak var optionTableView: UITableView!
     
     private var loginObserver: NSObjectProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setNameLabel()
-        
         loginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification, object: nil, queue: .main, using: { [weak self] _ in
             guard let strongSelf = self else {
                 return
@@ -31,6 +29,23 @@ class ProfileViewController: UIViewController {
         })
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        checkIfLogged()
+    }
+
+    func checkIfLogged(){
+        FirebaseAuth.Auth.auth().addStateDidChangeListener { auth ,user in
+            if user == nil {
+                guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "loginVC") as? LoginViewController else {
+                    return
+                }
+               // self.definesPresentationContext = true
+                //self.navigationController?.setNavigationBarHidden(true, animated: true)
+                self.present(UINavigationController(rootViewController: vc), animated: false)
+            }
+        }
+    }
     func setNameLabel() {
         guard let loggedUser = UserDefaults.standard.value(forKey: "email") as? String else {
             logOutButton.isHidden = true
@@ -69,7 +84,12 @@ class ProfileViewController: UIViewController {
     @IBAction func FBLoginButtonTapped(_ sender: Any) {
        
     }
-    
+    override func present(_ viewControllerToPresent: UIViewController,
+                            animated flag: Bool,
+                            completion: (() -> Void)? = nil) {
+        viewControllerToPresent.modalPresentationStyle = .overCurrentContext
+        super.present(viewControllerToPresent, animated: flag, completion: completion)
+      }
     
 }
 

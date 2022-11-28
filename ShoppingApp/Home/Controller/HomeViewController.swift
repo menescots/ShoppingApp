@@ -105,10 +105,9 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         }
         @IBAction func addToWishlistButtonTapped(_ sender: Any) {
             guard let indexPath = productsCollectionView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ProductsCollectionViewCell)) else { return }
-            
+    
             let product = products[indexPath.row]
             let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
-            
             let wishlistedProduct = Wishlist(context: managedContext)
             
             wishlistedProduct.setValue(product.name, forKey: #keyPath(Wishlist.name))

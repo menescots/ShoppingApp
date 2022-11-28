@@ -49,11 +49,10 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
-        
+        guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "registerVC") as? registerViewController else {
+            return
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
     
-    
-    @IBAction func closeTapped(_ sender: Any) {
-        navigationController?.dismiss(animated: true)
-    }
 }
