@@ -24,25 +24,26 @@
 		7E3B5F1F291BA30600FD261F /* ShoppingCart+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5F1B291BA30600FD261F /* ShoppingCart+CoreDataClass.swift */; };
 		7E3B5F20291BA30600FD261F /* ShoppingCart+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5F1C291BA30600FD261F /* ShoppingCart+CoreDataProperties.swift */; };
 		7E5ABDC7290821010072BCD3 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ABDC6290821010072BCD3 /* ProductsCollectionViewCell.swift */; };
-		7E8D39C4290FD50C00BE2BB9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C3290FD50C00BE2BB9 /* FirebaseAnalytics */; };
-		7E8D39C6290FD50C00BE2BB9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C5290FD50C00BE2BB9 /* FirebaseAuth */; };
-		7E8D39C8290FD50C00BE2BB9 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39C7290FD50C00BE2BB9 /* FirebaseDatabase */; };
-		7E8D39CB290FD5A200BE2BB9 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39CA290FD5A200BE2BB9 /* FacebookLogin */; };
-		7E8D39CD290FD5A200BE2BB9 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39CC290FD5A200BE2BB9 /* FacebookShare */; };
 		7E8D39D0290FD61700BE2BB9 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */; };
 		7E8D39D3290FDB1C00BE2BB9 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8D39D2290FDB1C00BE2BB9 /* IQKeyboardManagerSwift */; };
 		7E8D39D5290FE0F700BE2BB9 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */; };
 		7E8D39D7290FF4DC00BE2BB9 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D39D6290FF4DC00BE2BB9 /* registerViewController.swift */; };
 		7E8D39D92913AFBA00BE2BB9 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D39D82913AFBA00BE2BB9 /* WishlistViewController.swift */; };
 		7E8D39DC2913AFF500BE2BB9 /* WishlistCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D39DB2913AFF500BE2BB9 /* WishlistCustomCell.swift */; };
+		7EA0274529374AEF0063E859 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA0274429374AEF0063E859 /* FacebookCore */; };
+		7EA0274729374AEF0063E859 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA0274629374AEF0063E859 /* FacebookLogin */; };
+		7EA0274929374AEF0063E859 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA0274829374AEF0063E859 /* FacebookShare */; };
+		7EA0274C29374CC50063E859 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA0274B29374CC50063E859 /* FirebaseAnalytics */; };
+		7EA0274E29374CC50063E859 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA0274D29374CC50063E859 /* FirebaseAnalyticsSwift */; };
+		7EA0275029374CC50063E859 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA0274F29374CC50063E859 /* FirebaseAuth */; };
+		7EA0275229374CC50063E859 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA0275129374CC50063E859 /* FirebaseDatabase */; };
+		7EA0275429374CC50063E859 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA0275329374CC50063E859 /* FirebaseDatabaseSwift */; };
+		7EA02756293778470063E859 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA02755293778460063E859 /* AlertExtension.swift */; };
 		7EB867902900335D00502692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB8678F2900335D00502692 /* AppDelegate.swift */; };
 		7EB867922900335D00502692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867912900335D00502692 /* SceneDelegate.swift */; };
 		7EB867972900335D00502692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB867952900335D00502692 /* Main.storyboard */; };
 		7EB8679C2900336000502692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8679B2900336000502692 /* Assets.xcassets */; };
 		7EB8679F2900336000502692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8679D2900336000502692 /* LaunchScreen.storyboard */; };
-		7EB867AA2900336000502692 /* ShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867A92900336000502692 /* ShoppingAppTests.swift */; };
-		7EB867B42900336000502692 /* ShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867B32900336000502692 /* ShoppingAppUITests.swift */; };
-		7EB867B62900336000502692 /* ShoppingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB867B52900336000502692 /* ShoppingAppUITestsLaunchTests.swift */; };
 		7ECED62729227A5500D14570 /* SearchCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECED62629227A5500D14570 /* SearchCategoriesController.swift */; };
 		7ECED62A2923CB1C00D14570 /* CategoryProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECED6292923CB1C00D14570 /* CategoryProductsViewController.swift */; };
 		7EE53BB2290BB9FD00BE1505 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE53BB1290BB9FD00BE1505 /* ProfileViewController.swift */; };
@@ -52,26 +53,7 @@
 		7EFA9CAD2906A35100BFEA13 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EFA9CAC2906A35100BFEA13 /* Products.json */; };
 		7EFF1E0C2907C71C002A9F8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF1E0B2907C71B002A9F8A /* GoogleService-Info.plist */; };
 		7EFF1E1A2907E590002A9F8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF1E192907E590002A9F8A /* LoginViewController.swift */; };
-		E3D53B12571D072B88D0F7C9 /* Pods_ShoppingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4E578022C06FE201B431AF /* Pods_ShoppingAppTests.framework */; };
-		F66B812BE5D6F6F0096A60EF /* Pods_ShoppingApp_ShoppingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62866F25B7AB6014D0977D77 /* Pods_ShoppingApp_ShoppingAppUITests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7EB867A62900336000502692 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EB867842900335D00502692 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7EB8678B2900335D00502692;
-			remoteInfo = ShoppingApp;
-		};
-		7EB867B02900336000502692 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EB867842900335D00502692 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7EB8678B2900335D00502692;
-			remoteInfo = ShoppingApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04E5C7F2D48069BD9FF1F104 /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.release.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +80,7 @@
 		7E8D39D6290FF4DC00BE2BB9 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		7E8D39D82913AFBA00BE2BB9 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		7E8D39DB2913AFF500BE2BB9 /* WishlistCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistCustomCell.swift; sourceTree = "<group>"; };
+		7EA02755293778460063E859 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 		7EB8678C2900335D00502692 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8678F2900335D00502692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EB867912900335D00502692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,9 +88,7 @@
 		7EB8679B2900336000502692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EB8679E2900336000502692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EB867A02900336000502692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EB867A52900336000502692 /* ShoppingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB867A92900336000502692 /* ShoppingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppTests.swift; sourceTree = "<group>"; };
-		7EB867AF2900336000502692 /* ShoppingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB867B32900336000502692 /* ShoppingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITests.swift; sourceTree = "<group>"; };
 		7EB867B52900336000502692 /* ShoppingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7ECED62629227A5500D14570 /* SearchCategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoriesController.swift; sourceTree = "<group>"; };
@@ -130,32 +111,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E8D39CB290FD5A200BE2BB9 /* FacebookLogin in Frameworks */,
 				7E8D39D3290FDB1C00BE2BB9 /* IQKeyboardManagerSwift in Frameworks */,
+				7EA0274529374AEF0063E859 /* FacebookCore in Frameworks */,
+				7EA0274929374AEF0063E859 /* FacebookShare in Frameworks */,
 				7E8D39D0290FD61700BE2BB9 /* SwiftyJSON in Frameworks */,
-				7E8D39C4290FD50C00BE2BB9 /* FirebaseAnalytics in Frameworks */,
-				7E8D39CD290FD5A200BE2BB9 /* FacebookShare in Frameworks */,
-				7E8D39C6290FD50C00BE2BB9 /* FirebaseAuth in Frameworks */,
+				7EA0274E29374CC50063E859 /* FirebaseAnalyticsSwift in Frameworks */,
 				7E3B5EEF291A4F2B00FD261F /* Realm in Frameworks */,
-				7E8D39C8290FD50C00BE2BB9 /* FirebaseDatabase in Frameworks */,
+				7EA0275429374CC50063E859 /* FirebaseDatabaseSwift in Frameworks */,
+				7EA0275229374CC50063E859 /* FirebaseDatabase in Frameworks */,
 				7E3B5EF1291A4F2B00FD261F /* RealmSwift in Frameworks */,
+				7EA0275029374CC50063E859 /* FirebaseAuth in Frameworks */,
+				7EA0274729374AEF0063E859 /* FacebookLogin in Frameworks */,
 				3D5A7D40CBABF84347AD4C49 /* Pods_ShoppingApp.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EB867A22900336000502692 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3D53B12571D072B88D0F7C9 /* Pods_ShoppingAppTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EB867AC2900336000502692 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F66B812BE5D6F6F0096A60EF /* Pods_ShoppingApp_ShoppingAppUITests.framework in Frameworks */,
+				7EA0274C29374CC50063E859 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +215,7 @@
 			children = (
 				7E04963C29080B4B00871A10 /* UIStackViewExtension.swift */,
 				7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */,
+				7EA02755293778460063E859 /* AlertExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,8 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				7EB8678C2900335D00502692 /* ShoppingApp.app */,
-				7EB867A52900336000502692 /* ShoppingAppTests.xctest */,
-				7EB867AF2900336000502692 /* ShoppingAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -452,58 +419,22 @@
 			);
 			name = ShoppingApp;
 			packageProductDependencies = (
-				7E8D39C3290FD50C00BE2BB9 /* FirebaseAnalytics */,
-				7E8D39C5290FD50C00BE2BB9 /* FirebaseAuth */,
-				7E8D39C7290FD50C00BE2BB9 /* FirebaseDatabase */,
-				7E8D39CA290FD5A200BE2BB9 /* FacebookLogin */,
-				7E8D39CC290FD5A200BE2BB9 /* FacebookShare */,
 				7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */,
 				7E8D39D2290FDB1C00BE2BB9 /* IQKeyboardManagerSwift */,
 				7E3B5EEE291A4F2B00FD261F /* Realm */,
 				7E3B5EF0291A4F2B00FD261F /* RealmSwift */,
+				7EA0274429374AEF0063E859 /* FacebookCore */,
+				7EA0274629374AEF0063E859 /* FacebookLogin */,
+				7EA0274829374AEF0063E859 /* FacebookShare */,
+				7EA0274B29374CC50063E859 /* FirebaseAnalytics */,
+				7EA0274D29374CC50063E859 /* FirebaseAnalyticsSwift */,
+				7EA0274F29374CC50063E859 /* FirebaseAuth */,
+				7EA0275129374CC50063E859 /* FirebaseDatabase */,
+				7EA0275329374CC50063E859 /* FirebaseDatabaseSwift */,
 			);
 			productName = ShoppingApp;
 			productReference = 7EB8678C2900335D00502692 /* ShoppingApp.app */;
 			productType = "com.apple.product-type.application";
-		};
-		7EB867A42900336000502692 /* ShoppingAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7EB867BC2900336000502692 /* Build configuration list for PBXNativeTarget "ShoppingAppTests" */;
-			buildPhases = (
-				AD857396543642F1864F7C62 /* [CP] Check Pods Manifest.lock */,
-				7EB867A12900336000502692 /* Sources */,
-				7EB867A22900336000502692 /* Frameworks */,
-				7EB867A32900336000502692 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7EB867A72900336000502692 /* PBXTargetDependency */,
-			);
-			name = ShoppingAppTests;
-			productName = ShoppingAppTests;
-			productReference = 7EB867A52900336000502692 /* ShoppingAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7EB867AE2900336000502692 /* ShoppingAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7EB867BF2900336000502692 /* Build configuration list for PBXNativeTarget "ShoppingAppUITests" */;
-			buildPhases = (
-				9DBE964058178004E8C88180 /* [CP] Check Pods Manifest.lock */,
-				7EB867AB2900336000502692 /* Sources */,
-				7EB867AC2900336000502692 /* Frameworks */,
-				7EB867AD2900336000502692 /* Resources */,
-				214FE6D32B50BF0EC29079EC /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7EB867B12900336000502692 /* PBXTargetDependency */,
-			);
-			name = ShoppingAppUITests;
-			productName = ShoppingAppUITests;
-			productReference = 7EB867AF2900336000502692 /* ShoppingAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -518,14 +449,6 @@
 					7EB8678B2900335D00502692 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
-					7EB867A42900336000502692 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 7EB8678B2900335D00502692;
-					};
-					7EB867AE2900336000502692 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 7EB8678B2900335D00502692;
-					};
 				};
 			};
 			buildConfigurationList = 7EB867872900335D00502692 /* Build configuration list for PBXProject "ShoppingApp" */;
@@ -538,19 +461,17 @@
 			);
 			mainGroup = 7EB867832900335D00502692;
 			packageReferences = (
-				7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				7E8D39C9290FD5A200BE2BB9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				7E8D39D1290FDB1C00BE2BB9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */,
+				7EA0274329374AEE0063E859 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				7EA0274A29374CC50063E859 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7EB8678D2900335D00502692 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7EB8678B2900335D00502692 /* ShoppingApp */,
-				7EB867A42900336000502692 /* ShoppingAppTests */,
-				7EB867AE2900336000502692 /* ShoppingAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -569,40 +490,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EB867A32900336000502692 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EB867AD2900336000502692 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		214FE6D32B50BF0EC29079EC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		47A5B0078909E8D9381270F9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -618,50 +508,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9DBE964058178004E8C88180 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ShoppingApp-ShoppingAppUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD857396543642F1864F7C62 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ShoppingAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE86760C30A5D17BE11E0CEE /* [CP] Check Pods Manifest.lock */ = {
@@ -709,6 +555,7 @@
 				7E3B5EEC29190E6400FD261F /* ShoppingCartViewController.swift in Sources */,
 				7E3B5F20291BA30600FD261F /* ShoppingCart+CoreDataProperties.swift in Sources */,
 				7E5ABDC7290821010072BCD3 /* ProductsCollectionViewCell.swift in Sources */,
+				7EA02756293778470063E859 /* AlertExtension.swift in Sources */,
 				7EFA9CA62906869E00BFEA13 /* HomeViewController.swift in Sources */,
 				7E8D39DC2913AFF500BE2BB9 /* WishlistCustomCell.swift in Sources */,
 				7E3B5EFE291A5CE300FD261F /* CoreDataStack.swift in Sources */,
@@ -722,37 +569,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EB867A12900336000502692 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EB867AA2900336000502692 /* ShoppingAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EB867AB2900336000502692 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EB867B62900336000502692 /* ShoppingAppUITestsLaunchTests.swift in Sources */,
-				7EB867B42900336000502692 /* ShoppingAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7EB867A72900336000502692 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7EB8678B2900335D00502692 /* ShoppingApp */;
-			targetProxy = 7EB867A62900336000502692 /* PBXContainerItemProxy */;
-		};
-		7EB867B12900336000502692 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7EB8678B2900335D00502692 /* ShoppingApp */;
-			targetProxy = 7EB867B02900336000502692 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7EB867952900335D00502692 /* Main.storyboard */ = {
@@ -898,6 +715,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WD66NF7UM5;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -928,6 +746,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WD66NF7UM5;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -945,86 +764,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		7EB867BD2900336000502692 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C0B21B5C400A6D79C20A73B /* Pods-ShoppingAppTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WD66NF7UM5;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MenesAgata.ShoppingAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoppingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoppingApp";
-			};
-			name = Debug;
-		};
-		7EB867BE2900336000502692 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62FE1A9FFFCE073C694D3473 /* Pods-ShoppingAppTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WD66NF7UM5;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MenesAgata.ShoppingAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoppingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoppingApp";
-			};
-			name = Release;
-		};
-		7EB867C02900336000502692 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B80F8CA8C702BEEEC56E86A5 /* Pods-ShoppingApp-ShoppingAppUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WD66NF7UM5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MenesAgata.ShoppingAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ShoppingApp;
-			};
-			name = Debug;
-		};
-		7EB867C12900336000502692 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C816DDD161D4C58D352ED500 /* Pods-ShoppingApp-ShoppingAppUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WD66NF7UM5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MenesAgata.ShoppingAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ShoppingApp;
 			};
 			name = Release;
 		};
@@ -1049,24 +788,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EB867BC2900336000502692 /* Build configuration list for PBXNativeTarget "ShoppingAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EB867BD2900336000502692 /* Debug */,
-				7EB867BE2900336000502692 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7EB867BF2900336000502692 /* Build configuration list for PBXNativeTarget "ShoppingAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EB867C02900336000502692 /* Debug */,
-				7EB867C12900336000502692 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1076,22 +797,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 10.15.0;
-			};
-		};
-		7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-		7E8D39C9290FD5A200BE2BB9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
 			};
 		};
 		7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
@@ -1110,6 +815,22 @@
 				version = 6.5.0;
 			};
 		};
+		7EA0274329374AEE0063E859 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		7EA0274A29374CC50063E859 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1123,31 +844,6 @@
 			package = 7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
-		7E8D39C3290FD50C00BE2BB9 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		7E8D39C5290FD50C00BE2BB9 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		7E8D39C7290FD50C00BE2BB9 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7E8D39C2290FD50C00BE2BB9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		7E8D39CA290FD5A200BE2BB9 /* FacebookLogin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7E8D39C9290FD5A200BE2BB9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookLogin;
-		};
-		7E8D39CC290FD5A200BE2BB9 /* FacebookShare */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7E8D39C9290FD5A200BE2BB9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookShare;
-		};
 		7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
@@ -1157,6 +853,46 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7E8D39D1290FDB1C00BE2BB9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		7EA0274429374AEF0063E859 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA0274329374AEE0063E859 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		7EA0274629374AEF0063E859 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA0274329374AEE0063E859 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		7EA0274829374AEF0063E859 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA0274329374AEE0063E859 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		7EA0274B29374CC50063E859 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA0274A29374CC50063E859 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7EA0274D29374CC50063E859 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA0274A29374CC50063E859 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		7EA0274F29374CC50063E859 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA0274A29374CC50063E859 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7EA0275129374CC50063E859 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA0274A29374CC50063E859 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		7EA0275329374CC50063E859 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA0274A29374CC50063E859 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 

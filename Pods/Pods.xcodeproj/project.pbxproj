@@ -16,14 +16,12 @@
 		055E068C55DBFD02D2A177F1FB9E661C /* visibility_off.png in Resources */ = {isa = PBXBuildFile; fileRef = CA32E2A9AADF22EF41260B1381C57C03 /* visibility_off.png */; };
 		05FD4EFFD2FD95AEF332F8A2A2468304 /* MDCTextControlAssistiveLabelViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 299E3DF4B46B2301FD773EC5354D7C7E /* MDCTextControlAssistiveLabelViewLayout.m */; };
 		072DEF48E55F91F4B4A3EA62FAB80D2D /* MDCTextControlState.h in Headers */ = {isa = PBXBuildFile; fileRef = 4848996EA61FCCFE1C26F0F883B51A04 /* MDCTextControlState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		078B15623336CE789EB52AB53E367BC3 /* Pods-ShoppingAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F38500646A6E0B68B7E84FDEB7BA84 /* Pods-ShoppingAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B217BD4EF873E6392E3E05A79A5A35F /* MDCTextControlVerticalPositioningReferenceOutlined.m in Sources */ = {isa = PBXBuildFile; fileRef = A8420FC13E8FCE31D4C006C1E19288AF /* MDCTextControlVerticalPositioningReferenceOutlined.m */; };
 		0CABC2638472D3DE53BC7F92612122E5 /* MDCTextControlColorViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9B1A995B2A656B7E73F6A870630E8B /* MDCTextControlColorViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1062EDD2C5C3B8D7A91592F639600D74 /* MDFInternationalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 0339AB46074116149F468CDE5DEFC0BC /* MDFInternationalization.h */; };
 		11296E523965D9EC9F3C3F761A1F0EBE /* MDCTextControlPlaceholderSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 840959308AFCDA40BC5C5C200E3CD3B1 /* MDCTextControlPlaceholderSupport.m */; };
 		124EEAE22B8077371D55FDB1AC4F4D30 /* NSString+MaterialBidi.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9A886A8902B3F2D6ACFCE69FB84A6 /* NSString+MaterialBidi.m */; };
 		12B032A37293C0520B963FC0A1A2B32C /* MaterialComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B357149F6FD878554207FFD246EF7CF8 /* MaterialComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1518C0CB0496EF5E488EF2964E0D1299 /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38650C5D1DEE38D6B711639D6C12EE5D /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m */; };
 		15B1A1C32C8028DFD17710A44C15F2E8 /* MDCTextControlGradientManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9DD151E2F814A9339096AB366EFBB0 /* MDCTextControlGradientManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DCF9A800AE274F89C29078A6E212B7D /* MDFInternationalization-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B20B0A9CDAD49855DEECE20B32E395 /* MDFInternationalization-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23AC06556CD25C4B62BF41BB2F54AD2E /* MDCTextControlLabelAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF420EA29D433384995E3D25F53C9A80 /* MDCTextControlLabelAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,17 +74,15 @@
 		7DB6497C9CC06CA922AC1152CE38CDAC /* MDFRTL.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = DD2067BD55F0F7FE4DEAA51F5AC9803D /* MDFRTL.h */; };
 		7DBE9C2A9106E74D392CEE95425C59C4 /* PasswordTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A779F0B32B4E1B5896D9AA002ECD9AA /* PasswordTextField-dummy.m */; };
 		7E4E65080A19DB8FC6F110A0378517E7 /* MDCBaseTextFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE1F5C5138131556FD8AE0D97490741 /* MDCBaseTextFieldDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FF8E08A55AB7FEDC8D0226042AC7C71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		80BFF3ABB2EC17392FD015005018D011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		80C16CE50BBC5219B2A412DFB6A04B9A /* MaterialTextControlsPrivate+BaseStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 97AF3CFC4C02E2EB4278D6D42929651E /* MaterialTextControlsPrivate+BaseStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81DF2F420A9D5109DE4BEB998D89C8DB /* Pods-ShoppingAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E440728602536A10C256C4341864C0 /* Pods-ShoppingAppTests-dummy.m */; };
 		82937FB337DCF47D2C9E35DFA7B5D24C /* MDCOutlinedTextArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 663ABB2A868996D49DE76A91EEEF6A70 /* MDCOutlinedTextArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		835B1901766965F29B8AFA32C512E72F /* MDCBaseTextArea.m in Sources */ = {isa = PBXBuildFile; fileRef = A87877C75A04E02FE0AA41280B1534BA /* MDCBaseTextArea.m */; };
 		85838B6ED261E828CBEC9797EFCAB831 /* MDCBaseTextAreaLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BC9647324A32A3F9B5F4E1C9D9CF2 /* MDCBaseTextAreaLayout.m */; };
 		85BA1CB0B7C1C7E1077D1646C7FFF9BA /* CircleBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E47C5C94C6BF29905A2047957AE1A915 /* CircleBar-dummy.m */; };
 		8793D800ED5C5114FCDF90FEE0854B2B /* PasswordTextField-PasswordTextField in Resources */ = {isa = PBXBuildFile; fileRef = E1AE02FE52E1DF553479C602B170F3F1 /* PasswordTextField-PasswordTextField */; };
 		8857547CE9422C72C0F2CB70980FA5E3 /* MDCTextControlPlaceholderSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6A971D7BA94D94F397F19A3A0803E9 /* MDCTextControlPlaceholderSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		885E37A67DE15DB24333320913D5B2CD /* Pods-ShoppingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F50731EB124D5AAEA88827E518CB24F2 /* Pods-ShoppingApp-dummy.m */; };
+		885E37A67DE15DB24333320913D5B2CD /* Pods-ShoppingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA88BD968CAE9CF9F39F2FFD77FA652E /* Pods-ShoppingApp-dummy.m */; };
 		8AD7A05E64DD589382EE6D43F6C203BB /* MaterialAnimationTiming.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C601CC003394A17C63293926B2E46F2 /* MaterialAnimationTiming.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BC28C0EA2C4B3BFC780F507C2669CB9 /* MDCTextControlVerticalPositioningReferenceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5885994620EA140D1C0C10759A80E /* MDCTextControlVerticalPositioningReferenceBase.m */; };
 		8C050C985EF60CCC3B9E25050BE20F3E /* NSLocale+MaterialRTL.m in Sources */ = {isa = PBXBuildFile; fileRef = AA76002F06867B022A40D1242ECBA4F2 /* NSLocale+MaterialRTL.m */; };
@@ -115,19 +111,17 @@
 		BA4EDEEC31BBDE4AE13B54E83359DCA6 /* visibility_on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53FBEB705D163C0295B37EC73245E361 /* visibility_on@3x.png */; };
 		BAB5744AC75E06CB319846484DD29A90 /* MDCFilledTextArea.h in Headers */ = {isa = PBXBuildFile; fileRef = C11BEA2498AC7B6ED322A94280228BD8 /* MDCFilledTextArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBB57DC0BA0089EE6AB89F6DF06637AF /* MDCTextControlSideViewSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 573F9857A2DBA9F1DDE296A54F54EAF0 /* MDCTextControlSideViewSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE3FF23A4493AF7ED2F858AFD7F6D972 /* Pods-ShoppingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D45BF0D25AADEA1BA3C4AE6423AD5942 /* Pods-ShoppingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE3FF23A4493AF7ED2F858AFD7F6D972 /* Pods-ShoppingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2519DC0B066D8FE762157E25DF0DD7 /* Pods-ShoppingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE59C63F2AD1411C5A16DA5AF9BC02DD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0EF6A1F08E2324434FE1F2E7178941 /* StringExtension.swift */; };
 		BECCD91C3500DDC5274C08B7707F518A /* MDCBaseTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE9CA1B326B7563235D3AEB0BA12F9E /* MDCBaseTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF7F9976FA80C821BC13E58E30E94B5B /* MDFRTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 315E4EADBBA502C85ACD61F23DEDE349 /* MDFRTL.m */; };
 		C033F3E94355E90147C197D165E7DEE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C164157B98D8715965B6AE92A59B9EAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C831D426128BDB02E4AD3D76666F69EC /* MaterialTextControls+Enums.h in Headers */ = {isa = PBXBuildFile; fileRef = 361A37D3AA759E48ED814736D622C24A /* MaterialTextControls+Enums.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C872E018E08E0FD0B30B386614AB0E43 /* UIImage+MaterialRTL.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 8BF0F52A607F1CB1351B3A5B6E5312DA /* UIImage+MaterialRTL.h */; };
 		CB2F277B87C7D6A71DD91D7659AC1B0B /* MDCTextControlStyleFilled.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EB71A86CA5129073247BE9E1A53C5B /* MDCTextControlStyleFilled.m */; };
 		CB99BF1A0C8E3B2297CE9BE552698539 /* MaterialTextControls+OutlinedTextFields.h in Headers */ = {isa = PBXBuildFile; fileRef = FD322057793858DA60B11755C02C1D1E /* MaterialTextControls+OutlinedTextFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CECCA4649316B6CC139383061401DCF5 /* MDCBaseTextArea.h in Headers */ = {isa = PBXBuildFile; fileRef = A243FE5AAF4CD26E65CA5B3D0F75FB42 /* MDCBaseTextArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF5396A0FE1AA7DDBD5F92C9F10BE7E2 /* MDCTextControlColorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2758D0FCA51D0377B292C3A4545B14B /* MDCTextControlColorViewModel.m */; };
-		CFEB290040E4BF495B6BCA63ACC2BF18 /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A10E6041E37300BB4D0DC3884374BD8F /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D32A6120E0C87193CAC64B98418C0F25 /* MDCTextControlStyleFilled.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B34C1DEB8548519CC7EFA8D20CBC87 /* MDCTextControlStyleFilled.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D336E9BBF865B4821B73B73FAA465A79 /* visibility_on.png in Resources */ = {isa = PBXBuildFile; fileRef = A01C4DFDC7C01B97BBE22888F38CF2DA /* visibility_on.png */; };
 		D71E02822A526707C95148E07A9826A0 /* CAMediaTimingFunction+MDCAnimationTiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D945A404074D75D5BC230047D343B98 /* CAMediaTimingFunction+MDCAnimationTiming.m */; };
@@ -155,13 +149,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A264157A2027F058F8D399FC916587C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45B65ECC40F1B82786BABFA3A97B0D20;
-			remoteInfo = PasswordTextField;
-		};
 		12DC8B51656AB2093C21C02AF43EDB01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -175,13 +162,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 47125EF768D6F7A41A3B4EDDB3C096EB;
 			remoteInfo = "PasswordTextField-PasswordTextField";
-		};
-		16DF2472DF8C04CF7826FDE2C05163F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B7378E43393E401083784252E88810C0;
-			remoteInfo = CircleBar;
 		};
 		639472E73545E9B46B7A5215792665B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -197,13 +177,6 @@
 			remoteGlobalIDString = B7378E43393E401083784252E88810C0;
 			remoteInfo = CircleBar;
 		};
-		AC21F452B2A5C2CFE2CE2FD886D3FDB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C0C61DE724689C02344D66FAE8A3FAD;
-			remoteInfo = "Pods-ShoppingApp";
-		};
 		C05D2A1A619B8785F16089390B6F2A15 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -217,20 +190,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 45B65ECC40F1B82786BABFA3A97B0D20;
 			remoteInfo = PasswordTextField;
-		};
-		CD6DED8D8D136072A2FA0E65038FE1E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B4723B5744013DF08BE3A5FEAA286944;
-			remoteInfo = MaterialComponents;
-		};
-		E8A01698A9A07464420A8CB3248AFF0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55A01F8E987A6E2F7F0ED141A1ECA406;
-			remoteInfo = MDFInternationalization;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -254,14 +213,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		012386CB1C6A48A35C1E6D86C7632C40 /* Pods-ShoppingApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShoppingApp-frameworks.sh"; sourceTree = "<group>"; };
 		0151E7003AC125DD88FDD84041F890A2 /* MDCTextControlVerticalPositioningReferenceFilled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceFilled.m; path = components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlVerticalPositioningReferenceFilled.m; sourceTree = "<group>"; };
 		021C9EB4383B3FCEFC6BF646D47B0840 /* MDCTextControlAssistiveLabelDrawPriority.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlAssistiveLabelDrawPriority.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelDrawPriority.h; sourceTree = "<group>"; };
-		030F5372EE15781A042796B2F429DED2 /* Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0339AB46074116149F468CDE5DEFC0BC /* MDFInternationalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFInternationalization.h; path = Sources/MDFInternationalization.h; sourceTree = "<group>"; };
 		0356F8CD4477E0EBFEC4D267D9E39A7F /* MDCBaseTextAreaTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextAreaTextView.h; path = components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaTextView.h; sourceTree = "<group>"; };
 		054C3A69944F01B958681C99DCCBBD87 /* PasswordTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordTextField.swift; path = PasswordTextField/PasswordTextField.swift; sourceTree = "<group>"; };
-		06594F20AC1148968C99DC94F1562B5E /* Pods-ShoppingAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShoppingAppTests.modulemap"; sourceTree = "<group>"; };
 		06EE5EB4B87A98B5C38A5DA32D2240E4 /* MaterialTextControlsPrivate+TextFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+TextFields.h"; path = "components/private/TextControlsPrivate/src/TextFields/MaterialTextControlsPrivate+TextFields.h"; sourceTree = "<group>"; };
 		08973D15939ED6288B0DB7A816B3DDF6 /* MDCBaseTextAreaDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextAreaDelegate.h; path = components/TextControls/src/BaseTextAreas/MDCBaseTextAreaDelegate.h; sourceTree = "<group>"; };
 		0D72C9D9F91A9565E05F3601A72EA485 /* MDCTextControlHorizontalPositioningReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlHorizontalPositioningReference.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlHorizontalPositioningReference.m; sourceTree = "<group>"; };
@@ -273,7 +229,6 @@
 		146082741D5C9A34E0B5D2145E09B03A /* MaterialMathDummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MaterialMathDummy.m; path = components/private/Math/src/MaterialMathDummy.m; sourceTree = "<group>"; };
 		1808BE474E452C0354F4E00245948274 /* MDCTextControlVerticalPositioningReferenceBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReferenceBase.h; path = components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlVerticalPositioningReferenceBase.h; sourceTree = "<group>"; };
 		1A65309028E1FC93468B0E98D0A98314 /* SHCircleBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHCircleBar.swift; path = CircleBar/Classes/SHCircleBar.swift; sourceTree = "<group>"; };
-		1A9070773FE2ACE4244A73C2BC090C15 /* Pods-ShoppingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C0D07016EE4134EE7C58B7008EA5C97 /* MaterialAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialAvailability.h; path = components/Availability/src/MaterialAvailability.h; sourceTree = "<group>"; };
 		1E9C831574AD4B19DF74E35AAD289581 /* MDCFilledTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCFilledTextField.h; path = components/TextControls/src/FilledTextFields/MDCFilledTextField.h; sourceTree = "<group>"; };
 		2246B6966357B121D809D81BC36993DA /* MDCTextControlStyleUnderlined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlStyleUnderlined.h; path = components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlStyleUnderlined.h; sourceTree = "<group>"; };
@@ -285,7 +240,6 @@
 		2A978CB80420CC13963618A0EEDEB54F /* MDCBaseTextAreaLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextAreaLayout.h; path = components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaLayout.h; sourceTree = "<group>"; };
 		2BA4465D313EC13648FA4788C62F9850 /* MDCTextControlTextFieldSideViewAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlTextFieldSideViewAlignment.h; path = components/private/TextControlsPrivate/src/TextFields/MDCTextControlTextFieldSideViewAlignment.h; sourceTree = "<group>"; };
 		2C318B7DCF81FD841E84BCA2B2F01872 /* visibility_on@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visibility_on@2x.png"; path = "PasswordTextField/Media/visibility_on@2x.png"; sourceTree = "<group>"; };
-		2D4D052092D9C26B0F24B2618067DBF3 /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
 		2DC03CB99817DC99E40E189A5A6B419D /* MDFInternationalization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDFInternationalization.release.xcconfig; sourceTree = "<group>"; };
 		2E9B1A995B2A656B7E73F6A870630E8B /* MDCTextControlColorViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlColorViewModel.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlColorViewModel.h; sourceTree = "<group>"; };
 		2EE2275B2A02F7FED3E6BA840E2C9F15 /* MDCTextControlLabelSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlLabelSupport.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelSupport.h; sourceTree = "<group>"; };
@@ -293,25 +247,20 @@
 		315E4EADBBA502C85ACD61F23DEDE349 /* MDFRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDFRTL.m; path = Sources/MDFRTL.m; sourceTree = "<group>"; };
 		33FF07C9C0DDAF5D4319DAB7A39CDBCB /* MaterialTextControlsPrivate+Shared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+Shared.h"; path = "components/private/TextControlsPrivate/src/Shared/MaterialTextControlsPrivate+Shared.h"; sourceTree = "<group>"; };
 		361A37D3AA759E48ED814736D622C24A /* MaterialTextControls+Enums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+Enums.h"; path = "components/TextControls/src/Enums/MaterialTextControls+Enums.h"; sourceTree = "<group>"; };
-		38650C5D1DEE38D6B711639D6C12EE5D /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShoppingApp-ShoppingAppUITests-dummy.m"; sourceTree = "<group>"; };
-		3A7A7AC982D4645C8AEC48CA9053F3F1 /* Pods-ShoppingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		3CDA68CA617661084E8F998508DAA2EB /* UIView+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MaterialRTL.m"; path = "Sources/UIView+MaterialRTL.m"; sourceTree = "<group>"; };
 		3E24080C36E79ADDA2DCAF67E38CBEE1 /* MaterialTextControlsPrivate+UnderlinedStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+UnderlinedStyle.h"; path = "components/private/TextControlsPrivate/src/UnderlinedStyle/MaterialTextControlsPrivate+UnderlinedStyle.h"; sourceTree = "<group>"; };
-		3E5CC766163B46084F38FC3811155353 /* Pods-ShoppingAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingAppTests-Info.plist"; sourceTree = "<group>"; };
 		3E941FC29F33BF4EFA65EF695F08ACED /* Pods-ShoppingApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShoppingApp"; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE1F5C5138131556FD8AE0D97490741 /* MDCBaseTextFieldDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextFieldDelegate.h; path = components/TextControls/src/BaseTextFields/MDCBaseTextFieldDelegate.h; sourceTree = "<group>"; };
 		42A988993803EBB292C1742D59E33ECC /* UIBezierPath+MDCTextControlStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+MDCTextControlStyle.m"; path = "components/private/TextControlsPrivate/src/Shared/UIBezierPath+MDCTextControlStyle.m"; sourceTree = "<group>"; };
-		4317AA0F382B1FB2BAD5596ADF0505C8 /* Pods-ShoppingApp-ShoppingAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShoppingApp-ShoppingAppUITests"; path = Pods_ShoppingApp_ShoppingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43697E92E1EF903807158F32D260C4DC /* CircleBar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CircleBar; path = CircleBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44ABF2841C856D19EB258834F3448C95 /* Pods-ShoppingApp-ShoppingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp-ShoppingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		45B683D20AFE14BEAA82C1F8E83722B9 /* CAMediaTimingFunction+MDCAnimationTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAMediaTimingFunction+MDCAnimationTiming.h"; path = "components/AnimationTiming/src/CAMediaTimingFunction+MDCAnimationTiming.h"; sourceTree = "<group>"; };
 		4848996EA61FCCFE1C26F0F883B51A04 /* MDCTextControlState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlState.h; path = components/TextControls/src/Enums/MDCTextControlState.h; sourceTree = "<group>"; };
 		4B80F2CBFDE193112E75FD6B8655EF3C /* UIView+MDCTimingFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCTimingFunction.m"; path = "components/AnimationTiming/src/UIView+MDCTimingFunction.m"; sourceTree = "<group>"; };
 		4BC7A3FCBC57353F1C18BC06BB1988B0 /* MDCBaseTextFieldLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextFieldLayout.m; path = components/private/TextControlsPrivate/src/TextFields/MDCBaseTextFieldLayout.m; sourceTree = "<group>"; };
 		4F409DC341F674975259664EF03BDDC1 /* visibility_off@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visibility_off@3x.png"; path = "PasswordTextField/Media/visibility_off@3x.png"; sourceTree = "<group>"; };
 		50406753C9C76D5DE751FE935E1B9A2E /* MDCTextControlVerticalPositioningReferenceUnderlined.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceUnderlined.m; path = components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlVerticalPositioningReferenceUnderlined.m; sourceTree = "<group>"; };
+		507B533A6256C87FF897012DE8583176 /* Pods-ShoppingApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShoppingApp.modulemap"; sourceTree = "<group>"; };
 		511578A6E77EA07342777A618FD251F1 /* UIImage+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MaterialRTL.m"; path = "Sources/UIImage+MaterialRTL.m"; sourceTree = "<group>"; };
-		523B01777ED37A205868AF510CE109A0 /* Pods-ShoppingApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShoppingApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		53FBEB705D163C0295B37EC73245E361 /* visibility_on@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visibility_on@3x.png"; path = "PasswordTextField/Media/visibility_on@3x.png"; sourceTree = "<group>"; };
 		573F9857A2DBA9F1DDE296A54F54EAF0 /* MDCTextControlSideViewSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlSideViewSupport.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlSideViewSupport.h; sourceTree = "<group>"; };
 		59A466A5DB455801766E0B5F2A0E07A9 /* PasswordTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PasswordTextField-Info.plist"; sourceTree = "<group>"; };
@@ -319,16 +268,11 @@
 		5C601CC003394A17C63293926B2E46F2 /* MaterialAnimationTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialAnimationTiming.h; path = components/AnimationTiming/src/MaterialAnimationTiming.h; sourceTree = "<group>"; };
 		5C9E298BF36F274F58E013A81F708948 /* MDCTextControlVerticalPositioningReferenceFilled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReferenceFilled.h; path = components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlVerticalPositioningReferenceFilled.h; sourceTree = "<group>"; };
 		60D8326BABD9DC799BECBBCAA6C50457 /* MDCFilledTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCFilledTextField.m; path = components/TextControls/src/FilledTextFields/MDCFilledTextField.m; sourceTree = "<group>"; };
-		60E440728602536A10C256C4341864C0 /* Pods-ShoppingAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShoppingAppTests-dummy.m"; sourceTree = "<group>"; };
 		61EF1BF09842B122D42C43E153A1B243 /* UIBezierPath+MDCTextControlStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+MDCTextControlStyle.h"; path = "components/private/TextControlsPrivate/src/Shared/UIBezierPath+MDCTextControlStyle.h"; sourceTree = "<group>"; };
-		62106E26262FF879A04007ECBF2B7648 /* Pods-ShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		63B26DD26A7CC6E557F93EDE3EDC8D9D /* NSString+MaterialBidi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MaterialBidi.h"; path = "Sources/NSString+MaterialBidi.h"; sourceTree = "<group>"; };
 		645A0FD08164420FC98B9FDC14516D7D /* MDCTextControlGradientManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlGradientManager.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlGradientManager.m; sourceTree = "<group>"; };
 		663ABB2A868996D49DE76A91EEEF6A70 /* MDCOutlinedTextArea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCOutlinedTextArea.h; path = components/TextControls/src/OutlinedTextAreas/MDCOutlinedTextArea.h; sourceTree = "<group>"; };
-		6779C63B09CEEB2821051742C91EB1EE /* Pods-ShoppingAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShoppingAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		67F38500646A6E0B68B7E84FDEB7BA84 /* Pods-ShoppingAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShoppingAppTests-umbrella.h"; sourceTree = "<group>"; };
 		6900735FF766FAFF61B58046D8833067 /* Ruleable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ruleable.swift; path = PasswordTextField/Ruleable.swift; sourceTree = "<group>"; };
-		695F4C384D13F27C7EA0B54CE7006F5C /* Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6B1AD3D64B825A697AD78D49B499CE31 /* SHCircleBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHCircleBarController.swift; path = CircleBar/Classes/SHCircleBarController.swift; sourceTree = "<group>"; };
 		6B97E3EC47F7C93423DDEF8C3826503A /* visibility_off@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visibility_off@2x.png"; path = "PasswordTextField/Media/visibility_off@2x.png"; sourceTree = "<group>"; };
 		6E49FC29DEC59AAD1BFFA29664A85D0C /* MaterialTextControlsPrivate+OutlinedStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+OutlinedStyle.h"; path = "components/private/TextControlsPrivate/src/OutlinedStyle/MaterialTextControlsPrivate+OutlinedStyle.h"; sourceTree = "<group>"; };
@@ -346,6 +290,7 @@
 		7EF4689E2F2E6BE77E19A7C88E958034 /* MaterialTextControls+FilledTextFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+FilledTextFields.h"; path = "components/TextControls/src/FilledTextFields/MaterialTextControls+FilledTextFields.h"; sourceTree = "<group>"; };
 		822E13EA847B65F3334DFB6F8BBAF438 /* MDCTextControlLabelAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlLabelAnimation.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelAnimation.m; sourceTree = "<group>"; };
 		840959308AFCDA40BC5C5C200E3CD3B1 /* MDCTextControlPlaceholderSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlPlaceholderSupport.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlPlaceholderSupport.m; sourceTree = "<group>"; };
+		8440C5CE917B02575E26A480C69C3052 /* Pods-ShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		84E584EF273126E11C8E77B769FE67C1 /* MaterialTextControls+BaseTextFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+BaseTextFields.h"; path = "components/TextControls/src/BaseTextFields/MaterialTextControls+BaseTextFields.h"; sourceTree = "<group>"; };
 		85B99F2694931DBA8D75D9C56BBEB3C4 /* MDCTextControlVerticalPositioningReferenceUnderlined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReferenceUnderlined.h; path = components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlVerticalPositioningReferenceUnderlined.h; sourceTree = "<group>"; };
 		8632EDD2EE9F011F69CC9AECCFB659FF /* MDCTextControlHorizontalPositioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlHorizontalPositioning.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlHorizontalPositioning.h; sourceTree = "<group>"; };
@@ -362,25 +307,25 @@
 		8BF0F52A607F1CB1351B3A5B6E5312DA /* UIImage+MaterialRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MaterialRTL.h"; path = "Sources/UIImage+MaterialRTL.h"; sourceTree = "<group>"; };
 		8C7329543320A2A3354F6F5CA424118D /* MDCTextControlAssistiveLabelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlAssistiveLabelView.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelView.m; sourceTree = "<group>"; };
 		93B20B0A9CDAD49855DEECE20B32E395 /* MDFInternationalization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDFInternationalization-umbrella.h"; sourceTree = "<group>"; };
+		93F2DC725A26DB44073B54041A2BF234 /* Pods-ShoppingApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-Info.plist"; sourceTree = "<group>"; };
 		97AF3CFC4C02E2EB4278D6D42929651E /* MaterialTextControlsPrivate+BaseStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+BaseStyle.h"; path = "components/private/TextControlsPrivate/src/BaseStyle/MaterialTextControlsPrivate+BaseStyle.h"; sourceTree = "<group>"; };
 		98248CEA936655CB8122667B51679CA6 /* MDCBaseTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextField.m; path = components/TextControls/src/BaseTextFields/MDCBaseTextField.m; sourceTree = "<group>"; };
 		98F0FE0091D461C55B4B1B8B94CAC295 /* MDCTextControlStyleUnderlined.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlStyleUnderlined.m; path = components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlStyleUnderlined.m; sourceTree = "<group>"; };
 		991EF2BB30B32BCC6C86B1D41D7A9BBA /* MaterialTextControlsPrivate+FilledStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControlsPrivate+FilledStyle.h"; path = "components/private/TextControlsPrivate/src/FilledStyle/MaterialTextControlsPrivate+FilledStyle.h"; sourceTree = "<group>"; };
 		99F13298D323E674B0480039C69D9B55 /* MDCTextControlAssistiveLabelViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlAssistiveLabelViewLayout.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelViewLayout.h; sourceTree = "<group>"; };
 		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFInternationalization; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A826507F34D657E7564DE313C2D40C8 /* Pods-ShoppingApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShoppingApp-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A01C4DFDC7C01B97BBE22888F38CF2DA /* visibility_on.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = visibility_on.png; path = PasswordTextField/Media/visibility_on.png; sourceTree = "<group>"; };
-		A10E6041E37300BB4D0DC3884374BD8F /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShoppingApp-ShoppingAppUITests-umbrella.h"; sourceTree = "<group>"; };
 		A19BF3F045C2F50C98FC4BE694063D83 /* PasswordTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordTextField-prefix.pch"; sourceTree = "<group>"; };
 		A243FE5AAF4CD26E65CA5B3D0F75FB42 /* MDCBaseTextArea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextArea.h; path = components/TextControls/src/BaseTextAreas/MDCBaseTextArea.h; sourceTree = "<group>"; };
-		A2E17A19AE53D95DF12D34A68C40A5A7 /* Pods-ShoppingApp-ShoppingAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShoppingApp-ShoppingAppUITests-frameworks.sh"; sourceTree = "<group>"; };
-		A2E274166C4A2D64531293C1344675ED /* Pods-ShoppingAppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShoppingAppTests"; path = Pods_ShoppingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A348CB461854B6C6BBF7DE283F6EBDA7 /* MDCBaseTextFieldLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextFieldLayout.h; path = components/private/TextControlsPrivate/src/TextFields/MDCBaseTextFieldLayout.h; sourceTree = "<group>"; };
 		A7FB62DB767453D6B79EA1F77FAC98E4 /* MaterialComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialComponents.debug.xcconfig; sourceTree = "<group>"; };
 		A8212FBB7D4786A0F29ABE588E6E114C /* MaterialMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialMath.h; path = components/private/Math/src/MaterialMath.h; sourceTree = "<group>"; };
 		A8420FC13E8FCE31D4C006C1E19288AF /* MDCTextControlVerticalPositioningReferenceOutlined.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceOutlined.m; path = components/private/TextControlsPrivate/src/OutlinedStyle/MDCTextControlVerticalPositioningReferenceOutlined.m; sourceTree = "<group>"; };
 		A87877C75A04E02FE0AA41280B1534BA /* MDCBaseTextArea.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextArea.m; path = components/TextControls/src/BaseTextAreas/MDCBaseTextArea.m; sourceTree = "<group>"; };
+		A9D5F4C99F63172199565B9D416D856E /* Pods-ShoppingApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShoppingApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AA76002F06867B022A40D1242ECBA4F2 /* NSLocale+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLocale+MaterialRTL.m"; path = "Sources/NSLocale+MaterialRTL.m"; sourceTree = "<group>"; };
 		AB8D578F1CFB2778101EF01118173A49 /* MDFInternationalization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MDFInternationalization-dummy.m"; sourceTree = "<group>"; };
 		AC11398F56BE67A4B248177154A0E06C /* MDCTextControlStyleOutlined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlStyleOutlined.h; path = components/private/TextControlsPrivate/src/OutlinedStyle/MDCTextControlStyleOutlined.h; sourceTree = "<group>"; };
@@ -389,50 +334,45 @@
 		B02E44D2D56C77FAA6EE61335A409A0A /* PasswordTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasswordTextField.release.xcconfig; sourceTree = "<group>"; };
 		B0AFAA156BC3A0FEAD5618F03A6448CB /* CircleBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleBar.release.xcconfig; sourceTree = "<group>"; };
 		B357149F6FD878554207FFD246EF7CF8 /* MaterialComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-umbrella.h"; sourceTree = "<group>"; };
-		B4A3BEC9296FD7D5FF35E2355DC83563 /* Pods-ShoppingApp-ShoppingAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-ShoppingAppUITests-Info.plist"; sourceTree = "<group>"; };
 		B7368616726CBFF43E2DFF296407A4E7 /* MDCTextControlStyleBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlStyleBase.h; path = components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlStyleBase.h; sourceTree = "<group>"; };
 		B7399A2922DE27362353C6BE8298DC97 /* UIView+MaterialRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MaterialRTL.h"; path = "Sources/UIView+MaterialRTL.h"; sourceTree = "<group>"; };
-		B89A6DD3783794EBD9C0E603B3B123E8 /* Pods-ShoppingAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B8E27B5E7422A541CE5BCE02F42E2BF3 /* CircleBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleBar.debug.xcconfig; sourceTree = "<group>"; };
 		BF420EA29D433384995E3D25F53C9A80 /* MDCTextControlLabelAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlLabelAnimation.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelAnimation.h; sourceTree = "<group>"; };
+		BFACCBACBEE887FC8F0856A56E79F2FF /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
 		C00547007B02BE27E5A9897041E13302 /* MaterialTextControls+BaseTextAreas.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+BaseTextAreas.h"; path = "components/TextControls/src/BaseTextAreas/MaterialTextControls+BaseTextAreas.h"; sourceTree = "<group>"; };
 		C05598E283B8BDD20A143B241EF053EF /* MDCOutlinedTextArea.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCOutlinedTextArea.m; path = components/TextControls/src/OutlinedTextAreas/MDCOutlinedTextArea.m; sourceTree = "<group>"; };
 		C11BEA2498AC7B6ED322A94280228BD8 /* MDCFilledTextArea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCFilledTextArea.h; path = components/TextControls/src/FilledTextAreas/MDCFilledTextArea.h; sourceTree = "<group>"; };
 		C1518D35181F04287E368D5D54A6B321 /* MDCTextControlLabelBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlLabelBehavior.h; path = components/TextControls/src/Enums/MDCTextControlLabelBehavior.h; sourceTree = "<group>"; };
 		C419C8805E3F86BEEB24184A202FE9D1 /* MDCTextControlLabelSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlLabelSupport.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelSupport.m; sourceTree = "<group>"; };
-		C42BACE53C6D87746195E0A7D80131C1 /* Pods-ShoppingApp-ShoppingAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShoppingApp-ShoppingAppUITests.modulemap"; sourceTree = "<group>"; };
 		C7F9777AA4DFF08C711957B7F0834FFE /* MDFInternationalization.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MDFInternationalization.modulemap; sourceTree = "<group>"; };
 		C81FEEEE1B4C990BDD4DB2586B499BB8 /* RegexRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexRule.swift; path = PasswordTextField/RegexRule.swift; sourceTree = "<group>"; };
 		CA32E2A9AADF22EF41260B1381C57C03 /* visibility_off.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = visibility_off.png; path = PasswordTextField/Media/visibility_off.png; sourceTree = "<group>"; };
 		CAA99B24D710DE98FC464BA0F7DC1FBC /* CircleBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircleBar-Info.plist"; sourceTree = "<group>"; };
 		CC6A1AE239C155D59CAF618BE6D9292C /* NSLocale+MaterialRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLocale+MaterialRTL.h"; path = "Sources/NSLocale+MaterialRTL.h"; sourceTree = "<group>"; };
-		CD30C436999BCCD2FA06F3E9A440D497 /* Pods-ShoppingApp-ShoppingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingApp-ShoppingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC7C8C08F4B2DB412FE082725C97148 /* MDCFilledTextArea.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCFilledTextArea.m; path = components/TextControls/src/FilledTextAreas/MDCFilledTextArea.m; sourceTree = "<group>"; };
+		CFEA6DCA873E311B8624675052E46120 /* Pods-ShoppingApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		D10B7DB64D84CE339A1F318E5CE0E1DB /* MaterialTextControls+OutlinedTextAreas.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+OutlinedTextAreas.h"; path = "components/TextControls/src/OutlinedTextAreas/MaterialTextControls+OutlinedTextAreas.h"; sourceTree = "<group>"; };
 		D2758D0FCA51D0377B292C3A4545B14B /* MDCTextControlColorViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlColorViewModel.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlColorViewModel.m; sourceTree = "<group>"; };
-		D3828D77EE4B2B04B14A9764BE86B1E1 /* Pods-ShoppingApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		D45BF0D25AADEA1BA3C4AE6423AD5942 /* Pods-ShoppingApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShoppingApp-umbrella.h"; sourceTree = "<group>"; };
 		D4EDAFC69462831A09D4003C4C0AD673 /* MDCTextControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControl.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControl.m; sourceTree = "<group>"; };
 		D63E8B51E2BB00558C94A609D7E9122F /* CircleBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleBar-prefix.pch"; sourceTree = "<group>"; };
 		D6DBCC73B6E10B478A5782AD91FDDE1A /* PasswordRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordRule.swift; path = PasswordTextField/PasswordRule.swift; sourceTree = "<group>"; };
 		D914C6AC857FE7C497D8BC7207173AEC /* MDCOutlinedTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCOutlinedTextField.m; path = components/TextControls/src/OutlinedTextFields/MDCOutlinedTextField.m; sourceTree = "<group>"; };
 		DD2067BD55F0F7FE4DEAA51F5AC9803D /* MDFRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFRTL.h; path = Sources/MDFRTL.h; sourceTree = "<group>"; };
+		DD2519DC0B066D8FE762157E25DF0DD7 /* Pods-ShoppingApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShoppingApp-umbrella.h"; sourceTree = "<group>"; };
 		E0E12C542E2B07D672560EFE9AB7AE90 /* PasswordTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PasswordTextField.h; path = PasswordTextField/PasswordTextField.h; sourceTree = "<group>"; };
 		E16D8020BF7567EE7C553AACA2FABA0F /* MDCAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCAvailability.h; path = components/Availability/src/MDCAvailability.h; sourceTree = "<group>"; };
 		E1AE02FE52E1DF553479C602B170F3F1 /* PasswordTextField-PasswordTextField */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "PasswordTextField-PasswordTextField"; path = PasswordTextField.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B91CD379F8DE9D33C1EAB19BE419C6 /* MDCMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCMath.h; path = components/private/Math/src/MDCMath.h; sourceTree = "<group>"; };
 		E47C5C94C6BF29905A2047957AE1A915 /* CircleBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleBar-dummy.m"; sourceTree = "<group>"; };
 		E7F9E25273ADA75708B65FCB92CE41F0 /* MaterialComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-prefix.pch"; sourceTree = "<group>"; };
-		EFE255936EABB02B64E3B279426B459E /* Pods-ShoppingApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingApp-Info.plist"; sourceTree = "<group>"; };
+		EA88BD968CAE9CF9F39F2FFD77FA652E /* Pods-ShoppingApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShoppingApp-dummy.m"; sourceTree = "<group>"; };
 		F3B2B979D21179086FB3F7EBE3152F8F /* PasswordTextField */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PasswordTextField; path = PasswordTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A6CC5ABB7C5A6DE62B100254A49A07 /* MDCOutlinedTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCOutlinedTextField.h; path = components/TextControls/src/OutlinedTextFields/MDCOutlinedTextField.h; sourceTree = "<group>"; };
 		F4A7E3E1E85D3410A139838BE4C749A3 /* MDCTextControlStyleBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlStyleBase.m; path = components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlStyleBase.m; sourceTree = "<group>"; };
-		F50731EB124D5AAEA88827E518CB24F2 /* Pods-ShoppingApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShoppingApp-dummy.m"; sourceTree = "<group>"; };
 		F5AF155B399E5827701C4E6F8027BE18 /* MDCTextControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControl.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControl.h; sourceTree = "<group>"; };
 		F704B4CD63FCA3F5172BCC799606AC76 /* UIView+MDCTimingFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCTimingFunction.h"; path = "components/AnimationTiming/src/UIView+MDCTimingFunction.h"; sourceTree = "<group>"; };
 		FA47596E6C29EDF499CD3B20D9DF3D00 /* MaterialComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialComponents-dummy.m"; sourceTree = "<group>"; };
 		FBC9A886A8902B3F2D6ACFCE69FB84A6 /* NSString+MaterialBidi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MaterialBidi.m"; path = "Sources/NSString+MaterialBidi.m"; sourceTree = "<group>"; };
-		FBF266B688D06559B8A7352F5124D4C8 /* Pods-ShoppingApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShoppingApp.modulemap"; sourceTree = "<group>"; };
 		FD0EF6A1F08E2324434FE1F2E7178941 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = PasswordTextField/StringExtension.swift; sourceTree = "<group>"; };
 		FD322057793858DA60B11755C02C1D1E /* MaterialTextControls+OutlinedTextFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+OutlinedTextFields.h"; path = "components/TextControls/src/OutlinedTextFields/MaterialTextControls+OutlinedTextFields.h"; sourceTree = "<group>"; };
 		FF09D8A9602460714655BF7501D9690E /* MDFInternationalization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDFInternationalization-prefix.pch"; sourceTree = "<group>"; };
@@ -444,14 +384,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7425895B1F8D01EDF7F6F72DFF87519F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1CECD51B39AC01734921DF59BDA140EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C164157B98D8715965B6AE92A59B9EAB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,14 +418,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECDF31E4273DD60AC213A57BF4BACD8E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7FF8E08A55AB7FEDC8D0226042AC7C71 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F73ED230638625ADA65D268892621A09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -521,23 +445,6 @@
 			path = "../Target Support Files/PasswordTextField";
 			sourceTree = "<group>";
 		};
-		082DB7F8488E720164B5C705A93CCF7F /* Pods-ShoppingApp-ShoppingAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C42BACE53C6D87746195E0A7D80131C1 /* Pods-ShoppingApp-ShoppingAppUITests.modulemap */,
-				695F4C384D13F27C7EA0B54CE7006F5C /* Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.markdown */,
-				030F5372EE15781A042796B2F429DED2 /* Pods-ShoppingApp-ShoppingAppUITests-acknowledgements.plist */,
-				38650C5D1DEE38D6B711639D6C12EE5D /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m */,
-				A2E17A19AE53D95DF12D34A68C40A5A7 /* Pods-ShoppingApp-ShoppingAppUITests-frameworks.sh */,
-				B4A3BEC9296FD7D5FF35E2355DC83563 /* Pods-ShoppingApp-ShoppingAppUITests-Info.plist */,
-				A10E6041E37300BB4D0DC3884374BD8F /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h */,
-				CD30C436999BCCD2FA06F3E9A440D497 /* Pods-ShoppingApp-ShoppingAppUITests.debug.xcconfig */,
-				44ABF2841C856D19EB258834F3448C95 /* Pods-ShoppingApp-ShoppingAppUITests.release.xcconfig */,
-			);
-			name = "Pods-ShoppingApp-ShoppingAppUITests";
-			path = "Target Support Files/Pods-ShoppingApp-ShoppingAppUITests";
-			sourceTree = "<group>";
-		};
 		08A7A3CF322B59F78C83C067BC6DE585 /* MaterialComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,24 +460,21 @@
 				A26AAA0F1185C86912A4935BD840948A /* TextControls+OutlinedTextAreas */,
 				E1051D2E8B9452D5094644BEE93D1179 /* TextControls+OutlinedTextFields */,
 			);
+			name = MaterialComponents;
 			path = MaterialComponents;
 			sourceTree = "<group>";
 		};
-		09BC1BE14CC989BAB0B3C7AEDCD4E792 /* Pods-ShoppingApp */ = {
+		1FD84532A14F0D737A757DB0CA51E5C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBF266B688D06559B8A7352F5124D4C8 /* Pods-ShoppingApp.modulemap */,
-				523B01777ED37A205868AF510CE109A0 /* Pods-ShoppingApp-acknowledgements.markdown */,
-				D3828D77EE4B2B04B14A9764BE86B1E1 /* Pods-ShoppingApp-acknowledgements.plist */,
-				F50731EB124D5AAEA88827E518CB24F2 /* Pods-ShoppingApp-dummy.m */,
-				012386CB1C6A48A35C1E6D86C7632C40 /* Pods-ShoppingApp-frameworks.sh */,
-				EFE255936EABB02B64E3B279426B459E /* Pods-ShoppingApp-Info.plist */,
-				D45BF0D25AADEA1BA3C4AE6423AD5942 /* Pods-ShoppingApp-umbrella.h */,
-				62106E26262FF879A04007ECBF2B7648 /* Pods-ShoppingApp.debug.xcconfig */,
-				2D4D052092D9C26B0F24B2618067DBF3 /* Pods-ShoppingApp.release.xcconfig */,
+				43697E92E1EF903807158F32D260C4DC /* CircleBar */,
+				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */,
+				9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */,
+				F3B2B979D21179086FB3F7EBE3152F8F /* PasswordTextField */,
+				E1AE02FE52E1DF553479C602B170F3F1 /* PasswordTextField-PasswordTextField */,
+				3E941FC29F33BF4EFA65EF695F08ACED /* Pods-ShoppingApp */,
 			);
-			name = "Pods-ShoppingApp";
-			path = "Target Support Files/Pods-ShoppingApp";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		27E819BDF63512577050F6B902FAE43F /* Support Files */ = {
@@ -614,6 +518,7 @@
 				3CDA68CA617661084E8F998508DAA2EB /* UIView+MaterialRTL.m */,
 				27E819BDF63512577050F6B902FAE43F /* Support Files */,
 			);
+			name = MDFInternationalization;
 			path = MDFInternationalization;
 			sourceTree = "<group>";
 		};
@@ -635,6 +540,14 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5DD3CF1AA32E6A746A783B530E071861 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1EA679805A955DBBCF8157CFDEF7C /* Pods-ShoppingApp */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		608D3E800A24864E86637A277FEB5C8B /* Resources */ = {
@@ -685,16 +598,6 @@
 			name = AnimationTiming;
 			sourceTree = "<group>";
 		};
-		7C20C0A0E45B7C0A43FC0D3E00B620F8 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				09BC1BE14CC989BAB0B3C7AEDCD4E792 /* Pods-ShoppingApp */,
-				082DB7F8488E720164B5C705A93CCF7F /* Pods-ShoppingApp-ShoppingAppUITests */,
-				9B083042FAAB6A5F61108414EC944E4D /* Pods-ShoppingAppTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		7CE5F3809BF087679AA32333C43BDCB3 /* Availability */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +626,7 @@
 				6B1AD3D64B825A697AD78D49B499CE31 /* SHCircleBarController.swift */,
 				FADDCF4C919E2E4A7BF0A2E5D7B4AEE8 /* Support Files */,
 			);
+			name = CircleBar;
 			path = CircleBar;
 			sourceTree = "<group>";
 		};
@@ -734,22 +638,6 @@
 				E2B91CD379F8DE9D33C1EAB19BE419C6 /* MDCMath.h */,
 			);
 			name = Math;
-			sourceTree = "<group>";
-		};
-		9B083042FAAB6A5F61108414EC944E4D /* Pods-ShoppingAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				06594F20AC1148968C99DC94F1562B5E /* Pods-ShoppingAppTests.modulemap */,
-				6779C63B09CEEB2821051742C91EB1EE /* Pods-ShoppingAppTests-acknowledgements.markdown */,
-				B89A6DD3783794EBD9C0E603B3B123E8 /* Pods-ShoppingAppTests-acknowledgements.plist */,
-				60E440728602536A10C256C4341864C0 /* Pods-ShoppingAppTests-dummy.m */,
-				3E5CC766163B46084F38FC3811155353 /* Pods-ShoppingAppTests-Info.plist */,
-				67F38500646A6E0B68B7E84FDEB7BA84 /* Pods-ShoppingAppTests-umbrella.h */,
-				1A9070773FE2ACE4244A73C2BC090C15 /* Pods-ShoppingAppTests.debug.xcconfig */,
-				3A7A7AC982D4645C8AEC48CA9053F3F1 /* Pods-ShoppingAppTests.release.xcconfig */,
-			);
-			name = "Pods-ShoppingAppTests";
-			path = "Target Support Files/Pods-ShoppingAppTests";
 			sourceTree = "<group>";
 		};
 		9E42802951B82CF75FCAECE2340D5BEA /* TextControls+FilledTextAreas */ = {
@@ -835,8 +723,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				61093988AC8834417F55D79E2027678E /* Pods */,
-				EDD46D937856E95C7F300C4007600D40 /* Products */,
-				7C20C0A0E45B7C0A43FC0D3E00B620F8 /* Targets Support Files */,
+				1FD84532A14F0D737A757DB0CA51E5C2 /* Products */,
+				5DD3CF1AA32E6A746A783B530E071861 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -869,6 +757,7 @@
 				608D3E800A24864E86637A277FEB5C8B /* Resources */,
 				05CD0E067817CE8BEC4B0F560FA46793 /* Support Files */,
 			);
+			name = PasswordTextField;
 			path = PasswordTextField;
 			sourceTree = "<group>";
 		};
@@ -930,6 +819,23 @@
 			path = "../Target Support Files/MaterialComponents";
 			sourceTree = "<group>";
 		};
+		EAC1EA679805A955DBBCF8157CFDEF7C /* Pods-ShoppingApp */ = {
+			isa = PBXGroup;
+			children = (
+				507B533A6256C87FF897012DE8583176 /* Pods-ShoppingApp.modulemap */,
+				A9D5F4C99F63172199565B9D416D856E /* Pods-ShoppingApp-acknowledgements.markdown */,
+				CFEA6DCA873E311B8624675052E46120 /* Pods-ShoppingApp-acknowledgements.plist */,
+				EA88BD968CAE9CF9F39F2FFD77FA652E /* Pods-ShoppingApp-dummy.m */,
+				9A826507F34D657E7564DE313C2D40C8 /* Pods-ShoppingApp-frameworks.sh */,
+				93F2DC725A26DB44073B54041A2BF234 /* Pods-ShoppingApp-Info.plist */,
+				DD2519DC0B066D8FE762157E25DF0DD7 /* Pods-ShoppingApp-umbrella.h */,
+				8440C5CE917B02575E26A480C69C3052 /* Pods-ShoppingApp.debug.xcconfig */,
+				BFACCBACBEE887FC8F0856A56E79F2FF /* Pods-ShoppingApp.release.xcconfig */,
+			);
+			name = "Pods-ShoppingApp";
+			path = "Target Support Files/Pods-ShoppingApp";
+			sourceTree = "<group>";
+		};
 		ED13FB85AA2B0CCECC43CDD5AD9BC079 /* TextControlsPrivate+FilledStyle */ = {
 			isa = PBXGroup;
 			children = (
@@ -940,21 +846,6 @@
 				0151E7003AC125DD88FDD84041F890A2 /* MDCTextControlVerticalPositioningReferenceFilled.m */,
 			);
 			name = "TextControlsPrivate+FilledStyle";
-			sourceTree = "<group>";
-		};
-		EDD46D937856E95C7F300C4007600D40 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				43697E92E1EF903807158F32D260C4DC /* CircleBar */,
-				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */,
-				9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */,
-				F3B2B979D21179086FB3F7EBE3152F8F /* PasswordTextField */,
-				E1AE02FE52E1DF553479C602B170F3F1 /* PasswordTextField-PasswordTextField */,
-				3E941FC29F33BF4EFA65EF695F08ACED /* Pods-ShoppingApp */,
-				4317AA0F382B1FB2BAD5596ADF0505C8 /* Pods-ShoppingApp-ShoppingAppUITests */,
-				A2E274166C4A2D64531293C1344675ED /* Pods-ShoppingAppTests */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FADDCF4C919E2E4A7BF0A2E5D7B4AEE8 /* Support Files */ = {
@@ -975,14 +866,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		25654634CF8CA93E7B1A3AA7B8498FBF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFEB290040E4BF495B6BCA63ACC2BF18 /* Pods-ShoppingApp-ShoppingAppUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		31428DF5750375AAD719F5B86C72F2BE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1070,14 +953,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BB23CDF84811DE19C789241A67ABEF9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				078B15623336CE789EB52AB53E367BC3 /* Pods-ShoppingAppTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B5D0B1A73CD2A068C08379A8F7B61400 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1118,25 +993,6 @@
 			name = "Pods-ShoppingApp";
 			productName = Pods_ShoppingApp;
 			productReference = 3E941FC29F33BF4EFA65EF695F08ACED /* Pods-ShoppingApp */;
-			productType = "com.apple.product-type.framework";
-		};
-		354BE019FE2125308B2CE5FC68F8F973 /* Pods-ShoppingAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2526358FEEDB8C31251010DCB630B912 /* Build configuration list for PBXNativeTarget "Pods-ShoppingAppTests" */;
-			buildPhases = (
-				9BB23CDF84811DE19C789241A67ABEF9 /* Headers */,
-				41979C15E382865F7A0989D83A9AD786 /* Sources */,
-				ECDF31E4273DD60AC213A57BF4BACD8E /* Frameworks */,
-				A85DA2F2F73F5889BB986146D2B38683 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A65FCAB217C9C5850FD2F9B11B5AF509 /* PBXTargetDependency */,
-			);
-			name = "Pods-ShoppingAppTests";
-			productName = Pods_ShoppingAppTests;
-			productReference = A2E274166C4A2D64531293C1344675ED /* Pods-ShoppingAppTests */;
 			productType = "com.apple.product-type.framework";
 		};
 		45B65ECC40F1B82786BABFA3A97B0D20 /* PasswordTextField */ = {
@@ -1195,28 +1051,6 @@
 			productReference = 9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */;
 			productType = "com.apple.product-type.framework";
 		};
-		AFA63FACD0195230B5C0B2A7E2DBDB63 /* Pods-ShoppingApp-ShoppingAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E1A42C36C9006965C8C8F1A598904EF5 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp-ShoppingAppUITests" */;
-			buildPhases = (
-				25654634CF8CA93E7B1A3AA7B8498FBF /* Headers */,
-				75C55A14BC6F8464869AB5207907F45E /* Sources */,
-				1CECD51B39AC01734921DF59BDA140EA /* Frameworks */,
-				1603DC6D3A788068D38184D441DB4AFE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F6A5583D4E357A0093B51BFBAC70B131 /* PBXTargetDependency */,
-				BD8A53BC87D90DB4823B70756B236C1A /* PBXTargetDependency */,
-				17684DCE79DD831CE2DB2496DAF22B5C /* PBXTargetDependency */,
-				EEDEC6E239DD4600146B956EDEBAD247 /* PBXTargetDependency */,
-			);
-			name = "Pods-ShoppingApp-ShoppingAppUITests";
-			productName = Pods_ShoppingApp_ShoppingAppUITests;
-			productReference = 4317AA0F382B1FB2BAD5596ADF0505C8 /* Pods-ShoppingApp-ShoppingAppUITests */;
-			productType = "com.apple.product-type.framework";
-		};
 		B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 726D5927959030BE8EFACAECD8601B02 /* Build configuration list for PBXNativeTarget "MaterialComponents" */;
@@ -1233,7 +1067,7 @@
 			);
 			name = MaterialComponents;
 			productName = MaterialComponents;
-			productReference = A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */;
+			productReference = A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */;
 			productType = "com.apple.product-type.framework";
 		};
 		B7378E43393E401083784252E88810C0 /* CircleBar */ = {
@@ -1272,7 +1106,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = EDD46D937856E95C7F300C4007600D40 /* Products */;
+			productRefGroup = 1FD84532A14F0D737A757DB0CA51E5C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1282,20 +1116,11 @@
 				45B65ECC40F1B82786BABFA3A97B0D20 /* PasswordTextField */,
 				47125EF768D6F7A41A3B4EDDB3C096EB /* PasswordTextField-PasswordTextField */,
 				1C0C61DE724689C02344D66FAE8A3FAD /* Pods-ShoppingApp */,
-				AFA63FACD0195230B5C0B2A7E2DBDB63 /* Pods-ShoppingApp-ShoppingAppUITests */,
-				354BE019FE2125308B2CE5FC68F8F973 /* Pods-ShoppingAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1603DC6D3A788068D38184D441DB4AFE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5076612EAC42FABAB422C8E77B852069 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1304,13 +1129,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8F5D2ECF9390FA75D73A1680215C0A16 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A85DA2F2F73F5889BB986146D2B38683 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1376,14 +1194,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		41979C15E382865F7A0989D83A9AD786 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81DF2F420A9D5109DE4BEB998D89C8DB /* Pods-ShoppingAppTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		75C42EE808FFAC35041568CFE92847AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1394,14 +1204,6 @@
 				124EEAE22B8077371D55FDB1AC4F4D30 /* NSString+MaterialBidi.m in Sources */,
 				03219B99BEEC9AB447188784DFDF4E19 /* UIImage+MaterialRTL.m in Sources */,
 				984167BC563C943B94B43A01DECBEAB0 /* UIView+MaterialRTL.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75C55A14BC6F8464869AB5207907F45E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1518C0CB0496EF5E488EF2964E0D1299 /* Pods-ShoppingApp-ShoppingAppUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1507,12 +1309,6 @@
 			target = 55A01F8E987A6E2F7F0ED141A1ECA406 /* MDFInternationalization */;
 			targetProxy = C05D2A1A619B8785F16089390B6F2A15 /* PBXContainerItemProxy */;
 		};
-		17684DCE79DD831CE2DB2496DAF22B5C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MaterialComponents;
-			target = B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */;
-			targetProxy = CD6DED8D8D136072A2FA0E65038FE1E6 /* PBXContainerItemProxy */;
-		};
 		26CDE44C37AC57BE22BCB0F5ABF13160 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MaterialComponents;
@@ -1531,36 +1327,12 @@
 			target = 55A01F8E987A6E2F7F0ED141A1ECA406 /* MDFInternationalization */;
 			targetProxy = 12DC8B51656AB2093C21C02AF43EDB01 /* PBXContainerItemProxy */;
 		};
-		A65FCAB217C9C5850FD2F9B11B5AF509 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ShoppingApp";
-			target = 1C0C61DE724689C02344D66FAE8A3FAD /* Pods-ShoppingApp */;
-			targetProxy = AC21F452B2A5C2CFE2CE2FD886D3FDB4 /* PBXContainerItemProxy */;
-		};
-		BD8A53BC87D90DB4823B70756B236C1A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MDFInternationalization;
-			target = 55A01F8E987A6E2F7F0ED141A1ECA406 /* MDFInternationalization */;
-			targetProxy = E8A01698A9A07464420A8CB3248AFF0E /* PBXContainerItemProxy */;
-		};
-		EEDEC6E239DD4600146B956EDEBAD247 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PasswordTextField;
-			target = 45B65ECC40F1B82786BABFA3A97B0D20 /* PasswordTextField */;
-			targetProxy = 0A264157A2027F058F8D399FC916587C /* PBXContainerItemProxy */;
-		};
-		F6A5583D4E357A0093B51BFBAC70B131 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CircleBar;
-			target = B7378E43393E401083784252E88810C0 /* CircleBar */;
-			targetProxy = 16DF2472DF8C04CF7826FDE2C05163F7 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		04DD13A22CBFA4D3616196C80939D801 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D4D052092D9C26B0F24B2618067DBF3 /* Pods-ShoppingApp.release.xcconfig */;
+			baseConfigurationReference = BFACCBACBEE887FC8F0856A56E79F2FF /* Pods-ShoppingApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1682,44 +1454,6 @@
 			};
 			name = Release;
 		};
-		2369430645C42D35BAA8E3E64C8900D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44ABF2841C856D19EB258834F3448C95 /* Pods-ShoppingApp-ShoppingAppUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		28638208FA9BF6EBF5798FEF2D19E2E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B02E44D2D56C77FAA6EE61335A409A0A /* PasswordTextField.release.xcconfig */;
@@ -1748,44 +1482,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2FF02E223BDF25ECA2F34D568E2008CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A7A7AC982D4645C8AEC48CA9053F3F1 /* Pods-ShoppingAppTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingAppTests/Pods-ShoppingAppTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingAppTests/Pods-ShoppingAppTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1926,43 +1622,6 @@
 			};
 			name = Release;
 		};
-		6D8C6E3D5C36FE21DFA48ACBF90D61D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A9070773FE2ACE4244A73C2BC090C15 /* Pods-ShoppingAppTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingAppTests/Pods-ShoppingAppTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingAppTests/Pods-ShoppingAppTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		760ED325CEFD3831AA9BA0BE9196EE2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7FB62DB767453D6B79EA1F77FAC98E4 /* MaterialComponents.debug.xcconfig */;
@@ -1979,7 +1638,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2014,7 +1673,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2087,7 +1746,7 @@
 		};
 		D8DD3E6B1871FC1A7C37DE3A6A96647B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62106E26262FF879A04007ECBF2B7648 /* Pods-ShoppingApp.debug.xcconfig */;
+			baseConfigurationReference = 8440C5CE917B02575E26A480C69C3052 /* Pods-ShoppingApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2188,55 +1847,9 @@
 			};
 			name = Debug;
 		};
-		FF8B0C0A28CE5E9584643575B2B4197E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD30C436999BCCD2FA06F3E9A440D497 /* Pods-ShoppingApp-ShoppingAppUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingApp-ShoppingAppUITests/Pods-ShoppingApp-ShoppingAppUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2526358FEEDB8C31251010DCB630B912 /* Build configuration list for PBXNativeTarget "Pods-ShoppingAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6D8C6E3D5C36FE21DFA48ACBF90D61D3 /* Debug */,
-				2FF02E223BDF25ECA2F34D568E2008CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		29235CC975477CF0AE111D8533A857C9 /* Build configuration list for PBXNativeTarget "MDFInternationalization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2296,15 +1909,6 @@
 			buildConfigurations = (
 				7A494531A379F2B55FAAC524F9FFE46D /* Debug */,
 				1D200DD4DF81A0F6A85D8669C53C53EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E1A42C36C9006965C8C8F1A598904EF5 /* Build configuration list for PBXNativeTarget "Pods-ShoppingApp-ShoppingAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF8B0C0A28CE5E9584643575B2B4197E /* Debug */,
-				2369430645C42D35BAA8E3E64C8900D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

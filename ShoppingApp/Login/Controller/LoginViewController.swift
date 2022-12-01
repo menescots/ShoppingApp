@@ -11,7 +11,7 @@ import FirebaseAuth
 
 import MaterialComponents.MaterialTextControls_OutlinedTextFields
 
-class LoginViewController: UIViewController, UITextViewDelegate {
+class LoginViewController: UIViewController, UITextViewDelegate, Alertable {
     private var loginObserver: NSObjectProtocol?
     @IBOutlet weak var passwordField: MDCOutlinedTextField!
     @IBOutlet weak var emailField: MDCOutlinedTextField!
@@ -32,6 +32,7 @@ class LoginViewController: UIViewController, UITextViewDelegate {
               !email.isEmpty,
               !password.isEmpty,
               password.count >= 6 else {
+            self.showAlert(title: "Wrong email or password", message: nil)
             return
         }
         
@@ -39,7 +40,7 @@ class LoginViewController: UIViewController, UITextViewDelegate {
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { [weak self] authResult, error in
             
             guard error == nil else {
-                print("failed to log in with email: \(email)")
+                self?.showAlert(title: "Failed to sign in :(", message: "Check your credentials and try again.")
                 return
             }
             UserDefaults.standard.set(email, forKey: "email")

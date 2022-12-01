@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import MaterialComponents.MaterialTextControls_OutlinedTextFields
-class registerViewController: UIViewController {
+class registerViewController: UIViewController, Alertable {
 
     @IBOutlet weak var surnameField: MDCOutlinedTextField!
     @IBOutlet weak var nameField: MDCOutlinedTextField!
@@ -35,18 +35,24 @@ class registerViewController: UIViewController {
     @IBAction func signUpTapped(_ sender: Any) {
         guard let email = emailField.text,
               !email.isEmpty,
-              let password = passwordField.text,
-              !password.isEmpty,
-              password.count >= 7,
               let name = nameField.text,
               !name.isEmpty,
               let surname = surnameField.text,
               !surname.isEmpty else {
+            showAlert(title: "Fields can not be empty", message: nil)
+            return
+        }
+        
+        guard let password = passwordField.text,
+              !password.isEmpty,
+              password.count >= 7 else {
+            showAlert(title: "Password must be at least 7 characters long.", message: nil)
             return
         }
         if checkPassword() {
             FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password){ authResult, error in
                 guard authResult != nil, error == nil else {
+                    showAlert(title: "Failed to create new user.", message: nil)
                     return
                 }
                 

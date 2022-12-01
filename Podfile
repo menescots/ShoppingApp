@@ -14,13 +14,4 @@ pod 'MaterialComponents/TextControls+FilledTextFields'
 pod 'MaterialComponents/TextControls+OutlinedTextAreas'
 pod 'MaterialComponents/TextControls+OutlinedTextFields'
 
-  target 'ShoppingAppTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'ShoppingAppUITests' do
-    # Pods for testing
-  end
-
 end
