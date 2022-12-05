@@ -52,18 +52,23 @@ class registerViewController: UIViewController, Alertable {
         if checkPassword() {
             FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password){ authResult, error in
                 guard authResult != nil, error == nil else {
-                    showAlert(title: "Failed to create new user.", message: nil)
+                    self.showAlert(title: "Failed to create new user.", message: nil)
                     return
                 }
-                
-                self.database.child("users").child("\(self.safeEmail(email: email))").child("name").setValue("\(name) \(surname)", withCompletionBlock: { error, _ in
+                let post = [
+                    "name":  name,
+                    "surname": surname
+                ]
+                self.database.child("users").child("\(self.safeEmail(email: email))").setValue(post, withCompletionBlock: { [weak self] error, _ in
                     guard error == nil else {
+                        self?.showAlert(title: "Failed to add new user.", message: nil)
                         return
                     }
+                    
                 })
                 
                 UserDefaults.standard.set(email, forKey: "email")
-                UserDefaults.standard.set("\(name) \(surname)", forKey: "name")
+                UserDefaults.standard.set(name, forKey: "name")
                 NotificationCenter.default.post(name: .didLogInNotification, object: nil)
                 self.navigationController?.dismiss(animated: true)
             }

@@ -26,13 +26,6 @@ class CategoryTableViewCell: UITableViewCell {
     func setCategoryImage(index: Int) {
         categoryImage.image = UIImage(named: categoryNames[index])
     }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        contentView.layer.cornerRadius = cornerRadius
-        contentView.layer.masksToBounds = true
-        layer.cornerRadius = cornerRadius
-        layer.masksToBounds = false
-    }
     
     override func layoutSubviews() {
         super.layoutSubviews()

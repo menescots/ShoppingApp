@@ -14,12 +14,15 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var userNameLabel: UILabel!
     
     @IBOutlet weak var optionTableView: UITableView!
-    
+    var settingOptions = ["Delivery address", "Settings", "Orders"]
+
     private var loginObserver: NSObjectProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setNameLabel()
+        optionTableView.dataSource = self
+        optionTableView.delegate = self
         loginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification, object: nil, queue: .main, using: { [weak self] _ in
             guard let strongSelf = self else {
                 return
@@ -47,7 +50,7 @@ class ProfileViewController: UIViewController {
         }
     }
     func setNameLabel() {
-        guard let loggedUser = UserDefaults.standard.value(forKey: "email") as? String else {
+        guard let loggedUser = UserDefaults.standard.value(forKey: "name") as? String else {
             logOutButton.isHidden = true
             return
         }
@@ -93,3 +96,19 @@ class ProfileViewController: UIViewController {
     
 }
 
+extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return settingOptions.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath)
+        cell.textLabel?.text = settingOptions[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+    
+}
