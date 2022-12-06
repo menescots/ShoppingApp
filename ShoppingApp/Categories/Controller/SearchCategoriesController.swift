@@ -10,8 +10,6 @@ import FirebaseDatabase
 import CoreData
 class SearchCategoriesController: UIViewController {
     var categories = [Category]()
-    @IBOutlet weak var categoryNameLabel: UILabel!
-    @IBOutlet weak var categoryContentLabel: UILabel!
     @IBOutlet weak var categoryTableView: UITableView!
     private let database = Database.database().reference()
     var container: NSPersistentContainer!

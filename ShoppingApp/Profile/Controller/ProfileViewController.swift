@@ -15,7 +15,6 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var optionTableView: UITableView!
     var settingOptions = ["Delivery address", "Settings", "Orders"]
-
     private var loginObserver: NSObjectProtocol?
     
     override func viewDidLoad() {
@@ -54,7 +53,7 @@ class ProfileViewController: UIViewController {
             logOutButton.isHidden = true
             return
         }
-        userNameLabel.text = "Hello \(loggedUser)"
+        userNameLabel.text = "Hello, \(loggedUser)"
     }
     @IBAction func logOutTapped(_ sender: Any) {
         let actionSheet = UIAlertController(title: "Do you want to log out?",
@@ -102,9 +101,25 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath)
-        cell.textLabel?.text = settingOptions[indexPath.row]
+        let cell = optionTableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath) as! SettingsCustomCell 
+        let option = settingOptions[indexPath.row]
+        cell.setTitleLabel(title: option)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedOptions = settingOptions[indexPath.row]
+        
+        switch indexPath.row {
+        case 0:
+            guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "deliveryAddress") as? DeliverySettingsVC else {
+                return
+            }
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            return
+        }
+            
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
