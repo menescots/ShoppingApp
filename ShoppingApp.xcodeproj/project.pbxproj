@@ -218,6 +218,7 @@
 		7E04963B29080B2E00871A10 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7E0FF5F2291BB743007E7710 /* UIViewExtension.swift */,
 				7E04963C29080B4B00871A10 /* UIStackViewExtension.swift */,
 				7E8D39D4290FE0F700BE2BB9 /* UITextFieldExtension.swift */,
 				7EA02755293778460063E859 /* AlertExtension.swift */,
@@ -381,7 +382,6 @@
 				7E3B5EE92915162F00FD261F /* DatabaseManager.swift */,
 				7E3B5EFD291A5CE300FD261F /* CoreDataStack.swift */,
 				7E3B5F02291B998400FD261F /* ShoppingAppCoreData.xcdatamodeld */,
-				7E0FF5F2291BB743007E7710 /* UIViewExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";

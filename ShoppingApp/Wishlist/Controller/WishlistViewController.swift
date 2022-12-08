@@ -55,7 +55,6 @@ class WishlistViewController: UIViewController {
         do {
             let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
             let results = try managedContext.fetch(productFetch)
-            print(results)
             wishlistProducts = results
             productsTableView.reloadData()
         } catch let error as NSError {

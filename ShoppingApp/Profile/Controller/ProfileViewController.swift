@@ -108,7 +108,7 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedOptions = settingOptions[indexPath.row]
+        //et selectedOptions = settingOptions[indexPath.row]
         
         switch indexPath.row {
         case 0:
