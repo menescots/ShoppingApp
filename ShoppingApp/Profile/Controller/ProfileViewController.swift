@@ -9,20 +9,25 @@ import UIKit
 import FacebookLogin
 import FirebaseAuth
 import FirebaseCore
+import FirebaseDatabase
+
 class ProfileViewController: UIViewController {
     @IBOutlet weak var logOutButton: UIButton!
     @IBOutlet weak var userNameLabel: UILabel!
     
     @IBOutlet weak var optionTableView: UITableView!
     var settingOptions = ["Delivery address", "Settings", "Orders"]
-    private var loginObserver: NSObjectProtocol?
     
+    private var loginObserver: NSObjectProtocol?
+    private let database = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
         setNameLabel()
         optionTableView.dataSource = self
         optionTableView.delegate = self
-        loginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification, object: nil, queue: .main, using: { [weak self] _ in
+
+        loginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification, object: nil, queue: nil, using: { [weak self] _ in
+            print("in observer")
             guard let strongSelf = self else {
                 return
             }
@@ -42,6 +47,7 @@ class ProfileViewController: UIViewController {
                 guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "loginVC") as? LoginViewController else {
                     return
                 }
+                print(user?.email)
                // self.definesPresentationContext = true
                 //self.navigationController?.setNavigationBarHidden(true, animated: true)
                 self.present(UINavigationController(rootViewController: vc), animated: false)
@@ -49,11 +55,21 @@ class ProfileViewController: UIViewController {
         }
     }
     func setNameLabel() {
-        guard let loggedUser = UserDefaults.standard.value(forKey: "name") as? String else {
-            logOutButton.isHidden = true
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else {
             return
         }
-        userNameLabel.text = "Hello, \(loggedUser)"
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+        
+        database.child("users").child(safeEmail).observeSingleEvent(of: .value, with: { [weak self] snapshot in
+            if let data = snapshot.value as? [String: String] {
+                
+                guard let name = data["name"],
+                      let surname = data["surname"] else {
+                    return
+                }
+                self?.userNameLabel.text = "Hello, \(name) \(surname)"
+            }
+        })
     }
     @IBAction func logOutTapped(_ sender: Any) {
         let actionSheet = UIAlertController(title: "Do you want to log out?",
@@ -72,7 +88,6 @@ class ProfileViewController: UIViewController {
             do {
                 try FirebaseAuth.Auth.auth().signOut()
                 UserDefaults.standard.removeObject(forKey: "email")
-                UserDefaults.standard.removeObject(forKey: "name")
                 strongSelf.logOutButton.isHidden = true
                 strongSelf.userNameLabel.text = "Sign In on Sign Up"
             } catch {

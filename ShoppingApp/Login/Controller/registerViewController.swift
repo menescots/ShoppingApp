@@ -64,13 +64,12 @@ class registerViewController: UIViewController, Alertable {
                         self?.showAlert(title: "Failed to add new user.", message: nil)
                         return
                     }
-                    
                 })
                 
                 UserDefaults.standard.set(email, forKey: "email")
                 UserDefaults.standard.set(name, forKey: "name")
                 UserDefaults.standard.set(surname, forKey: "surname")
-                NotificationCenter.default.post(name: .didLogInNotification, object: nil)
+               NotificationCenter.default.post(name: .didLogInNotification, object: nil)
                 self.navigationController?.dismiss(animated: true)
             }
         }

@@ -961,7 +961,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlQ-As-PKa">
-                                <rect key="frame" x="40" y="697" width="310" height="44"/>
+                                <rect key="frame" x="40" y="692" width="310" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="S25-Tb-tCh"/>
                                 </constraints>
@@ -975,7 +975,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Dd-rs-PrP">
-                                <rect key="frame" x="15" y="91" width="370" height="586"/>
+                                <rect key="frame" x="15" y="91" width="370" height="581"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nhh" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwe-DZ-NJb">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="60"/>
@@ -987,7 +987,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m5k-x1-aJg">
-                                        <rect key="frame" x="0.0" y="70" width="370" height="516"/>
+                                        <rect key="frame" x="0.0" y="70" width="370" height="511"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="settingsCell" rowHeight="100" id="Swf-zp-cGp" customClass="SettingsCustomCell" customModule="ShoppingApp" customModuleProvider="target">
@@ -1025,7 +1025,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5Dd-rs-PrP" firstAttribute="leading" secondItem="I0g-hl-qZo" secondAttribute="leading" constant="15" id="7qY-e6-DYB"/>
-                            <constraint firstItem="I0g-hl-qZo" firstAttribute="bottom" secondItem="rlQ-As-PKa" secondAttribute="bottom" constant="20" id="9Ab-HT-J48"/>
+                            <constraint firstItem="I0g-hl-qZo" firstAttribute="bottom" secondItem="rlQ-As-PKa" secondAttribute="bottom" constant="25" id="9Ab-HT-J48"/>
                             <constraint firstItem="5Dd-rs-PrP" firstAttribute="top" secondItem="I0g-hl-qZo" secondAttribute="top" id="dIa-az-AsO"/>
                             <constraint firstItem="I0g-hl-qZo" firstAttribute="trailing" secondItem="rlQ-As-PKa" secondAttribute="trailing" constant="40" id="g0O-66-1QO"/>
                             <constraint firstItem="I0g-hl-qZo" firstAttribute="trailing" secondItem="5Dd-rs-PrP" secondAttribute="trailing" constant="5" id="kwE-Xe-uDW"/>

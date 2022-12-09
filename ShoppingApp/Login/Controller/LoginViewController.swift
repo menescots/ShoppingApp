@@ -43,7 +43,7 @@ class LoginViewController: UIViewController, UITextViewDelegate, Alertable {
                 self?.showAlert(title: "Failed to sign in :(", message: "Check your credentials and try again.")
                 return
             }
-            UserDefaults.standard.set(email, forKey: "email")
+            UserDefaults.standard.setValue(email, forKey: "email")
             NotificationCenter.default.post(name: .didLogInNotification, object: nil)
             self?.navigationController?.dismiss(animated: true)
         })
