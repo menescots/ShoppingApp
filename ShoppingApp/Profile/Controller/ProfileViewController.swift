@@ -15,24 +15,16 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var logOutButton: UIButton!
     @IBOutlet weak var userNameLabel: UILabel!
     
-    @IBOutlet weak var optionTableView: UITableView!
-    var settingOptions = ["Delivery address", "Settings", "Orders"]
-    
     private var loginObserver: NSObjectProtocol?
     private let database = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
         setNameLabel()
-        optionTableView.dataSource = self
-        optionTableView.delegate = self
 
         loginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification, object: nil, queue: nil, using: { [weak self] _ in
             print("in observer")
-            guard let strongSelf = self else {
-                return
-            }
-            strongSelf.logOutButton.isHidden = false
-            strongSelf.setNameLabel()
+            self?.logOutButton.isHidden = false
+            self?.setNameLabel()
         })
     }
     
@@ -47,7 +39,6 @@ class ProfileViewController: UIViewController {
                 guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "loginVC") as? LoginViewController else {
                     return
                 }
-                print(user?.email)
                // self.definesPresentationContext = true
                 //self.navigationController?.setNavigationBarHidden(true, animated: true)
                 self.present(UINavigationController(rootViewController: vc), animated: false)
@@ -61,13 +52,15 @@ class ProfileViewController: UIViewController {
         let safeEmail = DatabaseManager.shared.safeEmail(email: email)
         
         database.child("users").child(safeEmail).observeSingleEvent(of: .value, with: { [weak self] snapshot in
-            if let data = snapshot.value as? [String: String] {
+            if let data = snapshot.value as? [String: Any] {
                 
                 guard let name = data["name"],
                       let surname = data["surname"] else {
+                    print("Couldnt fetch data")
                     return
                 }
                 self?.userNameLabel.text = "Hello, \(name) \(surname)"
+                
             }
         })
     }
@@ -88,8 +81,11 @@ class ProfileViewController: UIViewController {
             do {
                 try FirebaseAuth.Auth.auth().signOut()
                 UserDefaults.standard.removeObject(forKey: "email")
-                strongSelf.logOutButton.isHidden = true
-                strongSelf.userNameLabel.text = "Sign In on Sign Up"
+                
+                DispatchQueue.main.async {
+                    strongSelf.logOutButton.isHidden = true
+                    strongSelf.userNameLabel.text = "Sign In on Sign Up"
+                }
             } catch {
                 print("Failed to log out.")
             }
@@ -110,35 +106,3 @@ class ProfileViewController: UIViewController {
     
 }
 
-extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingOptions.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = optionTableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath) as! SettingsCustomCell 
-        let option = settingOptions[indexPath.row]
-        cell.setTitleLabel(title: option)
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //et selectedOptions = settingOptions[indexPath.row]
-        
-        switch indexPath.row {
-        case 0:
-            guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "deliveryAddress") as? DeliverySettingsVC else {
-                return
-            }
-            self.navigationController?.pushViewController(vc, animated: true)
-        default:
-            return
-        }
-            
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
-    }
-    
-}

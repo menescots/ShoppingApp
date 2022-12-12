@@ -7,7 +7,7 @@
 
 import UIKit
 import CoreData
-
+import FirebaseAuth
 class WishlistViewController: UIViewController {
 
     @IBOutlet weak var productsTableView: UITableView!
@@ -62,6 +62,13 @@ class WishlistViewController: UIViewController {
         }
     }
 
+    func checkIfLogged(){
+        FirebaseAuth.Auth.auth().addStateDidChangeListener { auth ,user in
+            if user == nil {
+                
+            }
+        }
+    }
 }
 
 extension WishlistViewController: UITableViewDelegate, UITableViewDataSource {
