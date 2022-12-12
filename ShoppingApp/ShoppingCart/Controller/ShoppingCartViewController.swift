@@ -13,7 +13,7 @@ class ShoppingCartViewController: UIViewController {
     @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var productTableView: UITableView!
     var cartProducts = [ShoppingCart]()
-  var totalPrice = 0
+    var totalPrice = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,6 +40,7 @@ class ShoppingCartViewController: UIViewController {
         wishlistedProduct.setValue(product.image, forKey: #keyPath(Wishlist.image))
         removeFromCart(sender)
         AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+        updateTotal()
     }
     @IBAction func removeFromCart(_ sender: Any) {
         guard let indexPath = productTableView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ShoppingCartCustomCell)) else { return }
@@ -48,6 +49,7 @@ class ShoppingCartViewController: UIViewController {
         self.cartProducts.remove(at: indexPath.row)
         AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
         self.productTableView.deleteRows(at: [indexPath], with: .automatic)
+        updateTotal()
     }
     func getProducts() {
         let productFetch: NSFetchRequest<ShoppingCart> = ShoppingCart.fetchRequest()
@@ -74,13 +76,32 @@ extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath as IndexPath) as! ShoppingCartCustomCell
         let product = cartProducts[indexPath.row]
-        cell.setProductName(name: product.name)
+        updateTotal()
+        cell.configure(name: product.name, quantity: Int(product.amount), unitPrice: Int(product.price), delegate: self)
         cell.setProductImage(image: "imageproduct")
-        cell.setProductPrice(price: Int(product.price))
         cell.setProductID(id: Int(product.productId))
-        cell.setProductAmount()
         return cell
     }
     
     
+}
+
+extension ShoppingCartViewController: ShoppingItemCellDelegate {
+    func cell(_ cell: ShoppingCartCustomCell, didUpdateQuantity quantity: Int) {
+        guard let indexPath = productTableView.indexPath(for: cell) else { return }
+        let product = cartProducts[indexPath.row]
+        product.amount = Int32(quantity)
+
+        updateTotal()
+    }
+}
+
+private extension ShoppingCartViewController {
+    func updateTotal() {
+        let total = cartProducts
+            .map { $0.amount * $0.price }
+            .reduce(0, +)
+
+        totalPriceLabel.text = String(total)
+    }
 }

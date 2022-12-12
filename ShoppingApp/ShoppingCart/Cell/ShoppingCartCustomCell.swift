@@ -7,7 +7,12 @@
 
 import UIKit
 
+protocol ShoppingItemCellDelegate: AnyObject {
+    func cell(_ cell: ShoppingCartCustomCell, didUpdateQuantity quantity: Int)
+}
+
 class ShoppingCartCustomCell: UITableViewCell {
+    weak var delegate: ShoppingItemCellDelegate?
     
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var productName: UILabel!
@@ -19,17 +24,9 @@ class ShoppingCartCustomCell: UITableViewCell {
     
     
     @IBAction func productAmountChanged(_ sender: UIStepper) {
-        let stepperValue = Int(sender.value)
-        productAmount.text = String(stepperValue)
-        productPriceLabel.text = String(stepperValue * productPrice) + "$"
-    }
-    func setProductName(name: String) {
-        productName.text = name
-    }
-    
-    func setProductPrice(price: Int){
-        productPriceLabel.text = "\(String(price))$"
-        productPrice = price
+        let quantity = Int(sender.value)
+        productAmount.text = String(quantity)
+        delegate?.cell(self, didUpdateQuantity: quantity)
     }
     
     func setProductImage(image: String) {
@@ -40,14 +37,19 @@ class ShoppingCartCustomCell: UITableViewCell {
         productIdLabel.text = "ID: \(String(id))"
     }
 
-    func setProductAmount() {
-        productAmount.text = String(1)
-        stepper.value = 1
-    }
     let cornerRadius = 14.0
     override func awakeFromNib() {
         super.awakeFromNib()
         contentView.layer.cornerRadius = cornerRadius
         contentView.layer.masksToBounds = true
+    }
+}
+extension ShoppingCartCustomCell {
+    func configure(name: String, quantity: Int, unitPrice: Int, delegate: ShoppingItemCellDelegate) {
+        self.delegate = delegate
+
+        productName.text = name
+        productAmount.text = String(quantity)
+        productPriceLabel.text = String(unitPrice)
     }
 }
