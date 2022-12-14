@@ -59,6 +59,11 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
             filterTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
     @objc func textFieldDidChange() {
         guard let text = filterTextField.text?.lowercased() else { return }
         if text.count > 0 {
@@ -176,5 +181,12 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
             cell.setProductImage(image: "imageproduct")
             cell.setProductPrice(price: product.price)
             return cell
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            let product = products[indexPath.row]
+             let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "productDetail") as! ProductDetailController
+            vc.product = product
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
