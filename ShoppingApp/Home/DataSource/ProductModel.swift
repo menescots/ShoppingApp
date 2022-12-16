@@ -14,5 +14,6 @@ struct Product {
     let categoryId: Int
     let content: String
     let imageUrl: URL?
+    var amount: Int?
 }
 

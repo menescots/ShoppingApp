@@ -7,16 +7,17 @@
 
 import UIKit
 import CoreData
-
+import FirebaseDatabase
 class ShoppingCartViewController: UIViewController {
 
     @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var productTableView: UITableView!
-    var cartProducts = [ShoppingCart]()
+    var cartProducts = [Product]()
     var totalPrice = 0
+    private let database = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.refresh), name: NSNotification.Name(rawValue: "newDataNotif"), object: nil)
         productTableView.delegate = self
         productTableView.dataSource = self
     }
@@ -24,48 +25,72 @@ class ShoppingCartViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getProducts()
+       
     }
     
     @IBAction func addToWishlist(_ sender: Any) {
         guard let indexPath = productTableView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ShoppingCartCustomCell)) else { return }
-        
         let product = cartProducts[indexPath.row]
-        let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
-        
-        let wishlistedProduct = Wishlist(context: managedContext)
-        
-        wishlistedProduct.setValue(product.name, forKey: #keyPath(Wishlist.name))
-        wishlistedProduct.setValue(product.price, forKey: #keyPath(Wishlist.price))
-        wishlistedProduct.setValue(product.productId, forKey: #keyPath(Wishlist.productId))
-        wishlistedProduct.setValue(product.image, forKey: #keyPath(Wishlist.image))
-        removeFromCart(sender)
-        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+        //deleted from firebase, reloaded tableview but its not deleted from array
         updateTotal()
     }
     @IBAction func removeFromCart(_ sender: Any) {
         guard let indexPath = productTableView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ShoppingCartCustomCell)) else { return }
-
-        AppDelegate.sharedAppDelegate.coreDataStack.managedContext.delete(self.cartProducts[indexPath.row])
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+        
+        let product = cartProducts[indexPath.row]
+        self.database.child("users").child(safeEmail).child("Cart").child(String(product.id)).removeValue()
         self.cartProducts.remove(at: indexPath.row)
-        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
-        self.productTableView.deleteRows(at: [indexPath], with: .automatic)
+        self.productTableView.deleteRows(at: [indexPath], with: .fade)
         updateTotal()
     }
     func getProducts() {
-        let productFetch: NSFetchRequest<ShoppingCart> = ShoppingCart.fetchRequest()
-        
-        do {
-            let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
-            let results = try managedContext.fetch(productFetch)
-            print(results)
-            cartProducts = results
-            productTableView.reloadData()
-        } catch let error as NSError {
-            print("Fetch error: \(error) description: \(error.userInfo)")
-        }
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+        self.database.child("users").child(safeEmail).child("Cart").observeSingleEvent(of: .value , with: { [weak self] snapshot in
+            print("getproducts activated")
+            if let data = snapshot.value as? [String: [String: Any]] {
+                var cartProductsIds = [Int]()
+                for datum in data {
+                    guard let amount = datum.value["amount"] as? Int,
+                          let key = Int(datum.key) else { return }
+                    
+                    cartProductsIds.append(key)
+                    var productId = (Int(datum.key) ?? 201) - 201
+                    print(cartProductsIds)
+                    self?.database.child("Products/\(productId)").observeSingleEvent(of: .value, with: { [self] snapshot in
+                        if let product = snapshot.value as? [String: Any] {
+                            
+                                guard let name = product["name"] as? String,
+                                      let price = product["price"] as? Int,
+                                      let id = product["id"] as? Int,
+                                      let categoryId = product["categoryId"] as? Int,
+                                      let content = product["content"] as? String else {
+                                    return
+                                }
+                                if (self?.cartProducts.contains(where: {$0.id == id}))! { return }
+
+                                if id == Int(datum.key){
+                                    let prod = Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil, amount: amount)
+                                    self?.cartProducts.append(prod)
+                                    self?.productTableView.reloadData()
+                                }
+                        }
+                    })
+                    self?.productTableView.reloadData()
+                }
+            }
+        })
     }
-
-
+    @objc func refresh(notification: Notification) {
+        if let dict = notification.object as? NSDictionary {
+                if let id = dict["id"] as? Int{
+                    cartProducts.removeAll(where: { $0.id == id})
+                }
+            }
+       self.productTableView.reloadData()
+   }
 }
 
 extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource{
@@ -77,9 +102,9 @@ extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath as IndexPath) as! ShoppingCartCustomCell
         let product = cartProducts[indexPath.row]
         updateTotal()
-        cell.configure(name: product.name, quantity: Int(product.amount), unitPrice: Int(product.price), delegate: self)
+        cell.configure(name: product.name, quantity: Int(product.amount!), unitPrice: Int(product.price), delegate: self)
         cell.setProductImage(image: "imageproduct")
-        cell.setProductID(id: Int(product.productId))
+        cell.setProductID(id: Int(product.id))
         return cell
     }
     
@@ -89,8 +114,8 @@ extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource
 extension ShoppingCartViewController: ShoppingItemCellDelegate {
     func cell(_ cell: ShoppingCartCustomCell, didUpdateQuantity quantity: Int) {
         guard let indexPath = productTableView.indexPath(for: cell) else { return }
-        let product = cartProducts[indexPath.row]
-        product.amount = Int32(quantity)
+        var product = cartProducts[indexPath.row]
+        product.amount = quantity
 
         updateTotal()
     }
@@ -99,7 +124,7 @@ extension ShoppingCartViewController: ShoppingItemCellDelegate {
 private extension ShoppingCartViewController {
     func updateTotal() {
         let total = cartProducts
-            .map { $0.amount * $0.price }
+            .map { $0.amount! * $0.price }
             .reduce(0, +)
 
         totalPriceLabel.text = String(total)

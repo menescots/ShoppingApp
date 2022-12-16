@@ -47,7 +47,7 @@ class ShoppingCartCustomCell: UITableViewCell {
 extension ShoppingCartCustomCell {
     func configure(name: String, quantity: Int, unitPrice: Int, delegate: ShoppingItemCellDelegate) {
         self.delegate = delegate
-
+print(name)
         productName.text = name
         productAmount.text = String(quantity)
         productPriceLabel.text = String(unitPrice)

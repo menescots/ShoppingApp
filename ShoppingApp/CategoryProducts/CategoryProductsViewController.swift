@@ -29,7 +29,7 @@ class CategoryProductsViewController: UIViewController {
         }
     }
     func listenForProducts() {
-        database.child("Products").observeSingleEvent(of: .value, with: { snapshot in
+        database.child("Products").observeSingleEvent(of: .value, with: { [weak self] snapshot in
             if let data = snapshot.value as? [[String: Any]] {
                 for datum in data {
                     guard let name = datum["name"] as? String,
@@ -40,10 +40,10 @@ class CategoryProductsViewController: UIViewController {
                         print("returned")
                         return
                     }
-                    if categoryId == self.category?.id {
-                        self.products.append(Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil))
-                        self.productsCollectionView.reloadData()
-                        print(self.products)
+                    if categoryId == self?.category?.id {
+                        self?.products.append(Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil, amount: nil))
+                        self?.productsCollectionView.reloadData()
+                        print(self?.products)
                     }
                 }
             }

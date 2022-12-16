@@ -23,7 +23,7 @@ class DeliverySettingsVC: UIViewController, Alertable {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpFields()
-        getAddress()
+        getDeliveryAddress()
     }
 
     func setUpFields() {
@@ -69,7 +69,7 @@ class DeliverySettingsVC: UIViewController, Alertable {
        // navigationController?.popViewController(animated: true)
     }
     
-    func getAddress() {
+    func getDeliveryAddress() {
         guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
         let safeEmail = DatabaseManager.shared.safeEmail(email: email)
         

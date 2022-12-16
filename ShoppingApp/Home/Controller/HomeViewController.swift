@@ -88,7 +88,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
                               let categoryId = datum["categoryId"] as? Int,
                               let content = datum["content"] as? String else { print("returned"); return }
                         
-                        self.products.append(Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil))
+                        self.products.append(Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil, amount: nil))
                         self.productsCollectionView.reloadData()
                     }
                 } else {
@@ -110,51 +110,76 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         }
         @IBAction func addToWishlistButtonTapped(_ sender: Any) {
             guard let indexPath = productsCollectionView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ProductsCollectionViewCell)) else { return }
-    
+            
             let product = products[indexPath.row]
-            let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
-            let wishlistedProduct = Wishlist(context: managedContext)
+            let wishlistProducts = [
+                "ID": product.id
+            ]
             
-            wishlistedProduct.setValue(product.name, forKey: #keyPath(Wishlist.name))
-            wishlistedProduct.setValue(product.price, forKey: #keyPath(Wishlist.price))
-            wishlistedProduct.setValue(product.id, forKey: #keyPath(Wishlist.productId))
-            wishlistedProduct.setValue(product.imageUrl, forKey: #keyPath(Wishlist.image))
-            
-            AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
-            
+            guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+            let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+        
+            self.database.child("users").child(safeEmail).child("Wishlist").child("\(product.id)").setValue(wishlistProducts, withCompletionBlock: { [weak self] error,_  in
+                guard error != nil else { return }
+                print("added to wish")
+            })
         }
 
         @IBAction func addToCartButtonTapped(_ sender: Any) {
             guard let indexPath = productsCollectionView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ProductsCollectionViewCell)) else { return }
             
             let product = products[indexPath.row]
-            let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
-            let cartProduct = ShoppingCart(context: managedContext)
-            cartProduct.setValue(product.name, forKey: #keyPath(ShoppingCart.name))
-            cartProduct.setValue(product.price, forKey: #keyPath(ShoppingCart.price))
-            cartProduct.setValue(product.id, forKey: #keyPath(ShoppingCart.productId))
-            cartProduct.setValue(product.imageUrl, forKey: #keyPath(ShoppingCart.image))
-            self.cartProducts.insert(cartProduct, at: 0)
+            let cartProduct = [
+                "amount": 1
+            ]
             
-            AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+            guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+            let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+            
+            isInCart(id: product.id, completion: { exists in
+                if !exists {
+                    self.database.child("users").child(safeEmail).child("Cart").child("\(product.id)").setValue(cartProduct, withCompletionBlock: { [weak self] error,_  in
+                        guard error == nil else { return }
+                    })
+                } else {
+                    self.database.child("users").child(safeEmail).child("Cart").child("\(product.id)").removeValue(completionBlock: { error,_  in
+                        guard error == nil else { return }
+                        let info = ["id" : product.id]
+                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "newDataNotif"), object: info)
+                    })
+                }
+            })
         }
-        func setUpCollectionLayout(){
-            let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-            layout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
-            let width = UIScreen.main.bounds.width
-            layout.itemSize = CGSize(width: (width / 2)-20, height: (width / 2)+10)
-            
-            layout.minimumInteritemSpacing = 5
-            layout.minimumLineSpacing = 10
-            
-            productsCollectionView.collectionViewLayout = layout
-        }
+    
+    func isInCart(id: Int, completion: @escaping (Bool) -> Void) {
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
         
-        override func viewDidLayoutSubviews() {
-            super.viewDidLayoutSubviews()
-            let size = 44
-            reloadButton.frame = CGRect(x: (Int(view.frame.width)-size)/2,
-                                        
+        self.database.child("users").child(safeEmail).child("Cart").child(String(id)).observeSingleEvent(of: .value, with: { snapshot in
+            if !snapshot.exists() {
+                completion(false)
+            } else {
+                completion(true)
+            }
+        })
+    }
+    func setUpCollectionLayout(){
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        let width = UIScreen.main.bounds.width
+        layout.itemSize = CGSize(width: (width / 2)-20, height: (width / 2)+10)
+        
+        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = 10
+        
+        productsCollectionView.collectionViewLayout = layout
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let size = 44
+        reloadButton.frame = CGRect(x: (Int(view.frame.width)-size)/2,
+                                    
                                         y: 50,
                                         width: size,
                                         height: size)
