@@ -8,14 +8,16 @@
 import UIKit
 import CoreData
 import FirebaseAuth
-class WishlistViewController: UIViewController {
+import FirebaseDatabase
+class WishlistViewController: UIViewController, Alertable {
 
     @IBOutlet weak var productsTableView: UITableView!
-    
-    var wishlistProducts = [Wishlist]()
+    private let database = Database.database().reference()
+    var wishlistProducts = [Product]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.refresh), name: NSNotification.Name(rawValue: "newWishlistProduct"), object: nil)
         productsTableView.dataSource = self
         productsTableView.delegate = self
     }
@@ -26,42 +28,77 @@ class WishlistViewController: UIViewController {
    
     @IBAction func removeFromWishlist(_ sender: Any) {
         guard let indexPath = productsTableView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! WishlistCustomCell)) else { return }
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
         
-        AppDelegate.sharedAppDelegate.coreDataStack.managedContext.delete(self.wishlistProducts[indexPath.row])
+        let product = wishlistProducts[indexPath.row]
+        self.database.child("users").child(safeEmail).child("Wishlist").child(String(product.id)).removeValue()
         self.wishlistProducts.remove(at: indexPath.row)
-        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
-        self.productsTableView.deleteRows(at: [indexPath], with: .automatic)
-        
+        self.productsTableView.deleteRows(at: [indexPath], with: .fade)
     }
     
     @IBAction func addToCart(_ sender: Any) {
         guard let indexPath = productsTableView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! WishlistCustomCell)) else { return }
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+        
+        let cartProduct = [
+            "amount": 1
+        ]
         let product = wishlistProducts[indexPath.row]
-        let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
-        
-        let cartProduct = ShoppingCart(context: managedContext)
-        
-        cartProduct.setValue(product.name, forKey: #keyPath(ShoppingCart.name))
-        cartProduct.setValue(product.price, forKey: #keyPath(ShoppingCart.price))
-        cartProduct.setValue(product.productId, forKey: #keyPath(ShoppingCart.productId))
-        cartProduct.setValue(product.image, forKey: #keyPath(ShoppingCart.image))
-        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+        self.database.child("users").child(safeEmail).child("Cart").child("\(product.id)").setValue(cartProduct, withCompletionBlock: { [weak self] error,_  in
+            guard error == nil else { return }
+            self?.addRemoveCartAlert(message: "Product added to cart")
+        })
         removeFromWishlist(sender)
     }
     
     func getProducts() {
-        let productFetch: NSFetchRequest<Wishlist> = Wishlist.fetchRequest()
-        
-        do {
-            let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
-            let results = try managedContext.fetch(productFetch)
-            wishlistProducts = results
-            productsTableView.reloadData()
-        } catch let error as NSError {
-            print("Fetch error: \(error) description: \(error.userInfo)")
-        }
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+        self.database.child("users").child(safeEmail).child("Wishlist").observeSingleEvent(of: .value , with: { [weak self] snapshot in
+            if let data = snapshot.value as? [String: [String: Any]] {
+                var cartProductsIds = [Int]()
+                for datum in data {
+                    guard let amount = datum.value["isSelected"] as? Bool,
+                          let key = Int(datum.key) else { return }
+                    
+                    cartProductsIds.append(key)
+                    var productId = (Int(datum.key) ?? 201) - 201
+                    print(cartProductsIds)
+                    self?.database.child("Products/\(productId)").observeSingleEvent(of: .value, with: { [self] snapshot in
+                        if let product = snapshot.value as? [String: Any] {
+                            
+                                guard let name = product["name"] as? String,
+                                      let price = product["price"] as? Int,
+                                      let id = product["id"] as? Int,
+                                      let categoryId = product["categoryId"] as? Int,
+                                      let content = product["content"] as? String else {
+                                    return
+                                }
+                                if (self?.wishlistProducts.contains(where: {$0.id == id}))! { return }
+
+                                if id == Int(datum.key){
+                                    let prod = Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil, amount: nil)
+                                    self?.wishlistProducts.append(prod)
+                                    self?.productsTableView.reloadData()
+                                }
+                        }
+                    })
+                    self?.productsTableView.reloadData()
+                }
+            }
+        })
     }
 
+    @objc func refresh(notification: Notification) {
+        if let dict = notification.object as? NSDictionary {
+                if let id = dict["id"] as? Int{
+                    wishlistProducts.removeAll(where: { $0.id == id})
+                }
+            }
+       self.productsTableView.reloadData()
+   }
     func checkIfLogged(){
         FirebaseAuth.Auth.auth().addStateDidChangeListener { auth ,user in
             if user == nil {
@@ -85,18 +122,6 @@ extension WishlistViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setProductPrice(price: Int(wishlistedProduct.price))
         cell.setProductImage(image: "imageproduct")
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            
-            AppDelegate.sharedAppDelegate.coreDataStack.managedContext.delete(self.wishlistProducts[indexPath.row])
-            self.wishlistProducts.remove(at: indexPath.row)
-            // Save Changes
-            AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
-            // Remove row from TableView
-            self.productsTableView.deleteRows(at: [indexPath], with: .automatic)
-        }
     }
     
 }

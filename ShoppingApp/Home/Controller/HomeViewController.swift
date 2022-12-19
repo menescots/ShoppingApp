@@ -12,7 +12,7 @@ import CoreData
 import SwiftyJSON
 import FirebaseDatabase
 
-class HomeViewController: UIViewController, UITextFieldDelegate {
+class HomeViewController: UIViewController, UITextFieldDelegate, Alertable {
     
     var filteredProducts = [Product]()
     var isFiltering = false
@@ -112,16 +112,29 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
             guard let indexPath = productsCollectionView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ProductsCollectionViewCell)) else { return }
             
             let product = products[indexPath.row]
-            let wishlistProducts = [
-                "ID": product.id
+            let wishlistProduct = [
+                "isSelected": true
             ]
             
             guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
             let safeEmail = DatabaseManager.shared.safeEmail(email: email)
-        
-            self.database.child("users").child(safeEmail).child("Wishlist").child("\(product.id)").setValue(wishlistProducts, withCompletionBlock: { [weak self] error,_  in
-                guard error != nil else { return }
-                print("added to wish")
+            
+            isInWishlist(id: product.id, completion: { exists in
+                if !exists {
+                    self.database.child("users").child(safeEmail).child("Wishlist").child("\(product.id)").setValue(wishlistProduct, withCompletionBlock: { [weak self] error,_  in
+                        guard error == nil else { return }
+                        self?.addRemoveCartAlert(message: "Product added to wishlist")
+                    })
+                } else {
+                    self.database.child("users").child(safeEmail).child("Wishlist").child("\(product.id)").removeValue(completionBlock: { error,_  in
+                        guard error == nil else {
+                            print("failed to remove")
+                            return }
+                        let info = ["id" : product.id]
+                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "newWishlistProduct"), object: info)
+                        self.addRemoveCartAlert(message: "Product removed from wishlist")
+                    })
+                }
             })
         }
 
@@ -140,12 +153,14 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
                 if !exists {
                     self.database.child("users").child(safeEmail).child("Cart").child("\(product.id)").setValue(cartProduct, withCompletionBlock: { [weak self] error,_  in
                         guard error == nil else { return }
+                        self?.addRemoveCartAlert(message: "Product added to cart")
                     })
                 } else {
                     self.database.child("users").child(safeEmail).child("Cart").child("\(product.id)").removeValue(completionBlock: { error,_  in
                         guard error == nil else { return }
                         let info = ["id" : product.id]
                         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "newDataNotif"), object: info)
+                        self.addRemoveCartAlert(message: "Product removed from cart")
                     })
                 }
             })
@@ -156,6 +171,19 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         let safeEmail = DatabaseManager.shared.safeEmail(email: email)
         
         self.database.child("users").child(safeEmail).child("Cart").child(String(id)).observeSingleEvent(of: .value, with: { snapshot in
+            if !snapshot.exists() {
+                completion(false)
+            } else {
+                completion(true)
+            }
+        })
+    }
+    
+    func isInWishlist(id: Int, completion: @escaping (Bool) -> Void) {
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+        
+        self.database.child("users").child(safeEmail).child("Wishlist").child(String(id)).observeSingleEvent(of: .value, with: { snapshot in
             if !snapshot.exists() {
                 completion(false)
             } else {

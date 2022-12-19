@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 import FirebaseDatabase
-class ShoppingCartViewController: UIViewController {
+class ShoppingCartViewController: UIViewController, Alertable {
 
     @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var productTableView: UITableView!
@@ -30,8 +30,18 @@ class ShoppingCartViewController: UIViewController {
     
     @IBAction func addToWishlist(_ sender: Any) {
         guard let indexPath = productTableView?.indexPath(for: (((sender as AnyObject).superview??.superview) as! ShoppingCartCustomCell)) else { return }
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+        
+        let wishlistProduct = [
+            "isSelected": true
+        ]
         let product = cartProducts[indexPath.row]
-        //deleted from firebase, reloaded tableview but its not deleted from array
+        self.database.child("users").child(safeEmail).child("Wishlist").child("\(product.id)").setValue(wishlistProduct, withCompletionBlock: { [weak self] error,_  in
+            guard error == nil else { return }
+            self?.addRemoveCartAlert(message: "Product added to wishlist")
+        })
+        removeFromCart(sender)
         updateTotal()
     }
     @IBAction func removeFromCart(_ sender: Any) {
@@ -49,7 +59,6 @@ class ShoppingCartViewController: UIViewController {
         guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
         let safeEmail = DatabaseManager.shared.safeEmail(email: email)
         self.database.child("users").child(safeEmail).child("Cart").observeSingleEvent(of: .value , with: { [weak self] snapshot in
-            print("getproducts activated")
             if let data = snapshot.value as? [String: [String: Any]] {
                 var cartProductsIds = [Int]()
                 for datum in data {
