@@ -30,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     application,
                     didFinishLaunchingWithOptions: launchOptions
                 )
-
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
+        
         return true
     }
     func application(

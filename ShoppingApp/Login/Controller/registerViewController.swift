@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseDatabase
 import FirebaseAuth
 import MaterialComponents.MaterialTextControls_OutlinedTextFields
 class registerViewController: UIViewController, Alertable {

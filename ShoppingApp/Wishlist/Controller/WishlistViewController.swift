@@ -14,6 +14,11 @@ class WishlistViewController: UIViewController, Alertable {
     @IBOutlet weak var productsTableView: UITableView!
     private let database = Database.database().reference()
     var wishlistProducts = [Product]()
+    //remember amount
+    //stepper needs to know amount
+    //refresh tableview
+    //checkout two options
+    //selected heart
     
     override func viewDidLoad() {
         super.viewDidLoad()

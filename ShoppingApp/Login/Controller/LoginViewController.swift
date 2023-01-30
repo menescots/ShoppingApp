@@ -23,6 +23,11 @@ class LoginViewController: UIViewController, UITextViewDelegate, Alertable {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("here we go again")
+        checkIfLogged()
+    }
     @IBAction func signInTapped(_ sender: Any) {
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
@@ -45,8 +50,24 @@ class LoginViewController: UIViewController, UITextViewDelegate, Alertable {
             }
             UserDefaults.standard.setValue(email, forKey: "email")
             NotificationCenter.default.post(name: .didLogInNotification, object: nil)
-            self?.navigationController?.dismiss(animated: true)
+            guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "profileVC") as? ProfileViewController else {
+                return
+            }
+            self?.emailField.text = ""
+            self?.passwordField.text = ""
+            self?.present(UINavigationController(rootViewController: vc), animated: false)
         })
+    }
+    
+    func checkIfLogged(){
+        FirebaseAuth.Auth.auth().addStateDidChangeListener { auth ,user in
+            if user != nil {
+                guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "profileVC") as? ProfileViewController else {
+                    return
+                }
+                self.present(UINavigationController(rootViewController: vc), animated: true)
+            }
+        }
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
@@ -56,4 +77,10 @@ class LoginViewController: UIViewController, UITextViewDelegate, Alertable {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    override func present(_ viewControllerToPresent: UIViewController,
+                            animated flag: Bool,
+                            completion: (() -> Void)? = nil) {
+        viewControllerToPresent.modalPresentationStyle = .overCurrentContext
+        super.present(viewControllerToPresent, animated: flag, completion: completion)
+      }
 }

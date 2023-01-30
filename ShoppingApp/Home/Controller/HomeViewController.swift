@@ -80,19 +80,23 @@ class HomeViewController: UIViewController, UITextFieldDelegate, Alertable {
     
         @objc func listenForProducts() {
             database.child("Products").observeSingleEvent(of: .value, with: { snapshot in
-                if let data = snapshot.value as? [[String: Any]] {
-                    for datum in data {
-                        guard let name = datum["name"] as? String,
-                              let price = datum["price"] as? Int,
-                              let id = datum["id"] as? Int,
-                              let categoryId = datum["categoryId"] as? Int,
-                              let content = datum["content"] as? String else { print("returned"); return }
-                        
-                        self.products.append(Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil, amount: nil))
-                        self.productsCollectionView.reloadData()
+                DispatchQueue.main.async {
+                    if let data = snapshot.value as? [[String: Any]] {
+                        for datum in data {
+                            guard let name = datum["name"] as? String,
+                                  let price = datum["price"] as? Int,
+                                  let id = datum["id"] as? Int,
+                                  let categoryId = datum["categoryId"] as? Int,
+                                  let content = datum["content"] as? String else { print("returned"); return }
+                            
+                            self.products.append(Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil, amount: nil))
+                            DispatchQueue.main.async {
+                                self.productsCollectionView.reloadData()
+                            }
+                        }
+                    } else {
+                        self.reloadButton.isHidden = false
                     }
-                } else {
-                    self.reloadButton.isHidden = false
                 }
             })
         }
@@ -116,7 +120,10 @@ class HomeViewController: UIViewController, UITextFieldDelegate, Alertable {
                 "isSelected": true
             ]
             
-            guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+            guard let email = UserDefaults.standard.value(forKey: "email") as? String else {
+                notLoggedAlertWishlist(message: "Create an account to add products to wishlist")
+                return
+            }
             let safeEmail = DatabaseManager.shared.safeEmail(email: email)
             
             isInWishlist(id: product.id, completion: { exists in

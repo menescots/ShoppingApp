@@ -29,6 +29,8 @@ class CategoryTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        contentView.layer.cornerRadius = 14
+        contentView.layer.masksToBounds = true
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0))
     }
 }

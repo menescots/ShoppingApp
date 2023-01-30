@@ -77,4 +77,11 @@ extension CategoryProductsViewController: UICollectionViewDelegate, UICollection
         
         productsCollectionView.collectionViewLayout = layout
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let product = products[indexPath.row]
+         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "productDetail") as! ProductDetailController
+        vc.product = product
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

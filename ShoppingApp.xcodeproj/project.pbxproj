@@ -15,8 +15,6 @@
 		7E3B5EE82915010C00FD261F /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EE72915010C00FD261F /* ProductModel.swift */; };
 		7E3B5EEA2915162F00FD261F /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EE92915162F00FD261F /* DatabaseManager.swift */; };
 		7E3B5EEC29190E6400FD261F /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EEB29190E6300FD261F /* ShoppingCartViewController.swift */; };
-		7E3B5EEF291A4F2B00FD261F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3B5EEE291A4F2B00FD261F /* Realm */; };
-		7E3B5EF1291A4F2B00FD261F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3B5EF0291A4F2B00FD261F /* RealmSwift */; };
 		7E3B5EFE291A5CE300FD261F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5EFD291A5CE300FD261F /* CoreDataStack.swift */; };
 		7E3B5F04291B998400FD261F /* ShoppingAppCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5F02291B998400FD261F /* ShoppingAppCoreData.xcdatamodeld */; };
 		7E3B5F1D291BA30600FD261F /* Wishlist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B5F19291BA30600FD261F /* Wishlist+CoreDataClass.swift */; };
@@ -120,10 +118,8 @@
 				7EA0274929374AEF0063E859 /* FacebookShare in Frameworks */,
 				7E8D39D0290FD61700BE2BB9 /* SwiftyJSON in Frameworks */,
 				7EA0274E29374CC50063E859 /* FirebaseAnalyticsSwift in Frameworks */,
-				7E3B5EEF291A4F2B00FD261F /* Realm in Frameworks */,
 				7EA0275429374CC50063E859 /* FirebaseDatabaseSwift in Frameworks */,
 				7EA0275229374CC50063E859 /* FirebaseDatabase in Frameworks */,
-				7E3B5EF1291A4F2B00FD261F /* RealmSwift in Frameworks */,
 				7EA0275029374CC50063E859 /* FirebaseAuth in Frameworks */,
 				7EA0274729374AEF0063E859 /* FacebookLogin in Frameworks */,
 				3D5A7D40CBABF84347AD4C49 /* Pods_ShoppingApp.framework in Frameworks */,
@@ -459,8 +455,6 @@
 			packageProductDependencies = (
 				7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */,
 				7E8D39D2290FDB1C00BE2BB9 /* IQKeyboardManagerSwift */,
-				7E3B5EEE291A4F2B00FD261F /* Realm */,
-				7E3B5EF0291A4F2B00FD261F /* RealmSwift */,
 				7EA0274429374AEF0063E859 /* FacebookCore */,
 				7EA0274629374AEF0063E859 /* FacebookLogin */,
 				7EA0274829374AEF0063E859 /* FacebookShare */,
@@ -501,7 +495,6 @@
 			packageReferences = (
 				7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				7E8D39D1290FDB1C00BE2BB9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */,
 				7EA0274329374AEE0063E859 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				7EA0274A29374CC50063E859 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
@@ -831,14 +824,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.15.0;
-			};
-		};
 		7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
@@ -874,16 +859,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7E3B5EEE291A4F2B00FD261F /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		7E3B5EF0291A4F2B00FD261F /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7E3B5EED291A4F2B00FD261F /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
 		7E8D39CF290FD61700BE2BB9 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7E8D39CE290FD61700BE2BB9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;

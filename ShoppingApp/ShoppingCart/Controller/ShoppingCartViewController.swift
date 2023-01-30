@@ -64,10 +64,8 @@ class ShoppingCartViewController: UIViewController, Alertable {
                 for datum in data {
                     guard let amount = datum.value["amount"] as? Int,
                           let key = Int(datum.key) else { return }
-                    
                     cartProductsIds.append(key)
                     var productId = (Int(datum.key) ?? 201) - 201
-                    print(cartProductsIds)
                     self?.database.child("Products/\(productId)").observeSingleEvent(of: .value, with: { [self] snapshot in
                         if let product = snapshot.value as? [String: Any] {
                             
@@ -83,11 +81,15 @@ class ShoppingCartViewController: UIViewController, Alertable {
                                 if id == Int(datum.key){
                                     let prod = Product(id: id, name: name, price: price, categoryId: categoryId, content: content, imageUrl: nil, amount: amount)
                                     self?.cartProducts.append(prod)
-                                    self?.productTableView.reloadData()
+                                    DispatchQueue.main.async {
+                                        self?.productTableView.reloadData()
+                                    }
                                 }
                         }
                     })
-                    self?.productTableView.reloadData()
+                    DispatchQueue.main.async {
+                        self?.productTableView.reloadData()
+                    }
                 }
             }
         })
@@ -98,7 +100,9 @@ class ShoppingCartViewController: UIViewController, Alertable {
                     cartProducts.removeAll(where: { $0.id == id})
                 }
             }
-       self.productTableView.reloadData()
+        DispatchQueue.main.async {
+            self.productTableView.reloadData()
+        }
    }
 }
 
@@ -111,29 +115,17 @@ extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath as IndexPath) as! ShoppingCartCustomCell
         let product = cartProducts[indexPath.row]
         updateTotal()
-        cell.configure(name: product.name, quantity: Int(product.amount!), unitPrice: Int(product.price), delegate: self)
-        cell.setProductImage(image: "imageproduct")
-        cell.setProductID(id: Int(product.id))
+        
+        cell.configureCell(name: product.name, image: "imageproduct", id: product.id, amount: product.amount ?? 1, price: product.price)
         return cell
     }
     
     
 }
-
-extension ShoppingCartViewController: ShoppingItemCellDelegate {
-    func cell(_ cell: ShoppingCartCustomCell, didUpdateQuantity quantity: Int) {
-        guard let indexPath = productTableView.indexPath(for: cell) else { return }
-        var product = cartProducts[indexPath.row]
-        product.amount = quantity
-
-        updateTotal()
-    }
-}
-
 private extension ShoppingCartViewController {
     func updateTotal() {
         let total = cartProducts
-            .map { $0.amount! * $0.price }
+            .map { ($0.amount ?? 1) * $0.price }
             .reduce(0, +)
 
         totalPriceLabel.text = String(total)

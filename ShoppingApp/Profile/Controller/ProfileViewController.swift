@@ -20,9 +20,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNameLabel()
-
         loginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification, object: nil, queue: nil, using: { [weak self] _ in
-            print("in observer")
             self?.logOutButton.isHidden = false
             self?.setNameLabel()
         })
@@ -41,7 +39,7 @@ class ProfileViewController: UIViewController {
                 }
                // self.definesPresentationContext = true
                 //self.navigationController?.setNavigationBarHidden(true, animated: true)
-                self.present(UINavigationController(rootViewController: vc), animated: false)
+                //self.present(UINavigationController(rootViewController: vc), animated: true)
             }
         }
     }
@@ -85,6 +83,11 @@ class ProfileViewController: UIViewController {
                 DispatchQueue.main.async {
                     strongSelf.logOutButton.isHidden = true
                     strongSelf.userNameLabel.text = "Sign In on Sign Up"
+                    self?.navigationController?.dismiss(animated: true)
+                    guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "loginVC") as? LoginViewController else {
+                        return
+                    }
+                    self?.present(UINavigationController(rootViewController: vc), animated: true)
                 }
             } catch {
                 print("Failed to log out.")
@@ -97,12 +100,6 @@ class ProfileViewController: UIViewController {
     @IBAction func FBLoginButtonTapped(_ sender: Any) {
        
     }
-    override func present(_ viewControllerToPresent: UIViewController,
-                            animated flag: Bool,
-                            completion: (() -> Void)? = nil) {
-        viewControllerToPresent.modalPresentationStyle = .overCurrentContext
-        super.present(viewControllerToPresent, animated: flag, completion: completion)
-      }
     
 }
 

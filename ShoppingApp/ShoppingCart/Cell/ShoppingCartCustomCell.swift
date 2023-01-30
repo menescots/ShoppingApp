@@ -6,14 +6,9 @@
 //
 
 import UIKit
-
-protocol ShoppingItemCellDelegate: AnyObject {
-    func cell(_ cell: ShoppingCartCustomCell, didUpdateQuantity quantity: Int)
-}
+import FirebaseDatabase
 
 class ShoppingCartCustomCell: UITableViewCell {
-    weak var delegate: ShoppingItemCellDelegate?
-    
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var productImage: UIImageView!
@@ -21,22 +16,32 @@ class ShoppingCartCustomCell: UITableViewCell {
     @IBOutlet weak var productAmount: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var productIdLabel: UILabel!
-    
-    
+    private let database = Database.database().reference()
+    private var productId: Int!
     @IBAction func productAmountChanged(_ sender: UIStepper) {
         let quantity = Int(sender.value)
         productAmount.text = String(quantity)
-        delegate?.cell(self, didUpdateQuantity: quantity)
+        let cartProduct = [
+            "amount": quantity
+        ]
+        
+        guard let email = UserDefaults.standard.value(forKey: "email") as? String else { return }
+        let safeEmail = DatabaseManager.shared.safeEmail(email: email)
+        self.database.child("users").child(safeEmail).child("Cart").child(String(productId)).setValue(cartProduct, withCompletionBlock: { [weak self] error,_  in
+            guard error == nil else { return }
+            
+        })
     }
-    
-    func setProductImage(image: String) {
+                                                                                                           
+    func configureCell(name: String, image: String, id: Int, amount: Int, price: Int) {
+        productId = id
         productImage.image = UIImage(named: image)
+        productIdLabel.text = "ID: \(String(id))"
+        productName.text = name
+        productPriceLabel.text = "\(price)$"
+        productAmount.text = "\(amount)"
     }
     
-    func setProductID(id: Int) {
-        productIdLabel.text = "ID: \(String(id))"
-    }
-
     let cornerRadius = 14.0
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,12 +49,4 @@ class ShoppingCartCustomCell: UITableViewCell {
         contentView.layer.masksToBounds = true
     }
 }
-extension ShoppingCartCustomCell {
-    func configure(name: String, quantity: Int, unitPrice: Int, delegate: ShoppingItemCellDelegate) {
-        self.delegate = delegate
-print(name)
-        productName.text = name
-        productAmount.text = String(quantity)
-        productPriceLabel.text = String(unitPrice)
-    }
-}
+

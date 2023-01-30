@@ -49,4 +49,19 @@ extension Alertable where Self: UIViewController {
           alert.dismiss(animated: true, completion: nil)
         }
     }
+    
+    func notLoggedAlertWishlist(message: String) {
+        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Sign In", style: .default, handler: { [weak self] _ in
+
+            guard let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "loginVC") as? LoginViewController else {
+                return
+            }
+            self?.present(UINavigationController(rootViewController: vc), animated: false)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+
 }
